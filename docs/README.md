@@ -1,21 +1,23 @@
 # Co-Located Sensor Comparisons - 2025
 
-## How to View
+## View Online
 
-1. **Option A: Open locally**
-   - Extract all files from the zip (if shared as zip)
-   - Open `index.html` in your web browser
-   - All images and pages are included
+This site is published via GitHub Pages. Once configured, it will be available at:
+`https://arg02.github.io/bl-polar-plots/`
 
-2. **Option B: Upload to web hosting**
-   - Upload the entire folder to your web server
-   - Access via: `https://your-domain.com/colocated-comparisons/index.html`
+## Local Viewing
+
+To view locally:
+1. Clone this repository
+2. Open `index.html` in your web browser
+3. All images and pages are included with relative paths
 
 ## Contents
 
-- **index.html** - Master page listing all sensors
+- **index.html** - Master page listing all sensors with Intro and Methodology sections
 - Individual comparison pages for each sensor (NO2, PM2.5, Combined)
 - All PNG images (polar plots and time series graphs)
+- R code boxes showing the `polarPlot()` calls used
 
 ## Data
 
