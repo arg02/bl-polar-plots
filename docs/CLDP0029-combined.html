@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CLDP0029 - Combined Comparison</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 1400px; margin: 0 auto; padding: 20px; background: #f5f5f5; }
+    h1 { color: #333; }
+    h2 { border-bottom: 2px solid #ddd; padding-bottom: 10px; margin-top: 40px; }
+    .comparison { display: flex; gap: 20px; margin: 20px 0; flex-wrap: wrap; }
+    .plot-container { flex: 1; min-width: 400px; background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    .plot-container img { width: 100%; height: auto; border-radius: 4px; }
+    .code-box { background: #2d2d2d; color: #f8f8f2; padding: 15px; border-radius: 8px; margin-top: 15px; font-family: 'Courier New', monospace; font-size: 0.85em; overflow-x: auto; }
+    .code-box pre { margin: 0; white-space: pre-wrap; word-wrap: break-word; }
+    .timeseries { margin-top: 30px; background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    .timeseries img { width: 100%; height: auto; border-radius: 4px; }
+    .back-link { margin-bottom: 20px; }
+    .back-link a { color: #007bff; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="back-link"><a href="index.html">← Back to Index</a></div>
+  <h1>CLDP0029 - Combined Comparison</h1>
+  <p><strong>BL Sensor:</strong> Honor Oak Park - Solar (reference co-location)</p>
+  <p><strong>Reference Stations:</strong> NO2: Lewisham - Honor Oak Park (HP1); PM2.5: Lewisham - Honor Oak Park (HP1)</p>
+  <h2>NO2 Comparison</h2>
+  <p><strong>Matched Records:</strong> 8756</p>
+  <div class="comparison">
+    <div class="plot-container"><h3>Lewisham - Honor Oak Park</h3><img src="CLDP0029-HP1-no2-imperial.png" alt="Imperial NO2 polar plot"><div class="code-box"><pre>polarPlot(<br>  data = imperial_plot_data,<br>  pollutant = &quot;no2&quot;,<br>  x = &quot;ws&quot;,<br>  main = &quot;Lewisham - Honor Oak Park - NO2 2025&quot;,<br>  limits = c(0, 32.45)<br>)</pre></div></div>
+    <div class="plot-container"><h3>Honor Oak Park - Solar (reference co-location)</h3><img src="CLDP0029-HP1-no2-bl.png" alt="BL sensor NO2 polar plot"><div class="code-box"><pre>polarPlot(<br>  data = bl_plot_data,<br>  pollutant = &quot;no2&quot;,<br>  x = &quot;ws&quot;,<br>  main = &quot;Honor Oak Park - Solar (reference co-location) - INO2 2025\n(Using HP1 wind data)&quot;,<br>  limits = c(0, 32.45)<br>)</pre></div></div>
+  </div>
+  <div class="timeseries">
+    <h3>NO2 Time Series</h3><img src="CLDP0029-HP1-no2-timeseries.png" alt="NO2 time series">
+  </div>
+  <h2>PM2.5 Comparison</h2>
+  <p><strong>Matched Records:</strong> 8756</p>
+  <div class="comparison">
+    <div class="plot-container"><h3>Lewisham - Honor Oak Park</h3><img src="CLDP0029-HP1-pm2.5-imperial.png" alt="Imperial PM2.5 polar plot"><div class="code-box"><pre>polarPlot(<br>  data = imperial_plot_data,<br>  pollutant = &quot;pm2.5&quot;,<br>  x = &quot;ws&quot;,<br>  main = &quot;Lewisham - Honor Oak Park - PM2.5 2025&quot;,<br>  limits = c(0, 17.17)<br>)</pre></div></div>
+    <div class="plot-container"><h3>Honor Oak Park - Solar (reference co-location)</h3><img src="CLDP0029-HP1-pm2.5-bl.png" alt="BL sensor PM2.5 polar plot"><div class="code-box"><pre>polarPlot(<br>  data = bl_plot_data,<br>  pollutant = &quot;pm2.5&quot;,<br>  x = &quot;ws&quot;,<br>  main = &quot;Honor Oak Park - Solar (reference co-location) - IPM25 2025\n(Using HP1 wind data)&quot;,<br>  limits = c(0, 17.17)<br>)</pre></div></div>
+  </div>
+  <div class="timeseries">
+    <h3>PM2.5 Time Series</h3><img src="CLDP0029-HP1-pm2.5-timeseries.png" alt="PM2.5 time series">
+  </div>
+</body>
+</html>
