@@ -5,11 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Co-Located Sensor Comparisons</title>
   <style>
-    body { font-family: Arial, sans-serif; max-width: 1200px; margin: 0 auto; padding: 20px; }
-    h1 { color: #333; }
+    body { 
+      font-family: Arial, sans-serif; 
+      max-width: 1200px; 
+      margin: 0 auto; 
+      padding: 20px; 
+      background: #e8f4f8; 
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    h1 { color: #2c3e50; font-size: 1.8em; margin-bottom: 15px; }
+    h2 { color: #2c3e50; font-size: 1.4em; margin-top: 0; }
+    h3 { color: #555; font-size: 1.1em; margin-top: 0; }
+    p { font-size: 0.9em; color: #555; margin: 8px 0; }
     .sensor-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; margin-top: 20px; }
-    .sensor-card { border: 1px solid #ddd; padding: 15px; border-radius: 5px; background: #f9f9f9; }
-    .sensor-card h3 { margin-top: 0; color: #555; }
+    .sensor-card { border: 1px solid #ddd; padding: 15px; border-radius: 5px; background: #ffffff; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    .sensor-card h3 { margin-top: 0; color: #555; font-size: 1em; }
+    .sensor-card p { font-size: 0.85em; margin: 5px 0; }
     .sensor-card a { display: inline-block; margin: 5px 5px 5px 0; padding: 8px 15px; color: white; text-decoration: none; border-radius: 5px; font-weight: 500; transition: all 0.2s ease; }
     .sensor-card a:hover { transform: translateY(-1px); box-shadow: 0 2px 4px rgba(0,0,0,0.15); }
     /* Pastel colors for different comparison types */
@@ -45,47 +57,47 @@
 <body>
   <h1>Co-Located Sensor Comparisons - 2025</h1>
   
-  <div style="background: white; padding: 25px; border-radius: 8px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-    <h2 style="color: #2c3e50; margin-top: 0;">Introduction</h2>
-    <p>This page presents polar plot comparisons between Breathe London (BL) sensors and their co-located Imperial College reference stations for 2025. Polar plots visualize pollutant concentrations as a function of wind speed and direction, helping identify pollution sources and their directional patterns.</p>
-    <p>Each comparison shows side-by-side polar plots for the Imperial reference station and the BL sensor, using common wind data to ensure fair comparison. Time series graphs below show the temporal relationship between measurements.</p>
+  <div style="background: white; padding: 20px; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+    <h2 style="color: #2c3e50; margin-top: 0; font-size: 1.3em;">Introduction</h2>
+    <p style="font-size: 0.9em; line-height: 1.6;">This page presents polar plot comparisons between Breathe London (BL) sensors and their co-located Imperial College reference stations for 2025. Polar plots visualize pollutant concentrations as a function of wind speed and direction, helping identify pollution sources and their directional patterns.</p>
+    <p style="font-size: 0.9em; line-height: 1.6;">Each comparison shows side-by-side polar plots for the Imperial reference station and the BL sensor, using common wind data to ensure fair comparison. Time series graphs below show the temporal relationship between measurements.</p>
   </div>
   
-  <div style="background: white; padding: 25px; border-radius: 8px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-    <h2 style="color: #2c3e50; margin-top: 0;">Methodology</h2>
-    <h3 style="color: #555;">Sensor Selection</h3>
-    <p>BL sensors were identified using the <code>/ListSensors</code> API endpoint, filtering for sensors with <code>SiteLocationType: "Co-Location"</code>. This identified 17 co-located sensors across London.</p>
+  <div style="background: white; padding: 20px; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+    <h2 style="color: #2c3e50; margin-top: 0; font-size: 1.3em;">Methodology</h2>
+    <h3 style="color: #555; font-size: 1.05em; margin-top: 15px;">Sensor Selection</h3>
+    <p style="font-size: 0.9em; line-height: 1.6;">BL sensors were identified using the <code style="background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.85em;">/ListSensors</code> API endpoint, filtering for sensors with <code style="background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.85em;">SiteLocationType: "Co-Location"</code>. This identified 17 co-located sensors across London.</p>
     
-    <h3 style="color: #555;">Data Availability</h3>
-    <p>For each co-located sensor, we checked 2025 data availability using the <code>/getClarityData</code> endpoint for January 2025 (744 hourly records expected). Sensors with sufficient data (≥100 matched records) were included in the analysis.</p>
+    <h3 style="color: #555; font-size: 1.05em; margin-top: 15px;">Data Availability</h3>
+    <p style="font-size: 0.9em; line-height: 1.6;">For each co-located sensor, we checked 2025 data availability using the <code style="background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.85em;">/getClarityData</code> endpoint for January 2025 (744 hourly records expected). Sensors with sufficient data (≥100 matched records) were included in the analysis.</p>
     
-    <h3 style="color: #555;">Reference Station Matching</h3>
-    <p>BL sensors were matched to Imperial College reference stations using:</p>
-    <ul>
+    <h3 style="color: #555; font-size: 1.05em; margin-top: 15px;">Reference Station Matching</h3>
+    <p style="font-size: 0.9em; line-height: 1.6;">BL sensors were matched to Imperial College reference stations using:</p>
+    <ul style="font-size: 0.9em; line-height: 1.6; padding-left: 20px;">
       <li><strong>Location name matching:</strong> Comparing BL sensor site names with Imperial station names</li>
       <li><strong>Geographic proximity:</strong> For sensors without exact name matches, finding the nearest Imperial station (typically &lt;1km for co-located sensors)</li>
       <li><strong>Manual verification:</strong> Special cases (e.g., CLDP0013 uses BX1 for NO2 and BQ9 for PM2.5) were verified manually</li>
     </ul>
     
-    <h3 style="color: #555;">Data Processing</h3>
-    <ul>
-      <li><strong>Pollution data:</strong> Imperial station data from <code>openair::importImperial()</code>, BL sensor data from Breathe London API</li>
-      <li><strong>Wind data:</strong> Common wind speed and direction from MY1 (Marylebone Road AURN station) via <code>openair::importAURN()</code> - Imperial stations don't provide wind data directly</li>
+    <h3 style="color: #555; font-size: 1.05em; margin-top: 15px;">Data Processing</h3>
+    <ul style="font-size: 0.9em; line-height: 1.6; padding-left: 20px;">
+      <li><strong>Pollution data:</strong> Imperial station data from <code style="background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.85em;">openair::importImperial()</code>, BL sensor data from Breathe London API</li>
+      <li><strong>Wind data:</strong> Common wind speed and direction from MY1 (Marylebone Road AURN station) via <code style="background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.85em;">openair::importAURN()</code> - Imperial stations don't provide wind data directly</li>
       <li><strong>Timestamp matching:</strong> Data matched by hour-beginning timestamps (both APIs use hour-beginning convention)</li>
       <li><strong>Outlier handling:</strong> Color scales use 90th percentile limits (capped at 55 µg/m³ for NO2, 30 µg/m³ for PM2.5) to prevent extreme outliers from dominating the visualization</li>
     </ul>
     
-    <h3 style="color: #555;">Visualization</h3>
-    <p>Polar plots generated using <code>openair::polarPlot()</code> with:</p>
-    <ul>
+    <h3 style="color: #555; font-size: 1.05em; margin-top: 15px;">Visualization</h3>
+    <p style="font-size: 0.9em; line-height: 1.6;">Polar plots generated using <code style="background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.85em;">openair::polarPlot()</code> with:</p>
+    <ul style="font-size: 0.9em; line-height: 1.6; padding-left: 20px;">
       <li>Common color scale limits for fair comparison</li>
       <li>Wind speed (m/s) on radial axis, wind direction (°) on angular axis</li>
       <li>Mean pollutant concentration shown as color intensity</li>
     </ul>
-    <p>Time series graphs show temporal patterns with lines breaking at missing data points.</p>
+    <p style="font-size: 0.9em; line-height: 1.6;">Time series graphs show temporal patterns with lines breaking at missing data points.</p>
   </div>
   
-  <p><strong>Click on a sensor below to view detailed comparison with its Imperial reference station.</strong></p>
+  <p style="font-size: 0.95em; color: #666; margin-bottom: 20px;"><strong>Click on a sensor below to view detailed comparison with its Imperial reference station.</strong></p>
   <div class="sensor-list">
     <div class="sensor-card">
       <h3>CLDP0010 <span class="status has-data">NO2 + PM2.5</span></h3>
