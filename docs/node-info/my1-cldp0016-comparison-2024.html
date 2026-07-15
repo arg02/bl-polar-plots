@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY1 vs CLDP0016 Comparison - 2024</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            padding: 40px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+        
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+        
+        .plots-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .plot-item {
+            background: #fafafa;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .plot-item h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .plot-item img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .comparison-graph {
+            margin-top: 40px;
+            background: #fafafa;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .comparison-graph h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .comparison-graph img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .info-box {
+            background: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            padding: 15px;
+            margin-bottom: 30px;
+            border-radius: 4px;
+        }
+        
+        .info-box p {
+            margin: 5px 0;
+            color: #1565c0;
+        }
+        
+        @media (max-width: 768px) {
+            .plots-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>MY1 vs CLDP0016 Comparison - 2024</h1>
+        <p class="subtitle">Reference Station vs Breathe London Sensor Co-location Analysis</p>
+        
+        <div class="info-box">
+            <p><strong>MY1:</strong> Reference station (AURN network) - Marylebone Road, London</p>
+            <p><strong>CLDP0016:</strong> Breathe London sensor co-located at MY1</p>
+            <p><strong>Note:</strong> Both polar plots use the same wind speed and wind direction data from MY1</p>
+        </div>
+        
+        <div class="plots-container">
+            <div class="plot-item">
+                <h2>MY1 Reference Station</h2>
+                <p style="color: #666; margin-bottom: 15px;">Polar Plot - NO2 2024</p>
+                <img src="/my1-polar-plot-2024.png" alt="MY1 Polar Plot" id="my1-plot">
+            </div>
+            
+            <div class="plot-item">
+                <h2>CLDP0016 Breathe London Sensor</h2>
+                <p style="color: #666; margin-bottom: 15px;">Polar Plot - INO2 2024<br>(Using MY1 wind data)</p>
+                <img src="/cldp0016-polar-plot-2024.png" alt="CLDP0016 Polar Plot" id="cldp0016-plot">
+            </div>
+        </div>
+        
+        <div class="comparison-graph">
+            <h2>Time Series Comparison</h2>
+            <p style="color: #666; margin-bottom: 15px;">NO2 concentrations, wind speed, and wind direction - 2024</p>
+            <img src="/my1-cldp0016-comparison-2024.png" alt="Comparison Graph" id="comparison-plot">
+        </div>
+    </div>
+    
+    <script>
+        // Check if images loaded successfully
+        window.addEventListener('load', function() {
+            const images = ['my1-plot', 'cldp0016-plot', 'comparison-plot'];
+            images.forEach(id => {
+                const img = document.getElementById(id);
+                if (img) {
+                    img.onerror = function() {
+                        this.style.border = '2px solid #d32f2f';
+                        this.alt = 'Image failed to load: ' + this.src;
+                    };
+                    img.onload = function() {
+                        console.log('Loaded:', this.src);
+                    };
+                }
+            });
+        });
+    </script>
+</body>
+</html>

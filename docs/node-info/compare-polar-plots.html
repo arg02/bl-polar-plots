@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polar Plot Comparison - MY1 vs CLDP0016</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: #f5f5f5;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 14px;
+        }
+        .comparison-container {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .plot-card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            flex: 1;
+            min-width: 500px;
+            max-width: 600px;
+        }
+        .plot-card h2 {
+            margin-top: 0;
+            color: #333;
+            font-size: 20px;
+        }
+        .plot-card .info {
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        .plot-card img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .notes {
+            margin-top: 40px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .notes h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        .notes ul {
+            line-height: 1.8;
+            color: #555;
+        }
+        .notes li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Polar Plot Comparison</h1>
+    <div class="subtitle">MY1 Reference Station vs CLDP0016 Breathe London Sensor (2024)</div>
+    
+    <div class="comparison-container">
+        <div class="plot-card">
+            <h2>MY1 Reference Station</h2>
+            <div class="info">
+                <strong>Data Source:</strong> openair importAURN<br>
+                <strong>Pollutant:</strong> NO2<br>
+                <strong>Period:</strong> 2024-01-01 to 2024-12-31<br>
+                <strong>Records:</strong> 8,784 hourly records<br>
+                <strong>Wind Data:</strong> From MY1 met station
+            </div>
+            <img src="/my1-polar-plot-2024.png" alt="MY1 Polar Plot 2024">
+        </div>
+        
+        <div class="plot-card">
+            <h2>CLDP0016 Breathe London Sensor</h2>
+            <div class="info">
+                <strong>Data Source:</strong> Breathe London API<br>
+                <strong>Pollutant:</strong> NO2 (INO2)<br>
+                <strong>Period:</strong> 2024-01-01 to 2024-12-13<br>
+                <strong>Records:</strong> 8,304 hourly records<br>
+                <strong>Wind Data:</strong> From MY1 met station (co-located)
+            </div>
+            <img src="/cldp0016-polar-plot-2024.png" alt="CLDP0016 Polar Plot 2024">
+        </div>
+    </div>
+    
+    <div class="notes">
+        <h3>Notes</h3>
+        <ul>
+            <li><strong>Co-location:</strong> CLDP0016 is co-located at the MY1 reference station site, which is why we can use MY1 wind data for the CLDP0016 plot.</li>
+            <li><strong>Sensor Closure:</strong> CLDP0016 closed on 14 December 2024, so data ends on 13 December.</li>
+            <li><strong>Data Matching:</strong> Wind data from MY1 was matched with CLDP0016 pollution data by hour-beginning timestamps.</li>
+            <li><strong>Plot Interpretation:</strong> The radius represents wind speed (m/s), and the angle represents wind direction. Colors indicate NO2 concentration levels.</li>
+            <li><strong>Comparison:</strong> Both sensors are at the same location, so differences in the plots reflect differences in sensor characteristics, calibration, or measurement methodology.</li>
+        </ul>
+    </div>
+</body>
+</html>

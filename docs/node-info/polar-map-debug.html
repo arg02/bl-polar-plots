@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polar Map Debug</title>
+    <style>
+        body {
+            font-family: monospace;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        pre {
+            background: #f0f0f0;
+            padding: 10px;
+            overflow-x: auto;
+            border-left: 3px solid #007bff;
+        }
+        .error {
+            color: #d32f2f;
+            font-weight: bold;
+        }
+        .success {
+            color: #27ae60;
+        }
+    </style>
+</head>
+<body>
+    <h1>Polar Map Image Debug</h1>
+    
+    <div class="section">
+        <h2>Check Console Errors</h2>
+        <p>Open browser console (F12) and look for:</p>
+        <ul>
+            <li>404 errors for image files</li>
+            <li>Failed to load resource errors</li>
+            <li>Any errors mentioning "icon" or "marker"</li>
+        </ul>
+        <div id="console-output"></div>
+    </div>
+    
+    <div class="section">
+        <h2>Image References in HTML</h2>
+        <div id="image-refs"></div>
+    </div>
+    
+    <div class="section">
+        <h2>Leaflet Map Status</h2>
+        <div id="map-status"></div>
+    </div>
+    
+    <script>
+        // Check for image loading errors
+        window.addEventListener('error', function(e) {
+            if (e.target.tagName === 'IMG') {
+                const errorDiv = document.getElementById('console-output');
+                errorDiv.innerHTML += `<div class="error">Image failed to load: ${e.target.src}</div>`;
+            }
+        }, true);
+        
+        // Try to find image references in the HTML
+        fetch('/my1-polar-map-dynamic.html')
+            .then(response => response.text())
+            .then(html => {
+                // Look for icon URLs
+                const iconUrlMatches = html.match(/iconUrl["\']?\s*:\s*["\']([^"\']+)["\']/g);
+                const imageRefsDiv = document.getElementById('image-refs');
+                
+                if (iconUrlMatches) {
+                    imageRefsDiv.innerHTML = `<p>Found ${iconUrlMatches.length} icon URL references:</p><pre>${iconUrlMatches.slice(0, 10).join('\n')}</pre>`;
+                } else {
+                    imageRefsDiv.innerHTML = '<p>No iconUrl references found (images might be embedded as data URIs)</p>';
+                }
+                
+                // Check for data URIs
+                const dataUriMatches = html.match(/data:image\/png;base64,[A-Za-z0-9+/=]+/g);
+                if (dataUriMatches) {
+                    imageRefsDiv.innerHTML += `<p class="success">Found ${dataUriMatches.length} data URI images</p>`;
+                }
+            });
+        
+        // Check if map loads
+        setTimeout(() => {
+            const mapStatus = document.getElementById('map-status');
+            if (window.L && window.L.map) {
+                mapStatus.innerHTML = '<p class="success">✓ Leaflet library loaded</p>';
+            } else {
+                mapStatus.innerHTML = '<p class="error">✗ Leaflet library not found</p>';
+            }
+        }, 1000);
+    </script>
+    
+    <iframe src="/my1-polar-map-dynamic.html" style="width: 100%; height: 600px; border: 1px solid #ddd; margin-top: 20px;"></iframe>
+</body>
+</html>

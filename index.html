@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node Info — Breathe London Communities</title>
+    <!-- Production Squarespace styles (for typography / section themes) -->
+    <link rel="stylesheet" href="https://static1.squarespace.com/static/versioned-site-css/67f93e370d213673ed23e496/34/5c5a519771c10ba3470d8101/67f93e380d213673ed23e4de/1801/site.css">
+    <link rel="stylesheet" href="https://static1.squarespace.com/static/custom-css/67f93e370d213673ed23e496/67f93e380d213673ed23e4de/14/custom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body class="node-info-mirror">
+    <header class="demo-header">
+        <div class="demo-header__brand">
+            <a href="https://www.breathelondon-communities.org/" class="demo-header__logo">
+                <img src="https://images.squarespace-cdn.com/content/v1/67f93e370d213673ed23e496/e340aa4c-17e1-4679-b7f3-70304a65bf80/6.-bl-communities-logo-lungs-narrower3.png" alt="Breathe London Communities" height="56">
+            </a>
+        </div>
+        <button type="button" class="demo-header__menu-btn" id="header-menu-btn" aria-expanded="false" aria-controls="header-nav" aria-label="Open menu">
+            <span class="demo-header__menu-icon" aria-hidden="true"></span>
+        </button>
+        <nav class="demo-header__nav" id="header-nav" aria-label="Main navigation">
+            <a href="https://www.breathelondon-communities.org/about">About</a>
+            <a href="https://www.breathelondon-communities.org/origins">Origins</a>
+            <a href="https://www.breathelondon-communities.org/businesses-and-organisations">Business &amp; Organisations</a>
+            <a href="https://www.breathelondon-communities.org/local-government">Local Government</a>
+            <a href="https://www.breathelondon-communities.org/community-programme">Community Programme</a>
+            <a href="https://www.breathelondon-communities.org/news">News</a>
+            <a href="https://www.breathelondon-communities.org/shop">Shop</a>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Data use survey — kept in markup but omitted from the demo for now
+        <section class="page-section section-survey" id="data-use-survey-section" hidden>
+            <p class="section-survey__intro">
+                <strong>To help us understand who is using data from this sensor, we would be grateful if you could fill in this quick data use survey</strong>
+            </p>
+            <a
+                class="section-survey__button"
+                href="https://www.breathelondon-communities.org/sensor-info"
+                target="_blank"
+                rel="noopener"
+                id="data-use-survey-link"
+            >Data use survey</a>
+        </section>
+        -->
+
+        <!-- Sensor intro (lavender hero) -->
+        <section class="page-section section-lavender section-intro">
+            <style>
+                div .hero__info__meta { background-color: #0400cd1c !important; }
+                div .hero__info__meta dd { color: #0400cd !important; }
+            </style>
+            <div id="app"></div>
+        </section>
+
+        <!-- Map -->
+        <section class="page-section section-map">
+            <div id="app-ind-map"></div>
+        </section>
+
+        <!-- Hourly / Daily / Annual summary cards + linechart toggle -->
+        <section class="page-section section-lavender section-graphs">
+            <div id="app-sensor-graph"></div>
+            <div class="linechart-toggle-wrap">
+                <button type="button" id="widget__container__show">Graph plotting and data download</button>
+            </div>
+            <div id="widget__container__container">
+                <h2>Hourly graphs</h2>
+                <div id="widget__container"></div>
+            </div>
+        </section>
+
+        <!--
+          Polar plots — below graph button, above What can I do?
+          Variants:
+            ?polarMap=1 — overlay the transparent polar PNG on a map centred on the sensor
+              (e.g. /?sitecode=CLDP0299&polarMap=1).
+            ?polarUI=studio — radical “Wind Reading Room” restyle of the static plot section
+              (e.g. /?sitecode=CLDP0299&polarUI=studio). Class: polar-plot-slot--studio.
+              If both polarUI=studio and polarMap=1 are set, studio wins and map mode is ignored.
+        -->
+        <section class="page-section section-lavender polar-plot-slot" id="polar-plot-slot" aria-labelledby="polar-plot-heading">
+            <div class="polar-plot-slot__inner">
+                <header class="polar-plot-slot__header">
+                    <p class="polar-plot-slot__eyebrow" aria-hidden="true">How to read the wind</p>
+                    <h2 id="polar-plot-heading">Polar plots</h2>
+                    <p class="polar-plot-slot__studio-sub">A year of pollution, drawn by the wind</p>
+                </header>
+
+                <div class="polar-plot-layout">
+                    <div class="polar-plot-layout__visual">
+                        <div class="polar-plot-switcher" role="tablist" aria-label="Pollutant" data-pollutant="no2">
+                            <span class="polar-plot-switcher__dial" aria-hidden="true"></span>
+                            <button
+                                type="button"
+                                class="polar-plot-switcher__btn polar-plot-switcher__btn--no2 is-active"
+                                role="tab"
+                                id="polar-tab-no2"
+                                aria-selected="true"
+                                aria-controls="polar-panel-no2"
+                                data-pollutant="no2"
+                            >NO<sub>2</sub></button>
+                            <button
+                                type="button"
+                                class="polar-plot-switcher__btn polar-plot-switcher__btn--pm25"
+                                role="tab"
+                                id="polar-tab-pm25"
+                                aria-selected="false"
+                                aria-controls="polar-panel-pm25"
+                                data-pollutant="pm25"
+                                tabindex="-1"
+                            >PM<sub>2.5</sub></button>
+                        </div>
+
+                        <div id="polar-plot-demo" class="polar-plot-demo">
+                            <figure
+                                class="polar-plot-demo__figure is-active"
+                                id="polar-panel-no2"
+                                role="tabpanel"
+                                aria-labelledby="polar-tab-no2"
+                                data-pollutant="no2"
+                            >
+                                <img
+                                    src="%BASE_URL%cldp0299-no2-polar-2025.png"
+                                    alt="Polar plot of nitrogen dioxide for sensor CLDP0299, January to December 2025"
+                                    width="800"
+                                    height="840"
+                                />
+                            </figure>
+                            <figure
+                                class="polar-plot-demo__figure"
+                                id="polar-panel-pm25"
+                                role="tabpanel"
+                                aria-labelledby="polar-tab-pm25"
+                                data-pollutant="pm25"
+                                hidden
+                            >
+                                <img
+                                    src="%BASE_URL%cldp0299-pm25-polar-2025.png"
+                                    alt="Polar plot of fine particulate matter (PM2.5) for sensor CLDP0299, January to December 2025"
+                                    width="800"
+                                    height="840"
+                                />
+                            </figure>
+                        </div>
+
+                        <!-- Shown only when ?polarMap=1 (replaces static plot images above) -->
+                        <div id="polar-map-view" class="polar-map-view" hidden>
+                            <div class="polar-map-stack">
+                                <div id="polar-map" class="polar-map" role="img" aria-label="Map with polar plot overlay centred on sensor"></div>
+                                <div class="polar-map-controls" id="polar-map-controls">
+                                    <!-- Temporary Mapbox basemap picker (?polarMap=1) — remove when style is chosen -->
+                                    <div class="polar-map-basemap" id="polar-map-basemap-control">
+                                        <label class="polar-map-basemap__label" for="polar-map-basemap-style">
+                                            Basemap style
+                                            <span class="polar-map-basemap__temp">(temporary)</span>
+                                        </label>
+                                        <select
+                                            id="polar-map-basemap-style"
+                                            class="polar-map-basemap__select"
+                                            aria-describedby="polar-map-basemap-note"
+                                        >
+                                            <option value="mapbox://styles/mapbox/streets-v12" selected>Streets</option>
+                                            <option value="mapbox://styles/mapbox/outdoors-v12">Outdoors</option>
+                                            <option value="mapbox://styles/mapbox/light-v11">Light</option>
+                                            <option value="mapbox://styles/mapbox/dark-v11">Dark</option>
+                                            <option value="mapbox://styles/mapbox/satellite-v9">Satellite</option>
+                                            <option value="mapbox://styles/mapbox/satellite-streets-v12">Satellite Streets</option>
+                                            <option value="mapbox://styles/mapbox/standard">Standard</option>
+                                        </select>
+                                        <p id="polar-map-basemap-note" class="polar-map-basemap__note" hidden>
+                                            Basemap styles need Mapbox (OSM fallback in use).
+                                        </p>
+                                    </div>
+                                    <div class="polar-map-opacity" id="polar-map-opacity-control">
+                                        <label class="polar-map-opacity__label" for="polar-map-opacity">Plot opacity</label>
+                                        <input
+                                            type="range"
+                                            id="polar-map-opacity"
+                                            class="polar-map-opacity__slider"
+                                            min="0"
+                                            max="100"
+                                            value="50"
+                                            step="1"
+                                            aria-valuemin="0"
+                                            aria-valuemax="100"
+                                            aria-valuenow="50"
+                                        />
+                                        <span class="polar-map-opacity__value" id="polar-map-opacity-value" aria-hidden="true">50%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p id="polar-map-status" class="polar-map-status" hidden></p>
+                        </div>
+                    </div>
+
+                    <div class="polar-plot-layout__copy">
+                        <p class="polar-plot-slot__lede">
+                            These plots show how pollution at this sensor relates to wind over a full year.
+                        </p>
+                        <ul class="polar-plot-slot__guide">
+                            <li><strong>Direction</strong> around the circle is where the wind came from (N, E, S, W).</li>
+                            <li><strong>Distance from the centre</strong> is wind speed — calm near the middle, stronger winds toward the edge.</li>
+                            <li><strong>Colour</strong> shows the average concentration (µg/m³) for that wind combination — not the yearly site average. Warmer colours can sit well above the annual mean because they reflect specific wind conditions when levels were higher.</li>
+                        </ul>
+                        <p class="polar-plot-slot__lede polar-plot-slot__lede--follow">
+                            Look for warmer patches to see which directions pollution tends to arrive from. Switch between NO<sub>2</sub> and PM<sub>2.5</sub> above the plot — patterns can differ by pollutant.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What can I do? (extracted from production Squarespace embed) -->
+        <section class="page-section section-white section-what-can-i-do">
+            <h3 class="what-can-i-do__title">What can I do?</h3>
+            <div id="what-can-i-do-root"></div>
+        </section>
+
+        <!-- Feedback -->
+        <section class="page-section section-lavender section-feedback">
+            <a class="feedback-button" href="https://imperial.eu.qualtrics.com/jfe/form/SV_bkFARIlmNxy82yy" target="_blank" rel="noopener">Feedback</a>
+            <h4 class="feedback-text">We are interested to hear your opinions of the revised node page and of the Breathe London website.</h4>
+        </section>
+    </main>
+
+    <footer class="demo-footer">
+        <div class="demo-footer__grid">
+            <div class="demo-footer__column">
+                <h4>Our Partners</h4>
+                <div class="demo-footer__partners">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5fca46de849164702cf39d04/1607689539862-BSLSCDCJV52PISGD63DM/bloomberg-white.png" alt="Bloomberg Philanthropies" height="32">
+                </div>
+            </div>
+            <div class="demo-footer__column demo-footer__links">
+                <a href="https://www.breathelondon-communities.org/about">About</a>
+                <a href="https://www.breathelondon-communities.org/shop">Shop</a>
+                <a href="https://www.breathelondon-communities.org/apply">Community Programme</a>
+                <a href="https://www.breathelondon-communities.org/location-installation">Location &amp; Installation guide</a>
+                <a href="https://www.breathelondon-communities.org/stories">Community stories</a>
+                <a href="https://www.breathelondon-communities.org/air-quality-guidelines">Air quality guidelines</a>
+                <a href="https://www.breathelondon-communities.org/network-accuracy">Network accuracy</a>
+                <a href="https://www.breathelondon-communities.org/network-reports">Network reports</a>
+                <a href="https://www.breathelondon-communities.org/pilot/#wearables">Wearables study</a>
+                <a href="https://www.breathelondon-communities.org/developers">Developers</a>
+                <a href="https://www.breathelondon-communities.org/about/#partnerships">Strategic partnerships</a>
+                <a href="https://www.breathelondon-communities.org/privacy/#privacy">Privacy</a>
+                <a href="https://www.breathelondon-communities.org/privacy/#accessibility">Accessibility</a>
+            </div>
+            <div class="demo-footer__column">
+                <h4>Contact</h4>
+                <a href="mailto:breathelondon@imperial.ac.uk">Email</a>
+                <a href="https://twitter.com/Breathe_London">Twitter</a>
+                <a href="https://imperial.eu.qualtrics.com/jfe/form/SV_bkFARIlmNxy82yy" target="_blank" rel="noopener">Website Feedback</a>
+            </div>
+        </div>
+        <p class="demo-footer__copyright">© Copyright 2025<br>Imperial College London</p>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+</body>
+</html>
