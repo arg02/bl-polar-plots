@@ -14,14 +14,8 @@ import {
     MAPBOX_BASEMAP_STYLES,
     initializeMap
 } from '../../utils/mapbox-overlay.js';
-
-const assetBase = import.meta.env.BASE_URL || '/';
-
-const POLAR_IMAGES = {
-    no2: `${assetBase}cldp0299-no2-polar-2025.png`,
-    pm25: `${assetBase}cldp0299-pm25-polar-2025.png`
-};
-
+export { polarImageUrl } from './polar-image-url.js';
+import { polarImageUrl } from './polar-image-url.js';
 
 /** Default plot opacity so streets remain visible under the PNG. */
 const DEFAULT_OVERLAY_OPACITY = 0.5;
@@ -49,18 +43,6 @@ function storeBasemapStyle(styleUrl) {
     } catch {
         /* ignore */
     }
-}
-
-/**
- * Resolve polar PNG URL for a sitecode + pollutant.
- * Falls back to CLDP0299 assets when site-specific files are absent.
- */
-export function polarImageUrl(sitecode, pollutant) {
-    const code = (sitecode || 'CLDP0299').toLowerCase();
-    const key = pollutant === 'pm25' ? 'pm25' : 'no2';
-    const preferred = `${assetBase}${code}-${key}-polar-2025.png`;
-    if (code === 'cldp0299' || code === 'cldp0652') return preferred;
-    return POLAR_IMAGES[key];
 }
 
 function webglAvailable() {

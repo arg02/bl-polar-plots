@@ -1,3 +1,5 @@
+import { polarImageUrl } from './components/polar-plot/polar-image-url.js';
+
 const API_KEY = 'e2635276-e87a-11eb-9a03-0242ac130003';
 const API_BASE_URL = 'https://api.breathelondon-communities.org/api';
 
@@ -213,6 +215,21 @@ window.hidePolarPlotSlot = () => {
     if (slot) slot.hidden = true;
 };
 
+/** Point static polar <img> tags at sitecode-specific 2025 PNGs. */
+function applyStaticPolarImages(siteCode) {
+    const code = (siteCode || 'CLDP0299').toUpperCase();
+    const panels = [
+        { id: 'polar-panel-no2', pollutant: 'no2', label: 'nitrogen dioxide' },
+        { id: 'polar-panel-pm25', pollutant: 'pm25', label: 'fine particulate matter (PM2.5)' }
+    ];
+    for (const { id, pollutant, label } of panels) {
+        const img = document.querySelector(`#${id} img`);
+        if (!img) continue;
+        img.src = polarImageUrl(code, pollutant);
+        img.alt = `Polar plot of ${label} for sensor ${code}, January to December 2025`;
+    }
+}
+
 /**
  * Pollutant NO₂ / PM₂.₅ switcher for the polar section.
  * @param {{ onPollutantChange?: (pollutant: string) => void, syncPanels?: boolean }} [options]
@@ -296,6 +313,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     // / abort the location fetch and surface "Could not load sensor location".
     const polarMapPromise = (async () => {
         if (!polarMapEnabled) {
+            applyStaticPolarImages(sitecode);
             initPolarPlotSwitcher();
             return;
         }
@@ -315,6 +333,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             document.getElementById('polar-plot-demo')?.removeAttribute('hidden');
             const mapView = document.getElementById('polar-map-view');
             if (mapView) mapView.hidden = true;
+            applyStaticPolarImages(sitecode);
             initPolarPlotSwitcher();
         }
     })();
