@@ -1,4 +1,5 @@
 import { polarImageUrl } from './components/polar-plot/polar-image-url.js';
+import { loadPolarReadings, applyPolarReading } from './components/polar-plot/polar-readings.js';
 
 const API_KEY = 'e2635276-e87a-11eb-9a03-0242ac130003';
 const API_BASE_URL = 'https://api.breathelondon-communities.org/api';
@@ -230,12 +231,22 @@ function applyStaticPolarImages(siteCode) {
     }
 }
 
+/** Active pollutant from the polar switcher (defaults to NO₂). */
+function currentPolarPollutant() {
+    return document.getElementById('polar-plot-slot')?.dataset?.pollutant || 'no2';
+}
+
+/** Refresh expandable site reading for sitecode + current pollutant. */
+function refreshPolarReading(siteCode, pollutant = currentPolarPollutant()) {
+    applyPolarReading(siteCode, pollutant);
+}
+
 /**
  * Pollutant NO₂ / PM₂.₅ switcher for the polar section.
  * @param {{ onPollutantChange?: (pollutant: string) => void, syncPanels?: boolean }} [options]
  */
 function initPolarPlotSwitcher(options = {}) {
-    const { onPollutantChange, syncPanels = true } = options;
+    const { onPollutantChange, syncPanels = true, siteCode } = options;
     const slot = document.getElementById('polar-plot-slot');
     if (!slot) return;
 
@@ -262,6 +273,7 @@ function initPolarPlotSwitcher(options = {}) {
             });
         }
 
+        if (siteCode) refreshPolarReading(siteCode, pollutant);
         onPollutantChange?.(pollutant);
     }
 
@@ -312,9 +324,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Widgets also hit ListSensors (~1.2MB); sequencing them first used to starve
     // / abort the location fetch and surface "Could not load sensor location".
     const polarMapPromise = (async () => {
+        await loadPolarReadings();
         if (!polarMapEnabled) {
             applyStaticPolarImages(sitecode);
-            initPolarPlotSwitcher();
+            initPolarPlotSwitcher({ siteCode: sitecode });
+            refreshPolarReading(sitecode);
             return;
         }
         try {
@@ -324,8 +338,10 @@ document.addEventListener('DOMContentLoaded', async () => {
             const { setPollutant } = await initPolarMapView({ sitecode, slot });
             initPolarPlotSwitcher({
                 syncPanels: false,
+                siteCode: sitecode,
                 onPollutantChange: setPollutant
             });
+            refreshPolarReading(sitecode);
         } catch (error) {
             console.error('Error initialising polar map overlay:', error);
             const slot = document.getElementById('polar-plot-slot');
@@ -334,7 +350,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             const mapView = document.getElementById('polar-map-view');
             if (mapView) mapView.hidden = true;
             applyStaticPolarImages(sitecode);
-            initPolarPlotSwitcher();
+            initPolarPlotSwitcher({ siteCode: sitecode });
+            refreshPolarReading(sitecode);
         }
     })();
 

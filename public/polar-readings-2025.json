@@ -1,0 +1,618 @@
+{
+  "CLDP0298": {
+    "no2": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    },
+    "pm25": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    }
+  },
+  "CLDP0299": {
+    "no2": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    },
+    "pm25": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    }
+  },
+  "CLDP0300": {
+    "no2": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, any directional pattern is weaker: levels are only a little higher with winds from the south-east than from the south-west. This points to a contribution from the south-east."
+      ]
+    },
+    "pm25": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    }
+  },
+  "CLDP0306": {
+    "no2": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    },
+    "pm25": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    }
+  },
+  "CLDP0316": {
+    "no2": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    },
+    "pm25": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    }
+  },
+  "CLDP0317": {
+    "no2": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    },
+    "pm25": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    }
+  },
+  "CLDP0353": {
+    "no2": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    },
+    "pm25": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    }
+  },
+  "CLDP0362": {
+    "no2": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    },
+    "pm25": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the east. This points to a contribution from that direction."
+      ]
+    }
+  },
+  "CLDP0384": {
+    "no2": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    },
+    "pm25": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    }
+  },
+  "CLDP0390": {
+    "no2": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    },
+    "pm25": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    }
+  },
+  "CLDP0391": {
+    "no2": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    },
+    "pm25": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the east. This points to a contribution from that direction."
+      ]
+    }
+  },
+  "CLDP0392": {
+    "no2": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, any directional pattern is weaker: levels are only a little higher with winds from the south than from the north-east. This points to a contribution from the south."
+      ]
+    },
+    "pm25": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the east. This points to a contribution from that direction."
+      ]
+    }
+  },
+  "CLDP0394": {
+    "no2": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    },
+    "pm25": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    }
+  },
+  "CLDP0438": {
+    "no2": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    },
+    "pm25": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    }
+  },
+  "CLDP0439": {
+    "no2": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    },
+    "pm25": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    }
+  },
+  "CLDP0444": {
+    "no2": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    },
+    "pm25": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    }
+  },
+  "CLDP0452": {
+    "no2": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    },
+    "pm25": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    }
+  },
+  "CLDP0454": {
+    "no2": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, any directional pattern is weaker: levels are only a little higher with winds from the south-east than from the south-west. This points to a contribution from the south-east."
+      ]
+    },
+    "pm25": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    }
+  },
+  "CLDP0455": {
+    "no2": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, any directional pattern is weaker: levels are only a little higher with winds from the south-east than from the north-east. This points to a contribution from the south-east."
+      ]
+    },
+    "pm25": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    }
+  },
+  "CLDP0466": {
+    "no2": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    },
+    "pm25": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    }
+  },
+  "CLDP0467": {
+    "no2": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    },
+    "pm25": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, any directional pattern is weaker: levels are only a little higher with winds from the east than from the north-west. This points to a contribution from the east."
+      ]
+    }
+  },
+  "CLDP0468": {
+    "no2": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    },
+    "pm25": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    }
+  },
+  "CLDP0469": {
+    "no2": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    },
+    "pm25": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    }
+  },
+  "CLDP0470": {
+    "no2": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    },
+    "pm25": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    }
+  },
+  "CLDP0474": {
+    "no2": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    },
+    "pm25": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    }
+  },
+  "CLDP0475": {
+    "no2": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, any directional pattern is weaker: levels are only a little higher with winds from the north than from the north-east. This points to a contribution from the north."
+      ]
+    },
+    "pm25": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the east. This points to a contribution from that direction."
+      ]
+    }
+  },
+  "CLDP0476": {
+    "no2": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    },
+    "pm25": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    }
+  },
+  "CLDP0477": {
+    "no2": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    },
+    "pm25": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    }
+  },
+  "CLDP0531": {
+    "no2": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    },
+    "pm25": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    }
+  },
+  "CLDP0533": {
+    "no2": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    },
+    "pm25": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, any directional pattern is weaker: levels are only a little higher with winds from the south-east than from the north-west. This points to a contribution from the south-east."
+      ]
+    }
+  },
+  "CLDP0539": {
+    "no2": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    },
+    "pm25": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    }
+  },
+  "CLDP0541": {
+    "no2": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    },
+    "pm25": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    }
+  },
+  "CLDP0542": {
+    "no2": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    },
+    "pm25": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the east. This points to a contribution from that direction."
+      ]
+    }
+  },
+  "CLDP0551": {
+    "no2": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    },
+    "pm25": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    }
+  },
+  "CLDP0552": {
+    "no2": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    },
+    "pm25": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    }
+  },
+  "CLDP0553": {
+    "no2": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    },
+    "pm25": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    }
+  },
+  "CLDP0554": {
+    "no2": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    },
+    "pm25": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    }
+  },
+  "CLDP0557": {
+    "no2": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    },
+    "pm25": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    }
+  },
+  "CLDP0558": {
+    "no2": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    },
+    "pm25": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, any directional pattern is weaker: levels are only a little higher with winds from the south-east than from the north-west. This points to a contribution from the south-east."
+      ]
+    }
+  },
+  "CLDP0559": {
+    "no2": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    },
+    "pm25": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    }
+  },
+  "CLDP0561": {
+    "no2": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    },
+    "pm25": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    }
+  },
+  "CLDP0564": {
+    "no2": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    },
+    "pm25": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the east. This points to a contribution from that direction."
+      ]
+    }
+  },
+  "CLDP0589": {
+    "no2": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    },
+    "pm25": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ]
+    }
+  },
+  "CLDP0651": {
+    "no2": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the east. This points to a contribution from that direction."
+      ]
+    },
+    "pm25": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the east. This points to a contribution from that direction."
+      ]
+    }
+  }
+}

@@ -2,8 +2,12 @@
 
 ## View Online
 
-This site is published via GitHub Pages. Once configured, it will be available at:
+Published via GitHub Pages from this `docs/` folder on branch `reference-comparison`
+(Settings → Pages → Deploy from a branch → `/docs`):
+
 `https://arg02.github.io/bl-polar-plots/`
+
+The Vite node-info mockup is separate; see the root README section **Deploying the node mockup**.
 
 ## Local Viewing
 

@@ -18,7 +18,7 @@ export { polarImageUrl } from './polar-image-url.js';
 import { polarImageUrl } from './polar-image-url.js';
 
 /** Default plot opacity so streets remain visible under the PNG. */
-const DEFAULT_OVERLAY_OPACITY = 0.5;
+const DEFAULT_OVERLAY_OPACITY = 0.7;
 
 /** sessionStorage key for the temporary basemap style picker. */
 const BASEMAP_STYLE_STORAGE_KEY = 'polar-map-basemap-style';

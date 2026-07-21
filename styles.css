@@ -389,6 +389,15 @@ body.node-info-mirror {
     letter-spacing: -0.01em;
 }
 
+.polar-plot-slot__year {
+    margin: 4px 0 0;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--bl-chart-title);
+    opacity: 0.7;
+    letter-spacing: 0.02em;
+}
+
 .polar-plot-layout {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
@@ -420,21 +429,17 @@ body.node-info-mirror {
     opacity: 0.88;
 }
 
-.polar-plot-slot__lede--follow {
-    margin-top: 16px;
-}
-
 .polar-plot-slot__guide {
-    margin: 16px 0 0;
+    margin: 12px 0 0;
     padding: 0 0 0 1.15em;
     color: var(--bl-navy);
-    font-size: 0.98rem;
-    line-height: 1.55;
+    font-size: 0.92rem;
+    line-height: 1.45;
     opacity: 0.88;
 }
 
 .polar-plot-slot__guide li {
-    margin-bottom: 10px;
+    margin-bottom: 6px;
 }
 
 .polar-plot-slot__guide li:last-child {
@@ -444,6 +449,33 @@ body.node-info-mirror {
 .polar-plot-slot__guide strong {
     font-weight: 600;
     color: var(--bl-navy);
+}
+
+/* Site-specific reading — always visible beside the plot (when available) */
+.polar-reading {
+    margin-top: 18px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(4, 0, 205, 0.18);
+    color: var(--bl-navy);
+}
+
+.polar-reading__title {
+    margin: 0 0 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--bl-chart-title);
+    letter-spacing: -0.01em;
+}
+
+.polar-reading__body p {
+    margin: 0 0 12px;
+    font-size: 0.95rem;
+    line-height: 1.55;
+    opacity: 0.92;
+}
+
+.polar-reading__body p:last-child {
+    margin-bottom: 0;
 }
 
 /* Pollutant tabs — coloured to match graph bars (NO2 purple / PM2.5 grey) */
@@ -615,29 +647,53 @@ body.node-info-mirror {
 
 .polar-map-controls {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 0;
+    box-sizing: border-box;
     width: 100%;
+    padding: 10px 14px;
+    background: #f4f5f9;
+    border: 1px solid rgba(11, 31, 74, 0.12);
+    border-top: none;
+    border-radius: 0 0 6px 6px;
     position: relative;
     z-index: 2;
 }
 
-.polar-map-basemap {
+.polar-map-basemap,
+.polar-map-opacity {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 8px 12px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
     box-sizing: border-box;
-    width: 100%;
-    padding: 8px 12px;
-    background: rgba(255, 255, 255, 0.96);
-    border: 1px solid rgba(11, 31, 74, 0.12);
-    border-top: none;
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 0 14px;
+    background: transparent;
+    border: none;
     font-size: 0.85rem;
     color: var(--bl-navy);
 }
 
-.polar-map-basemap__label {
+.polar-map-basemap {
+    padding-left: 0;
+    border-right: 1px solid rgba(11, 31, 74, 0.1);
+}
+
+.polar-map-opacity {
+    padding-right: 0;
+}
+
+.polar-map-basemap__label,
+.polar-map-opacity__label {
+    margin: 0;
     font-weight: 600;
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--bl-caption);
     white-space: nowrap;
     cursor: pointer;
     flex-shrink: 0;
@@ -645,21 +701,34 @@ body.node-info-mirror {
 
 .polar-map-basemap__temp {
     font-weight: 500;
+    text-transform: none;
+    letter-spacing: 0;
     opacity: 0.65;
 }
 
 .polar-map-basemap__select {
-    flex: 1 1 auto;
-    min-width: 10rem;
-    max-width: 16rem;
-    padding: 4px 8px;
-    border: 1px solid rgba(11, 31, 74, 0.22);
-    border-radius: 4px;
+    width: 100%;
+    max-width: none;
+    padding: 7px 10px;
+    border: 1px solid rgba(11, 31, 74, 0.18);
+    border-radius: 6px;
     background: #fff;
     color: var(--bl-navy);
     font: inherit;
     font-size: 0.85rem;
+    line-height: 1.3;
     cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%230b1f4a' d='M1.4 0.6L6 5.2 10.6 0.6 12 2 6 8 0 2z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 10px 7px;
+    padding-right: 28px;
+}
+
+.polar-map-basemap__select:focus {
+    outline: 2px solid var(--bl-blue);
+    outline-offset: 1px;
 }
 
 .polar-map-basemap__select:disabled {
@@ -668,7 +737,6 @@ body.node-info-mirror {
 }
 
 .polar-map-basemap__note {
-    flex: 1 0 100%;
     margin: 0;
     font-size: 0.78rem;
     line-height: 1.35;
@@ -679,40 +747,30 @@ body.node-info-mirror {
     display: none !important;
 }
 
-.polar-map-opacity {
+.polar-map-opacity__row {
     display: flex;
     align-items: center;
-    gap: 12px;
-    box-sizing: border-box;
-    width: 100%;
-    padding: 8px 12px;
-    background: rgba(255, 255, 255, 0.96);
-    border: 1px solid rgba(11, 31, 74, 0.12);
-    border-top: none;
-    border-radius: 0;
-    font-size: 0.85rem;
-    color: var(--bl-navy);
-}
-
-.polar-map-opacity__label {
-    font-weight: 600;
-    white-space: nowrap;
-    cursor: pointer;
-    flex-shrink: 0;
+    gap: 10px;
+    min-height: 34px;
+    padding: 0 4px;
 }
 
 .polar-map-opacity__slider {
     flex: 1 1 auto;
     width: auto;
     min-width: 0;
+    height: 4px;
     accent-color: var(--bl-blue);
     cursor: pointer;
 }
 
 .polar-map-opacity__value {
-    min-width: 2.6em;
+    min-width: 2.75em;
     font-variant-numeric: tabular-nums;
-    opacity: 0.75;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--bl-navy);
+    opacity: 0.85;
     flex-shrink: 0;
     text-align: right;
 }
@@ -849,6 +907,20 @@ body.node-info-mirror {
 
     .polar-map-controls {
         margin: 0;
+        flex-direction: column;
+        gap: 12px;
+        padding: 12px 14px;
+    }
+
+    .polar-map-basemap,
+    .polar-map-opacity {
+        padding: 0;
+        border-right: none;
+    }
+
+    .polar-map-basemap {
+        padding-bottom: 12px;
+        border-bottom: 1px solid rgba(11, 31, 74, 0.1);
     }
 
     .polar-plot-slot--map .polar-plot-layout {
@@ -973,6 +1045,13 @@ body.node-info-mirror {
     line-height: 0.95;
     letter-spacing: -0.04em;
     margin: 0;
+}
+
+.polar-plot-slot--studio .polar-plot-slot__year {
+    color: var(--studio-muted);
+    opacity: 0.85;
+    font-size: 1.05rem;
+    margin-top: 8px;
 }
 
 .polar-plot-slot--studio .polar-plot-slot__studio-sub {
@@ -1119,7 +1198,7 @@ body.node-info-mirror {
 
 .polar-plot-slot--studio .polar-plot-slot__lede {
     color: var(--studio-muted);
-    font-size: 1.08rem;
+    font-size: 1.02rem;
     line-height: 1.5;
     opacity: 1;
     border-left: 3px solid var(--studio-teal);
@@ -1128,66 +1207,50 @@ body.node-info-mirror {
 
 .polar-plot-slot--studio .polar-plot-slot__guide {
     list-style: none;
-    margin: 28px 0 0;
+    margin: 16px 0 0;
     padding: 0;
-    counter-reset: studio-callout;
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 8px;
     opacity: 1;
 }
 
 .polar-plot-slot--studio .polar-plot-slot__guide li {
-    counter-increment: studio-callout;
-    position: relative;
     margin: 0;
-    padding: 16px 18px 16px 64px;
+    padding: 10px 14px;
     background: rgba(224, 224, 255, 0.06);
     border: 1px solid rgba(224, 224, 255, 0.12);
-    border-radius: 2px 18px 2px 18px;
+    border-radius: 2px 14px 2px 14px;
     color: var(--studio-muted);
-    font-size: 0.95rem;
-    line-height: 1.5;
-    backdrop-filter: blur(6px);
-    animation: polar-studio-callout 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+    font-size: 0.9rem;
+    line-height: 1.45;
 }
 
-.polar-plot-slot--studio .polar-plot-slot__guide li:nth-child(1) { animation-delay: 0.28s; }
-.polar-plot-slot--studio .polar-plot-slot__guide li:nth-child(2) { animation-delay: 0.4s; }
-.polar-plot-slot--studio .polar-plot-slot__guide li:nth-child(3) { animation-delay: 0.52s; }
-
 .polar-plot-slot--studio .polar-plot-slot__guide li::before {
-    content: counter(studio-callout);
-    position: absolute;
-    left: 14px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 36px;
-    height: 36px;
-    display: grid;
-    place-items: center;
-    font-size: 0.85rem;
-    font-weight: 700;
-    letter-spacing: 0;
-    color: #fff;
-    background: var(--studio-teal);
-    border-radius: 50%;
-    box-shadow: 0 0 18px var(--studio-teal-glow);
+    content: none;
 }
 
 .polar-plot-slot--studio .polar-plot-slot__guide strong {
-    display: block;
+    display: inline;
     color: var(--studio-ink);
-    font-size: 0.98rem;
-    margin-bottom: 4px;
-    letter-spacing: 0.01em;
+    font-size: inherit;
+    margin: 0;
 }
 
-.polar-plot-slot--studio .polar-plot-slot__lede--follow {
-    margin-top: 22px;
-    font-size: 0.95rem;
-    color: rgba(224, 224, 255, 0.58);
-    border-left-color: var(--bl-blue);
+.polar-plot-slot--studio .polar-reading {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(224, 224, 255, 0.18);
+    color: var(--studio-muted);
+}
+
+.polar-plot-slot--studio .polar-reading__title {
+    color: var(--studio-teal);
+}
+
+.polar-plot-slot--studio .polar-reading__body p {
+    color: var(--studio-muted);
+    opacity: 1;
 }
 
 @media (max-width: 900px) {
