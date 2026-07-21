@@ -1,0 +1,1450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Community polar plot summaries — 2025</title>
+  <style>
+    :root {
+      --ink: #0b1f4a;
+      --muted: #5a6178;
+      --line: #d8dbe8;
+      --bg: #f4f5f9;
+      --card: #fff;
+      --accent: #088476;
+      --lavender: #e0e0ff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.5;
+    }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 28px 20px 80px; }
+    header.page {
+      background: var(--lavender);
+      border-bottom: 1px solid var(--line);
+      padding: 28px 20px 24px;
+    }
+    header.page .inner { max-width: 1100px; margin: 0 auto; }
+    h1 { margin: 0 0 8px; font-size: 1.75rem; color: var(--accent); }
+    .lede { margin: 0 0 12px; max-width: 70ch; color: var(--muted); }
+    .caveat {
+      margin: 16px 0 0;
+      padding: 12px 14px;
+      background: #fff8e8;
+      border: 1px solid #ead7a0;
+      color: #5a4a20;
+      font-size: 0.92rem;
+      max-width: 80ch;
+    }
+    .toc {
+      display: flex; flex-wrap: wrap; gap: 6px 10px;
+      margin: 20px 0 8px; padding: 0; list-style: none;
+      font-size: 0.85rem;
+    }
+    .toc a {
+      color: var(--ink); text-decoration: none;
+      border-bottom: 1px solid var(--line);
+    }
+    .toc a:hover { color: var(--accent); border-color: var(--accent); }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      margin: 28px 0;
+      padding: 20px 20px 8px;
+    }
+    .card__head h2 { margin: 0; font-size: 1.35rem; letter-spacing: 0.02em; }
+    .card__site { margin: 4px 0 0; color: var(--muted); font-size: 1.05rem; }
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 10px 18px;
+      margin: 16px 0 18px;
+      padding: 12px 0;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+    .meta dt { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); }
+    .meta dd { margin: 2px 0 0; font-weight: 600; }
+    .meta code { font-weight: 600; background: #eef1f8; padding: 1px 6px; }
+    .plots {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .plots--trial {
+      margin-top: 8px;
+      padding-top: 18px;
+      border-top: 1px dashed var(--line);
+      grid-template-columns: 1fr 1fr;
+    }
+    .trial-banner {
+      grid-column: 1 / -1;
+      margin: 0 0 4px;
+      padding: 10px 12px;
+      background: #fff0f7;
+      border: 1px solid #ffb3d4;
+      color: #7a1048;
+      font-size: 0.9rem;
+    }
+    .trial-banner code {
+      background: #ffe3f0;
+      padding: 1px 5px;
+    }
+    figure { margin: 0 0 16px; }
+    figcaption {
+      font-weight: 700; color: var(--accent);
+      margin-bottom: 8px; font-size: 0.95rem;
+    }
+    figure img {
+      display: block; width: 100%; max-width: 420px;
+      height: auto; background: #fafbff;
+      border: 1px solid var(--line);
+    }
+    .summary {
+      margin: 10px 0 0;
+      font-size: 0.92rem;
+      color: #222;
+      max-width: 48ch;
+    }
+    .missing { color: #a00; font-style: italic; }
+    .count { color: var(--muted); font-size: 0.9rem; }
+    .design-notes {
+      margin: 28px 0 8px;
+      padding: 20px 20px 8px;
+      background: var(--card);
+      border: 1px solid var(--line);
+    }
+    .design-notes h2 {
+      margin: 0 0 8px;
+      font-size: 1.2rem;
+      color: var(--accent);
+    }
+    .design-notes h3 {
+      margin: 18px 0 8px;
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--muted);
+    }
+    .design-notes p { margin: 0 0 12px; max-width: 75ch; color: #222; font-size: 0.95rem; }
+    .palette-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      margin: 0 0 16px;
+    }
+    .palette {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 12px;
+      align-items: center;
+      padding: 10px 0;
+      border-top: 1px solid var(--line);
+    }
+    .palette:first-of-type { border-top: none; }
+    .palette__name { font-weight: 700; font-size: 0.92rem; }
+    .palette__name code {
+      display: block;
+      font-weight: 500;
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+    .palette__bar {
+      height: 22px;
+      border: 1px solid var(--line);
+      border-radius: 2px;
+    }
+    .palette__meta {
+      grid-column: 1 / -1;
+      margin: -4px 0 0;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    .palette--current .palette__name { color: #8a1c1c; }
+    .tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      padding: 1px 6px;
+      margin-left: 6px;
+      border: 1px solid var(--line);
+      color: var(--muted);
+      vertical-align: middle;
+    }
+    .tag--rec { border-color: var(--accent); color: var(--accent); }
+    .tag--avoid { border-color: #a44; color: #a44; }
+    @media (max-width: 800px) {
+      .plots { grid-template-columns: 1fr; }
+      .palette { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header class="page">
+    <div class="inner">
+      <h1>Community polar plot summaries — 2025</h1>
+      <p class="lede">
+        Suggested plain-English readings of the 2025 openair polar plots for Bloomberg Philanthropies
+        community / cultural nodes (no EndDate). Descriptions are derived from the same hourly data
+        used to draw the plots (sensor pollution + Marylebone Road MY1 wind).
+      </p>
+      <p class="count">45 sensors · 44 with plots · CLDP0664 skipped (no 2025 data)</p>
+      <p class="caveat">
+        <strong>How to read these.</strong> Distance from the centre is wind speed; angle is where the wind
+        came from; colour is concentration. A hot centre usually means higher levels in calm air
+        (local build-up / poor dispersion). A hot lobe toward the outer ring in one direction can mean
+        a contribution from that direction that shows more clearly in stronger winds.
+        <br><br>
+        <strong>Caveat.</strong> Wind is from MY1 (central London), not a local mast at each node, so
+        directional hints are approximate and shared meteorology can make calm-weather peaks look similar
+        across sites. Treat each summary as a draft for review, not a definitive source attribution.
+      </p>
+    </div>
+  </header>
+  <div class="wrap">
+    <section class="design-notes" id="colour-scale-notes" aria-labelledby="colour-scale-heading">
+      <h2 id="colour-scale-heading">Colour scale notes (for next plot batch)</h2>
+      <p>
+        Each plot currently normalises its colour scale to roughly its own high end
+        (about the 90th percentile, capped at 55&nbsp;µg/m³ for NO₂ and 30 for PM₂.₅).
+        Across this set that high end ranged from about <strong>34–55</strong> µg/m³ for NO₂
+        and <strong>11–23</strong> for PM₂.₅ — so two plots can look equally “hot” even when
+        absolute levels differ a lot. That is good for seeing <em>shape</em> at one node;
+        it is poor for comparing intensity between nodes.
+      </p>
+      <p>
+        A shared scale (e.g. 0–55 for NO₂, 0–25 for PM₂.₅, or 0–max across the network)
+        would make quieter sites look flatter and busier sites look hotter — which is
+        honest for cross-site comparison, but can make low-pollution patterns harder to read.
+        A practical middle ground is a shared scale per pollutant, with the numeric colour
+        bar always visible so “pale” does not look like “no signal”.
+      </p>
+
+      <h3>Current scale (problem)</h3>
+      <div class="palette-grid">
+        <div class="palette palette--current">
+          <div class="palette__name">
+            openair default<span class="tag tag--avoid">uses red</span>
+            <code>cols = "default"</code>
+          </div>
+          <div class="palette__bar" style="background: linear-gradient(90deg, #5E4FA2, #41A3B2, #A1D9A5, #F0FAA3, #FFEB9E, #FCA45B, #E55147, #9E0142)"></div>
+          <p class="palette__meta">Cool → warm, but the top is red/magenta — easy to read as “over the limit” even when the value is only high <em>relative to that plot</em>.</p>
+        </div>
+      </div>
+
+      <h3>Suggested alternatives (cool → warmer, without a red top)</h3>
+      <p>
+        These are all available via openair’s <code>cols</code> argument (or a short custom hex vector).
+        Prefer perceptually even scales so steps in concentration look even.
+      </p>
+      <div class="palette-grid">
+        <div class="palette">
+          <div class="palette__name">
+            Viridis<span class="tag tag--rec">recommended</span>
+            <code>cols = "viridis"</code>
+          </div>
+          <div class="palette__bar" style="background: linear-gradient(90deg, #440154, #45317C, #365B8B, #277E8E, #22A186, #4CC06B, #9FD938, #FDE725)"></div>
+          <p class="palette__meta">Purple → teal → yellow. Colourblind-friendly, print-safe, clearly “more” without implying exceedance. Strong default pick for public AQ graphics.</p>
+        </div>
+        <div class="palette">
+          <div class="palette__name">
+            Cividis<span class="tag tag--rec">recommended</span>
+            <code>cols = "cividis"</code>
+          </div>
+          <div class="palette__bar" style="background: linear-gradient(90deg, #00204D, #10396D, #4A536C, #6C6D72, #8D8A78, #B2A771, #DAC75F, #FFEA46)"></div>
+          <p class="palette__meta">Navy → grey-olive → yellow. Designed for CVD accessibility; very restrained “heat” at the top.</p>
+        </div>
+        <div class="palette">
+          <div class="palette__name">
+            Magma (light end)
+            <code>cols = "magma"</code>
+          </div>
+          <div class="palette__bar" style="background: linear-gradient(90deg, #000004, #240F4E, #5E187C, #982C7F, #D2446E, #F67661, #FDBA82, #FCFDBF)"></div>
+          <p class="palette__meta">Near-black → purple → peach → cream. No traffic-light red; the high end is pale, which can feel counter-intuitive unless the key is labelled clearly.</p>
+        </div>
+        <div class="palette">
+          <div class="palette__name">
+            Plasma
+            <code>cols = "plasma"</code>
+          </div>
+          <div class="palette__bar" style="background: linear-gradient(90deg, #0D0887, #5302A1, #8A0DA2, #B83289, #DB5B67, #F28848, #FCBC2C, #F0F921)"></div>
+          <p class="palette__meta">Blue → magenta → amber → yellow. Energetic “hotter” feel; still avoids classic alert red, though magenta can feel strong on lavender page backgrounds.</p>
+        </div>
+        <div class="palette">
+          <div class="palette__name">
+            BuPu (sequential)
+            <code>cols = "BuPu"</code>
+          </div>
+          <div class="palette__bar" style="background: linear-gradient(90deg, #F7FCFD, #E0ECF4, #BFD3E6, #9EBCDA, #8C96C6, #8C6BB1, #88419D, #6E016B)"></div>
+          <p class="palette__meta">Ice → lilac → deep purple. Fits Breathe London’s blue/lavender brand; high end is purple, not red. Lower contrast than viridis for busy polar lobes.</p>
+        </div>
+        <div class="palette">
+          <div class="palette__name">
+            PuBuGn
+            <code>cols = "PuBuGn"</code>
+          </div>
+          <div class="palette__bar" style="background: linear-gradient(90deg, #FFF7FB, #ECE2F0, #D0D1E6, #A6BDDB, #67A9CF, #3690C0, #02818A, #016450)"></div>
+          <p class="palette__meta">Pale → blue → teal-green. Soft and on-brand; high end is deep teal rather than “alarm”.</p>
+        </div>
+        <div class="palette">
+          <div class="palette__name">
+            Custom BL amber
+            <code>cols = c("#e0e0ff","#88b0c8","#088476","#c4a035","#8a6a12")</code>
+          </div>
+          <div class="palette__bar" style="background: linear-gradient(90deg, #e0e0ff, #88b0c8, #088476, #c4a035, #8a6a12)"></div>
+          <p class="palette__meta">Lavender → teal → gold/amber. Cool-to-warm using BL chart teal and a restrained amber top — reads as intensity, not “limit breached”.</p>
+        </div>
+      </div>
+
+      <h3>Also available but less ideal here</h3>
+      <div class="palette-grid">
+        <div class="palette">
+          <div class="palette__name">Heat / jet / turbo<span class="tag tag--avoid">red top</span></div>
+          <div class="palette__bar" style="background: linear-gradient(90deg, #FFFFCC, #FEEA9A, #FECE68, #FDA343, #FE6A32, #EC261D, #C30224, #800026)"></div>
+          <p class="palette__meta">Classic rainbow/heat scales. Easy to misread against AQ “red = exceedance” conventions — better avoided for public community pages.</p>
+        </div>
+      </div>
+      <p>
+        <strong>Practical suggestion:</strong> try <code>viridis</code> or <code>cividis</code> first with a
+        <em>shared</em> NO₂ / PM₂.₅ limit across all community plots; if brand alignment matters more,
+        use the custom lavender→teal→amber vector. Happy to regenerate a small comparison strip
+        (same node, several palettes) when you want to pick one.
+      </p>
+    </section>
+    <nav class="toc" aria-label="Sensors"><a href="#cldp0298">CLDP0298</a><a href="#cldp0299">CLDP0299</a><a href="#cldp0300">CLDP0300</a><a href="#cldp0306">CLDP0306</a><a href="#cldp0316">CLDP0316</a><a href="#cldp0317">CLDP0317</a><a href="#cldp0353">CLDP0353</a><a href="#cldp0362">CLDP0362</a><a href="#cldp0384">CLDP0384</a><a href="#cldp0390">CLDP0390</a><a href="#cldp0391">CLDP0391</a><a href="#cldp0392">CLDP0392</a><a href="#cldp0394">CLDP0394</a><a href="#cldp0438">CLDP0438</a><a href="#cldp0439">CLDP0439</a><a href="#cldp0444">CLDP0444</a><a href="#cldp0452">CLDP0452</a><a href="#cldp0454">CLDP0454</a><a href="#cldp0455">CLDP0455</a><a href="#cldp0466">CLDP0466</a><a href="#cldp0467">CLDP0467</a><a href="#cldp0468">CLDP0468</a><a href="#cldp0469">CLDP0469</a><a href="#cldp0470">CLDP0470</a><a href="#cldp0474">CLDP0474</a><a href="#cldp0475">CLDP0475</a><a href="#cldp0476">CLDP0476</a><a href="#cldp0477">CLDP0477</a><a href="#cldp0531">CLDP0531</a><a href="#cldp0533">CLDP0533</a><a href="#cldp0539">CLDP0539</a><a href="#cldp0541">CLDP0541</a><a href="#cldp0542">CLDP0542</a><a href="#cldp0551">CLDP0551</a><a href="#cldp0552">CLDP0552</a><a href="#cldp0553">CLDP0553</a><a href="#cldp0554">CLDP0554</a><a href="#cldp0557">CLDP0557</a><a href="#cldp0558">CLDP0558</a><a href="#cldp0559">CLDP0559</a><a href="#cldp0561">CLDP0561</a><a href="#cldp0564">CLDP0564</a><a href="#cldp0589">CLDP0589</a><a href="#cldp0651">CLDP0651</a><a href="#cldp0664">CLDP0664</a></nav>
+    
+<article class="card" id="cldp0298">
+  <header class="card__head">
+    <h2>CLDP0298</h2>
+    <p class="card__site">Barking Food Forest</p>
+  </header>
+  <dl class="meta">
+    <div><dt>Community group</dt><dd>Barking Food Forest</dd></div>
+    <div><dt>Programme / site group</dt><dd>Community Programme Y1</dd></div>
+    <div><dt>Classification</dt><dd>Urban Background</dd></div>
+    <div><dt>Open date (StartDate)</dt><dd>2022-03-10</dd></div>
+    <div><dt>Closed date (EndDate)</dt><dd><code>null (still open)</code></dd></div>
+  </dl>
+  <div class="plots">
+    <figure>
+      <figcaption>NO₂ — 2025</figcaption>
+      <img src="cldp0298-no2-polar-2025.png?v=purple1" alt="NO2 polar plot 2025 for CLDP0298" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+    <figure>
+      <figcaption>PM₂.₅ — 2025</figcaption>
+      <img src="cldp0298-pm25-polar-2025.png?v=purple1" alt="PM2.5 polar plot 2025 for CLDP0298" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+  </div>
+</article>
+<article class="card" id="cldp0299">
+  <header class="card__head">
+    <h2>CLDP0299</h2>
+    <p class="card__site">Linden Children&#x27;s Centre</p>
+  </header>
+  <dl class="meta">
+    <div><dt>Community group</dt><dd>Rectory Road Resident&#x27;s Association</dd></div>
+    <div><dt>Programme / site group</dt><dd>Community Programme Y1</dd></div>
+    <div><dt>Classification</dt><dd>Urban Background</dd></div>
+    <div><dt>Open date (StartDate)</dt><dd>2022-03-10</dd></div>
+    <div><dt>Closed date (EndDate)</dt><dd><code>null (still open)</code></dd></div>
+  </dl>
+  <div class="plots">
+    <figure>
+      <figcaption>NO₂ — 2025</figcaption>
+      <img src="cldp0299-no2-polar-2025.png?v=purple1" alt="NO2 polar plot 2025 for CLDP0299" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+    <figure>
+      <figcaption>PM₂.₅ — 2025</figcaption>
+      <img src="cldp0299-pm25-polar-2025.png?v=purple1" alt="PM2.5 polar plot 2025 for CLDP0299" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+  </div>
+</article>
+<article class="card" id="cldp0300">
+  <header class="card__head">
+    <h2>CLDP0300</h2>
+    <p class="card__site">Harlesden High Street</p>
+  </header>
+  <dl class="meta">
+    <div><dt>Community group</dt><dd>Harlesden Neighbourhood Forum</dd></div>
+    <div><dt>Programme / site group</dt><dd>Community Programme Y1</dd></div>
+    <div><dt>Classification</dt><dd>Roadside</dd></div>
+    <div><dt>Open date (StartDate)</dt><dd>2022-03-11</dd></div>
+    <div><dt>Closed date (EndDate)</dt><dd><code>null (still open)</code></dd></div>
+  </dl>
+  <div class="plots">
+    <figure>
+      <figcaption>NO₂ — 2025</figcaption>
+      <img src="cldp0300-no2-polar-2025.png?v=purple1" alt="NO2 polar plot 2025 for CLDP0300" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, any directional pattern is weaker: levels are only a little higher with winds from the south-east than from the south-west. This points to a contribution from the south-east.</p>
+    </figure>
+    <figure>
+      <figcaption>PM₂.₅ — 2025</figcaption>
+      <img src="cldp0300-pm25-polar-2025.png?v=purple1" alt="PM2.5 polar plot 2025 for CLDP0300" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+  </div>
+</article>
+<article class="card" id="cldp0306">
+  <header class="card__head">
+    <h2>CLDP0306</h2>
+    <p class="card__site">Victoria Park Harriers</p>
+  </header>
+  <dl class="meta">
+    <div><dt>Community group</dt><dd>Victoria Park Harriers</dd></div>
+    <div><dt>Programme / site group</dt><dd>Community Programme Y1</dd></div>
+    <div><dt>Classification</dt><dd>Roadside</dd></div>
+    <div><dt>Open date (StartDate)</dt><dd>2022-06-17</dd></div>
+    <div><dt>Closed date (EndDate)</dt><dd><code>null (still open)</code></dd></div>
+  </dl>
+  <div class="plots">
+    <figure>
+      <figcaption>NO₂ — 2025</figcaption>
+      <img src="cldp0306-no2-polar-2025.png?v=purple1" alt="NO2 polar plot 2025 for CLDP0306" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+    <figure>
+      <figcaption>PM₂.₅ — 2025</figcaption>
+      <img src="cldp0306-pm25-polar-2025.png?v=purple1" alt="PM2.5 polar plot 2025 for CLDP0306" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+  </div>
+</article>
+<article class="card" id="cldp0316">
+  <header class="card__head">
+    <h2>CLDP0316</h2>
+    <p class="card__site">A1203 - Shadwell</p>
+  </header>
+  <dl class="meta">
+    <div><dt>Community group</dt><dd>St. George’s Neighborhood Action</dd></div>
+    <div><dt>Programme / site group</dt><dd>Community Programme Y1</dd></div>
+    <div><dt>Classification</dt><dd>Roadside</dd></div>
+    <div><dt>Open date (StartDate)</dt><dd>2022-04-27</dd></div>
+    <div><dt>Closed date (EndDate)</dt><dd><code>null (still open)</code></dd></div>
+  </dl>
+  <div class="plots">
+    <figure>
+      <figcaption>NO₂ — 2025</figcaption>
+      <img src="cldp0316-no2-polar-2025.png?v=purple1" alt="NO2 polar plot 2025 for CLDP0316" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+    <figure>
+      <figcaption>PM₂.₅ — 2025</figcaption>
+      <img src="cldp0316-pm25-polar-2025.png?v=purple1" alt="PM2.5 polar plot 2025 for CLDP0316" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+  </div>
+</article>
+<article class="card" id="cldp0317">
+  <header class="card__head">
+    <h2>CLDP0317</h2>
+    <p class="card__site">Warwick Road</p>
+  </header>
+  <dl class="meta">
+    <div><dt>Community group</dt><dd>Earls Court Society</dd></div>
+    <div><dt>Programme / site group</dt><dd>Community Programme Y1</dd></div>
+    <div><dt>Classification</dt><dd>Roadside</dd></div>
+    <div><dt>Open date (StartDate)</dt><dd>2022-04-28</dd></div>
+    <div><dt>Closed date (EndDate)</dt><dd><code>null (still open)</code></dd></div>
+  </dl>
+  <div class="plots">
+    <figure>
+      <figcaption>NO₂ — 2025</figcaption>
+      <img src="cldp0317-no2-polar-2025.png?v=purple1" alt="NO2 polar plot 2025 for CLDP0317" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+    <figure>
+      <figcaption>PM₂.₅ — 2025</figcaption>
+      <img src="cldp0317-pm25-polar-2025.png?v=purple1" alt="PM2.5 polar plot 2025 for CLDP0317" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+  </div>
+</article>
+<article class="card" id="cldp0353">
+  <header class="card__head">
+    <h2>CLDP0353</h2>
+    <p class="card__site">Serpentine Gallery</p>
+  </header>
+  <dl class="meta">
+    <div><dt>Community group</dt><dd>Serpentine Gallery</dd></div>
+    <div><dt>Programme / site group</dt><dd>Cultural Centres</dd></div>
+    <div><dt>Classification</dt><dd>Urban Background</dd></div>
+    <div><dt>Open date (StartDate)</dt><dd>2022-10-06</dd></div>
+    <div><dt>Closed date (EndDate)</dt><dd><code>null (still open)</code></dd></div>
+  </dl>
+  <div class="plots">
+    <figure>
+      <figcaption>NO₂ — 2025</figcaption>
+      <img src="cldp0353-no2-polar-2025.png?v=purple1" alt="NO2 polar plot 2025 for CLDP0353" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+    <figure>
+      <figcaption>PM₂.₅ — 2025</figcaption>
+      <img src="cldp0353-pm25-polar-2025.png?v=purple1" alt="PM2.5 polar plot 2025 for CLDP0353" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+  </div>
+</article>
+<article class="card" id="cldp0362">
+  <header class="card__head">
+    <h2>CLDP0362</h2>
+    <p class="card__site">Kew Gardens</p>
+  </header>
+  <dl class="meta">
+    <div><dt>Community group</dt><dd>Kew Gardens</dd></div>
+    <div><dt>Programme / site group</dt><dd>Cultural Centres</dd></div>
+    <div><dt>Classification</dt><dd>Urban Background</dd></div>
+    <div><dt>Open date (StartDate)</dt><dd>2022-11-04</dd></div>
+    <div><dt>Closed date (EndDate)</dt><dd><code>null (still open)</code></dd></div>
+  </dl>
+  <div class="plots">
+    <figure>
+      <figcaption>NO₂ — 2025</figcaption>
+      <img src="cldp0362-no2-polar-2025.png?v=purple1" alt="NO2 polar plot 2025 for CLDP0362" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+    <figure>
+      <figcaption>PM₂.₅ — 2025</figcaption>
+      <img src="cldp0362-pm25-polar-2025.png?v=purple1" alt="PM2.5 polar plot 2025 for CLDP0362" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the east. This points to a contribution from that direction.</p>
+    </figure>
+  </div>
+</article>
+<article class="card" id="cldp0384">
+  <header class="card__head">
+    <h2>CLDP0384</h2>
+    <p class="card__site">Imperial War Museum</p>
+  </header>
+  <dl class="meta">
+    <div><dt>Community group</dt><dd>Imperial War Museum</dd></div>
+    <div><dt>Programme / site group</dt><dd>Cultural Centres</dd></div>
+    <div><dt>Classification</dt><dd>Urban Background</dd></div>
+    <div><dt>Open date (StartDate)</dt><dd>2022-12-14</dd></div>
+    <div><dt>Closed date (EndDate)</dt><dd><code>null (still open)</code></dd></div>
+  </dl>
+  <div class="plots">
+    <figure>
+      <figcaption>NO₂ — 2025</figcaption>
+      <img src="cldp0384-no2-polar-2025.png?v=purple1" alt="NO2 polar plot 2025 for CLDP0384" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+    <figure>
+      <figcaption>PM₂.₅ — 2025</figcaption>
+      <img src="cldp0384-pm25-polar-2025.png?v=purple1" alt="PM2.5 polar plot 2025 for CLDP0384" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+  </div>
+</article>
+<article class="card" id="cldp0390">
+  <header class="card__head">
+    <h2>CLDP0390</h2>
+    <p class="card__site">The Heron Practice</p>
+  </header>
+  <dl class="meta">
+    <div><dt>Community group</dt><dd>The Heron Practice</dd></div>
+    <div><dt>Programme / site group</dt><dd>Community Programme Y2</dd></div>
+    <div><dt>Classification</dt><dd>Urban Background</dd></div>
+    <div><dt>Open date (StartDate)</dt><dd>2023-01-20</dd></div>
+    <div><dt>Closed date (EndDate)</dt><dd><code>null (still open)</code></dd></div>
+  </dl>
+  <div class="plots">
+    <figure>
+      <figcaption>NO₂ — 2025</figcaption>
+      <img src="cldp0390-no2-polar-2025.png?v=purple1" alt="NO2 polar plot 2025 for CLDP0390" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+    <figure>
+      <figcaption>PM₂.₅ — 2025</figcaption>
+      <img src="cldp0390-pm25-polar-2025.png?v=purple1" alt="PM2.5 polar plot 2025 for CLDP0390" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+  </div>
+</article>
+<article class="card" id="cldp0391">
+  <header class="card__head">
+    <h2>CLDP0391</h2>
+    <p class="card__site">Clean Air for Southall and Hayes (CASH)</p>
+  </header>
+  <dl class="meta">
+    <div><dt>Community group</dt><dd>Clean Air for Southall and Hayes (CASH)</dd></div>
+    <div><dt>Programme / site group</dt><dd>Community Programme Y2</dd></div>
+    <div><dt>Classification</dt><dd>Urban Background</dd></div>
+    <div><dt>Open date (StartDate)</dt><dd>2023-01-25</dd></div>
+    <div><dt>Closed date (EndDate)</dt><dd><code>null (still open)</code></dd></div>
+  </dl>
+  <div class="plots">
+    <figure>
+      <figcaption>NO₂ — 2025</figcaption>
+      <img src="cldp0391-no2-polar-2025.png?v=purple1" alt="NO2 polar plot 2025 for CLDP0391" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+    <figure>
+      <figcaption>PM₂.₅ — 2025</figcaption>
+      <img src="cldp0391-pm25-polar-2025.png?v=purple1" alt="PM2.5 polar plot 2025 for CLDP0391" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the east. This points to a contribution from that direction.</p>
+    </figure>
+  </div>
+</article>
+<article class="card" id="cldp0392">
+  <header class="card__head">
+    <h2>CLDP0392</h2>
+    <p class="card__site">Hackney New Primary School</p>
+  </header>
+  <dl class="meta">
+    <div><dt>Community group</dt><dd>Parents&#x27; Air Quality and Road Safety Group at Hackney New Primary School</dd></div>
+    <div><dt>Programme / site group</dt><dd>Community Programme Y2</dd></div>
+    <div><dt>Classification</dt><dd>Roadside</dd></div>
+    <div><dt>Open date (StartDate)</dt><dd>2023-01-26</dd></div>
+    <div><dt>Closed date (EndDate)</dt><dd><code>null (still open)</code></dd></div>
+  </dl>
+  <div class="plots">
+    <figure>
+      <figcaption>NO₂ — 2025</figcaption>
+      <img src="cldp0392-no2-polar-2025.png?v=purple1" alt="NO2 polar plot 2025 for CLDP0392" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, any directional pattern is weaker: levels are only a little higher with winds from the south than from the north-east. This points to a contribution from the south.</p>
+    </figure>
+    <figure>
+      <figcaption>PM₂.₅ — 2025</figcaption>
+      <img src="cldp0392-pm25-polar-2025.png?v=purple1" alt="PM2.5 polar plot 2025 for CLDP0392" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the east. This points to a contribution from that direction.</p>
+    </figure>
+  </div>
+</article>
+<article class="card" id="cldp0394">
+  <header class="card__head">
+    <h2>CLDP0394</h2>
+    <p class="card__site">Ellen Wilkinson Primary School</p>
+  </header>
+  <dl class="meta">
+    <div><dt>Community group</dt><dd>Beckton Community Air Quality Group</dd></div>
+    <div><dt>Programme / site group</dt><dd>Community Programme Y2</dd></div>
+    <div><dt>Classification</dt><dd>Roadside</dd></div>
+    <div><dt>Open date (StartDate)</dt><dd>2023-02-02</dd></div>
+    <div><dt>Closed date (EndDate)</dt><dd><code>null (still open)</code></dd></div>
+  </dl>
+  <div class="plots">
+    <figure>
+      <figcaption>NO₂ — 2025</figcaption>
+      <img src="cldp0394-no2-polar-2025.png?v=purple1" alt="NO2 polar plot 2025 for CLDP0394" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+    <figure>
+      <figcaption>PM₂.₅ — 2025</figcaption>
+      <img src="cldp0394-pm25-polar-2025.png?v=purple1" alt="PM2.5 polar plot 2025 for CLDP0394" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+  </div>
+</article>
+<article class="card" id="cldp0438">
+  <header class="card__head">
+    <h2>CLDP0438</h2>
+    <p class="card__site">St James Primary School</p>
+  </header>
+  <dl class="meta">
+    <div><dt>Community group</dt><dd>The Friends of St James Primary School</dd></div>
+    <div><dt>Programme / site group</dt><dd>Community Programme Y2</dd></div>
+    <div><dt>Classification</dt><dd>Urban Background</dd></div>
+    <div><dt>Open date (StartDate)</dt><dd>2023-02-21</dd></div>
+    <div><dt>Closed date (EndDate)</dt><dd><code>null (still open)</code></dd></div>
+  </dl>
+  <div class="plots">
+    <figure>
+      <figcaption>NO₂ — 2025</figcaption>
+      <img src="cldp0438-no2-polar-2025.png?v=purple1" alt="NO2 polar plot 2025 for CLDP0438" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+    <figure>
+      <figcaption>PM₂.₅ — 2025</figcaption>
+      <img src="cldp0438-pm25-polar-2025.png?v=purple1" alt="PM2.5 polar plot 2025 for CLDP0438" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+  </div>
+</article>
+<article class="card" id="cldp0439">
+  <header class="card__head">
+    <h2>CLDP0439</h2>
+    <p class="card__site">Aberfeldy, Poplar</p>
+  </header>
+  <dl class="meta">
+    <div><dt>Community group</dt><dd>Knitting The Air</dd></div>
+    <div><dt>Programme / site group</dt><dd>Community Programme Y2</dd></div>
+    <div><dt>Classification</dt><dd>Roadside</dd></div>
+    <div><dt>Open date (StartDate)</dt><dd>2023-02-28</dd></div>
+    <div><dt>Closed date (EndDate)</dt><dd><code>null (still open)</code></dd></div>
+  </dl>
+  <div class="plots">
+    <figure>
+      <figcaption>NO₂ — 2025</figcaption>
+      <img src="cldp0439-no2-polar-2025.png?v=purple1" alt="NO2 polar plot 2025 for CLDP0439" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+    <figure>
+      <figcaption>PM₂.₅ — 2025</figcaption>
+      <img src="cldp0439-pm25-polar-2025.png?v=purple1" alt="PM2.5 polar plot 2025 for CLDP0439" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+  </div>
+</article>
+<article class="card" id="cldp0444">
+  <header class="card__head">
+    <h2>CLDP0444</h2>
+    <p class="card__site">Science Museum</p>
+  </header>
+  <dl class="meta">
+    <div><dt>Community group</dt><dd>Science Museum</dd></div>
+    <div><dt>Programme / site group</dt><dd>Cultural Centres</dd></div>
+    <div><dt>Classification</dt><dd>Roadside</dd></div>
+    <div><dt>Open date (StartDate)</dt><dd>2023-03-03</dd></div>
+    <div><dt>Closed date (EndDate)</dt><dd><code>null (still open)</code></dd></div>
+  </dl>
+  <div class="plots">
+    <figure>
+      <figcaption>NO₂ — 2025</figcaption>
+      <img src="cldp0444-no2-polar-2025.png?v=purple1" alt="NO2 polar plot 2025 for CLDP0444" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+    <figure>
+      <figcaption>PM₂.₅ — 2025</figcaption>
+      <img src="cldp0444-pm25-polar-2025.png?v=purple1" alt="PM2.5 polar plot 2025 for CLDP0444" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+  </div>
+</article>
+<article class="card" id="cldp0452">
+  <header class="card__head">
+    <h2>CLDP0452</h2>
+    <p class="card__site">St.Luke&#x27;s Hospice</p>
+  </header>
+  <dl class="meta">
+    <div><dt>Community group</dt><dd>St Luke&#x27;s Hospice</dd></div>
+    <div><dt>Programme / site group</dt><dd>Community Programme Y2</dd></div>
+    <div><dt>Classification</dt><dd>Urban Background</dd></div>
+    <div><dt>Open date (StartDate)</dt><dd>2023-05-17</dd></div>
+    <div><dt>Closed date (EndDate)</dt><dd><code>null (still open)</code></dd></div>
+  </dl>
+  <div class="plots">
+    <figure>
+      <figcaption>NO₂ — 2025</figcaption>
+      <img src="cldp0452-no2-polar-2025.png?v=purple1" alt="NO2 polar plot 2025 for CLDP0452" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+    <figure>
+      <figcaption>PM₂.₅ — 2025</figcaption>
+      <img src="cldp0452-pm25-polar-2025.png?v=purple1" alt="PM2.5 polar plot 2025 for CLDP0452" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+  </div>
+</article>
+<article class="card" id="cldp0454">
+  <header class="card__head">
+    <h2>CLDP0454</h2>
+    <p class="card__site">Residents Action on Climate and Health</p>
+  </header>
+  <dl class="meta">
+    <div><dt>Community group</dt><dd>Residents Action on Climate and Health</dd></div>
+    <div><dt>Programme / site group</dt><dd>Community Programme Y2</dd></div>
+    <div><dt>Classification</dt><dd>Roadside</dd></div>
+    <div><dt>Open date (StartDate)</dt><dd>2023-07-07</dd></div>
+    <div><dt>Closed date (EndDate)</dt><dd><code>null (still open)</code></dd></div>
+  </dl>
+  <div class="plots">
+    <figure>
+      <figcaption>NO₂ — 2025</figcaption>
+      <img src="cldp0454-no2-polar-2025.png?v=purple1" alt="NO2 polar plot 2025 for CLDP0454" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, any directional pattern is weaker: levels are only a little higher with winds from the south-east than from the south-west. This points to a contribution from the south-east.</p>
+    </figure>
+    <figure>
+      <figcaption>PM₂.₅ — 2025</figcaption>
+      <img src="cldp0454-pm25-polar-2025.png?v=purple1" alt="PM2.5 polar plot 2025 for CLDP0454" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+  </div>
+</article>
+<article class="card" id="cldp0455">
+  <header class="card__head">
+    <h2>CLDP0455</h2>
+    <p class="card__site">Christ’s College Finchley Breathe</p>
+  </header>
+  <dl class="meta">
+    <div><dt>Community group</dt><dd>Christ’s College Finchley Breathe</dd></div>
+    <div><dt>Programme / site group</dt><dd>Community Programme Y2</dd></div>
+    <div><dt>Classification</dt><dd>Urban Background</dd></div>
+    <div><dt>Open date (StartDate)</dt><dd>2023-06-16</dd></div>
+    <div><dt>Closed date (EndDate)</dt><dd><code>null (still open)</code></dd></div>
+  </dl>
+  <div class="plots">
+    <figure>
+      <figcaption>NO₂ — 2025</figcaption>
+      <img src="cldp0455-no2-polar-2025.png?v=purple1" alt="NO2 polar plot 2025 for CLDP0455" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, any directional pattern is weaker: levels are only a little higher with winds from the south-east than from the north-east. This points to a contribution from the south-east.</p>
+    </figure>
+    <figure>
+      <figcaption>PM₂.₅ — 2025</figcaption>
+      <img src="cldp0455-pm25-polar-2025.png?v=purple1" alt="PM2.5 polar plot 2025 for CLDP0455" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+  </div>
+</article>
+<article class="card" id="cldp0466">
+  <header class="card__head">
+    <h2>CLDP0466</h2>
+    <p class="card__site">Columbia Road Primary School</p>
+  </header>
+  <dl class="meta">
+    <div><dt>Community group</dt><dd>Save Our Safer Streets (SOSS)</dd></div>
+    <div><dt>Programme / site group</dt><dd>Community Programme Y2</dd></div>
+    <div><dt>Classification</dt><dd>Roadside</dd></div>
+    <div><dt>Open date (StartDate)</dt><dd>2023-05-09</dd></div>
+    <div><dt>Closed date (EndDate)</dt><dd><code>null (still open)</code></dd></div>
+  </dl>
+  <div class="plots">
+    <figure>
+      <figcaption>NO₂ — 2025</figcaption>
+      <img src="cldp0466-no2-polar-2025.png?v=purple1" alt="NO2 polar plot 2025 for CLDP0466" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+    <figure>
+      <figcaption>PM₂.₅ — 2025</figcaption>
+      <img src="cldp0466-pm25-polar-2025.png?v=purple1" alt="PM2.5 polar plot 2025 for CLDP0466" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+  </div>
+</article>
+<article class="card" id="cldp0467">
+  <header class="card__head">
+    <h2>CLDP0467</h2>
+    <p class="card__site">St Matthew&#x27;s Road, Brixton</p>
+  </header>
+  <dl class="meta">
+    <div><dt>Community group</dt><dd>Brixton Central / In Transit</dd></div>
+    <div><dt>Programme / site group</dt><dd>Community Programme Y2</dd></div>
+    <div><dt>Classification</dt><dd>Urban Background</dd></div>
+    <div><dt>Open date (StartDate)</dt><dd>2023-10-13</dd></div>
+    <div><dt>Closed date (EndDate)</dt><dd><code>null (still open)</code></dd></div>
+  </dl>
+  <div class="plots">
+    <figure>
+      <figcaption>NO₂ — 2025</figcaption>
+      <img src="cldp0467-no2-polar-2025.png?v=purple1" alt="NO2 polar plot 2025 for CLDP0467" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+    <figure>
+      <figcaption>PM₂.₅ — 2025</figcaption>
+      <img src="cldp0467-pm25-polar-2025.png?v=purple1" alt="PM2.5 polar plot 2025 for CLDP0467" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, any directional pattern is weaker: levels are only a little higher with winds from the east than from the north-west. This points to a contribution from the east.</p>
+    </figure>
+  </div>
+</article>
+<article class="card" id="cldp0468">
+  <header class="card__head">
+    <h2>CLDP0468</h2>
+    <p class="card__site">Florence Road, Lewisham</p>
+  </header>
+  <dl class="meta">
+    <div><dt>Community group</dt><dd>Florence Road Residents&#x27; Group</dd></div>
+    <div><dt>Programme / site group</dt><dd>Community Programme Y2</dd></div>
+    <div><dt>Classification</dt><dd>Roadside</dd></div>
+    <div><dt>Open date (StartDate)</dt><dd>2023-06-09</dd></div>
+    <div><dt>Closed date (EndDate)</dt><dd><code>null (still open)</code></dd></div>
+  </dl>
+  <div class="plots">
+    <figure>
+      <figcaption>NO₂ — 2025</figcaption>
+      <img src="cldp0468-no2-polar-2025.png?v=purple1" alt="NO2 polar plot 2025 for CLDP0468" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+    <figure>
+      <figcaption>PM₂.₅ — 2025</figcaption>
+      <img src="cldp0468-pm25-polar-2025.png?v=purple1" alt="PM2.5 polar plot 2025 for CLDP0468" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+  </div>
+</article>
+<article class="card" id="cldp0469">
+  <header class="card__head">
+    <h2>CLDP0469</h2>
+    <p class="card__site">Ashmead School, SE8</p>
+  </header>
+  <dl class="meta">
+    <div><dt>Community group</dt><dd>Climate Action Lewisham</dd></div>
+    <div><dt>Programme / site group</dt><dd>Community Programme Y2</dd></div>
+    <div><dt>Classification</dt><dd>Roadside</dd></div>
+    <div><dt>Open date (StartDate)</dt><dd>2023-06-28</dd></div>
+    <div><dt>Closed date (EndDate)</dt><dd><code>null (still open)</code></dd></div>
+  </dl>
+  <div class="plots">
+    <figure>
+      <figcaption>NO₂ — 2025</figcaption>
+      <img src="cldp0469-no2-polar-2025.png?v=purple1" alt="NO2 polar plot 2025 for CLDP0469" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+    <figure>
+      <figcaption>PM₂.₅ — 2025</figcaption>
+      <img src="cldp0469-pm25-polar-2025.png?v=purple1" alt="PM2.5 polar plot 2025 for CLDP0469" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+  </div>
+</article>
+<article class="card" id="cldp0470">
+  <header class="card__head">
+    <h2>CLDP0470</h2>
+    <p class="card__site">Hounslow High Street</p>
+  </header>
+  <dl class="meta">
+    <div><dt>Community group</dt><dd>Hounslow Borough Respiratory Support Group</dd></div>
+    <div><dt>Programme / site group</dt><dd>Community Programme Y2</dd></div>
+    <div><dt>Classification</dt><dd>Roadside</dd></div>
+    <div><dt>Open date (StartDate)</dt><dd>2023-07-14</dd></div>
+    <div><dt>Closed date (EndDate)</dt><dd><code>null (still open)</code></dd></div>
+  </dl>
+  <div class="plots">
+    <figure>
+      <figcaption>NO₂ — 2025</figcaption>
+      <img src="cldp0470-no2-polar-2025.png?v=purple1" alt="NO2 polar plot 2025 for CLDP0470" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+    <figure>
+      <figcaption>PM₂.₅ — 2025</figcaption>
+      <img src="cldp0470-pm25-polar-2025.png?v=purple1" alt="PM2.5 polar plot 2025 for CLDP0470" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+  </div>
+</article>
+<article class="card" id="cldp0474">
+  <header class="card__head">
+    <h2>CLDP0474</h2>
+    <p class="card__site">Offord Road Green Alliance</p>
+  </header>
+  <dl class="meta">
+    <div><dt>Community group</dt><dd>The Offord Road Green Alliance</dd></div>
+    <div><dt>Programme / site group</dt><dd>Community Programme Y2</dd></div>
+    <div><dt>Classification</dt><dd>Roadside</dd></div>
+    <div><dt>Open date (StartDate)</dt><dd>2023-06-07</dd></div>
+    <div><dt>Closed date (EndDate)</dt><dd><code>null (still open)</code></dd></div>
+  </dl>
+  <div class="plots">
+    <figure>
+      <figcaption>NO₂ — 2025</figcaption>
+      <img src="cldp0474-no2-polar-2025.png?v=purple1" alt="NO2 polar plot 2025 for CLDP0474" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+    <figure>
+      <figcaption>PM₂.₅ — 2025</figcaption>
+      <img src="cldp0474-pm25-polar-2025.png?v=purple1" alt="PM2.5 polar plot 2025 for CLDP0474" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+  </div>
+</article>
+<article class="card" id="cldp0475">
+  <header class="card__head">
+    <h2>CLDP0475</h2>
+    <p class="card__site">National Gallery</p>
+  </header>
+  <dl class="meta">
+    <div><dt>Community group</dt><dd>National Gallery</dd></div>
+    <div><dt>Programme / site group</dt><dd>Cultural Centres</dd></div>
+    <div><dt>Classification</dt><dd>Urban Background</dd></div>
+    <div><dt>Open date (StartDate)</dt><dd>2023-06-20</dd></div>
+    <div><dt>Closed date (EndDate)</dt><dd><code>null (still open)</code></dd></div>
+  </dl>
+  <div class="plots">
+    <figure>
+      <figcaption>NO₂ — 2025</figcaption>
+      <img src="cldp0475-no2-polar-2025.png?v=purple1" alt="NO2 polar plot 2025 for CLDP0475" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, any directional pattern is weaker: levels are only a little higher with winds from the north than from the north-east. This points to a contribution from the north.</p>
+    </figure>
+    <figure>
+      <figcaption>PM₂.₅ — 2025</figcaption>
+      <img src="cldp0475-pm25-polar-2025.png?v=purple1" alt="PM2.5 polar plot 2025 for CLDP0475" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the east. This points to a contribution from that direction.</p>
+    </figure>
+  </div>
+</article>
+<article class="card" id="cldp0476">
+  <header class="card__head">
+    <h2>CLDP0476</h2>
+    <p class="card__site">Weymouth Avenue - Little Ealing Lane</p>
+  </header>
+  <dl class="meta">
+    <div><dt>Community group</dt><dd>Ealing Transition</dd></div>
+    <div><dt>Programme / site group</dt><dd>Community Programme Y2</dd></div>
+    <div><dt>Classification</dt><dd>Roadside</dd></div>
+    <div><dt>Open date (StartDate)</dt><dd>2023-06-26</dd></div>
+    <div><dt>Closed date (EndDate)</dt><dd><code>null (still open)</code></dd></div>
+  </dl>
+  <div class="plots">
+    <figure>
+      <figcaption>NO₂ — 2025</figcaption>
+      <img src="cldp0476-no2-polar-2025.png?v=purple1" alt="NO2 polar plot 2025 for CLDP0476" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+    <figure>
+      <figcaption>PM₂.₅ — 2025</figcaption>
+      <img src="cldp0476-pm25-polar-2025.png?v=purple1" alt="PM2.5 polar plot 2025 for CLDP0476" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+  </div>
+</article>
+<article class="card" id="cldp0477">
+  <header class="card__head">
+    <h2>CLDP0477</h2>
+    <p class="card__site">Cricklewood Lane</p>
+  </header>
+  <dl class="meta">
+    <div><dt>Community group</dt><dd>Green Our Neighbourhood</dd></div>
+    <div><dt>Programme / site group</dt><dd>Community Programme Y2</dd></div>
+    <div><dt>Classification</dt><dd>Roadside</dd></div>
+    <div><dt>Open date (StartDate)</dt><dd>2023-07-07</dd></div>
+    <div><dt>Closed date (EndDate)</dt><dd><code>null (still open)</code></dd></div>
+  </dl>
+  <div class="plots">
+    <figure>
+      <figcaption>NO₂ — 2025</figcaption>
+      <img src="cldp0477-no2-polar-2025.png?v=purple1" alt="NO2 polar plot 2025 for CLDP0477" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+    <figure>
+      <figcaption>PM₂.₅ — 2025</figcaption>
+      <img src="cldp0477-pm25-polar-2025.png?v=purple1" alt="PM2.5 polar plot 2025 for CLDP0477" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+  </div>
+</article>
+<article class="card" id="cldp0531">
+  <header class="card__head">
+    <h2>CLDP0531</h2>
+    <p class="card__site">Air on the Green</p>
+  </header>
+  <dl class="meta">
+    <div><dt>Community group</dt><dd>Air on the Green</dd></div>
+    <div><dt>Programme / site group</dt><dd>Community Programme Y3</dd></div>
+    <div><dt>Classification</dt><dd>Urban Background</dd></div>
+    <div><dt>Open date (StartDate)</dt><dd>2023-09-06</dd></div>
+    <div><dt>Closed date (EndDate)</dt><dd><code>null (still open)</code></dd></div>
+  </dl>
+  <div class="plots">
+    <figure>
+      <figcaption>NO₂ — 2025</figcaption>
+      <img src="cldp0531-no2-polar-2025.png?v=purple1" alt="NO2 polar plot 2025 for CLDP0531" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+    <figure>
+      <figcaption>PM₂.₅ — 2025</figcaption>
+      <img src="cldp0531-pm25-polar-2025.png?v=purple1" alt="PM2.5 polar plot 2025 for CLDP0531" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+  </div>
+</article>
+<article class="card" id="cldp0533">
+  <header class="card__head">
+    <h2>CLDP0533</h2>
+    <p class="card__site">Willesden High Street</p>
+  </header>
+  <dl class="meta">
+    <div><dt>Community group</dt><dd>Willesden Green Town Team</dd></div>
+    <div><dt>Programme / site group</dt><dd>Community Programme Y3</dd></div>
+    <div><dt>Classification</dt><dd>Roadside</dd></div>
+    <div><dt>Open date (StartDate)</dt><dd>2023-09-14</dd></div>
+    <div><dt>Closed date (EndDate)</dt><dd><code>null (still open)</code></dd></div>
+  </dl>
+  <div class="plots">
+    <figure>
+      <figcaption>NO₂ — 2025</figcaption>
+      <img src="cldp0533-no2-polar-2025.png?v=purple1" alt="NO2 polar plot 2025 for CLDP0533" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+    <figure>
+      <figcaption>PM₂.₅ — 2025</figcaption>
+      <img src="cldp0533-pm25-polar-2025.png?v=purple1" alt="PM2.5 polar plot 2025 for CLDP0533" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, any directional pattern is weaker: levels are only a little higher with winds from the south-east than from the north-west. This points to a contribution from the south-east.</p>
+    </figure>
+  </div>
+</article>
+<article class="card" id="cldp0539">
+  <header class="card__head">
+    <h2>CLDP0539</h2>
+    <p class="card__site">Whitfield Nursery Playground</p>
+  </header>
+  <dl class="meta">
+    <div><dt>Community group</dt><dd>Fitzrovia Trust</dd></div>
+    <div><dt>Programme / site group</dt><dd>Community Programme Y3</dd></div>
+    <div><dt>Classification</dt><dd>Urban Background</dd></div>
+    <div><dt>Open date (StartDate)</dt><dd>2023-11-12</dd></div>
+    <div><dt>Closed date (EndDate)</dt><dd><code>null (still open)</code></dd></div>
+  </dl>
+  <div class="plots">
+    <figure>
+      <figcaption>NO₂ — 2025</figcaption>
+      <img src="cldp0539-no2-polar-2025.png?v=purple1" alt="NO2 polar plot 2025 for CLDP0539" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+    <figure>
+      <figcaption>PM₂.₅ — 2025</figcaption>
+      <img src="cldp0539-pm25-polar-2025.png?v=purple1" alt="PM2.5 polar plot 2025 for CLDP0539" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+  </div>
+</article>
+<article class="card" id="cldp0541">
+  <header class="card__head">
+    <h2>CLDP0541</h2>
+    <p class="card__site">Falcon Building, Bloomsbury</p>
+  </header>
+  <dl class="meta">
+    <div><dt>Community group</dt><dd>Falcon Residents&#x27; Association and Bloomsbury Air</dd></div>
+    <div><dt>Programme / site group</dt><dd>Community Programme Y3</dd></div>
+    <div><dt>Classification</dt><dd>Urban Background</dd></div>
+    <div><dt>Open date (StartDate)</dt><dd>2024-02-13</dd></div>
+    <div><dt>Closed date (EndDate)</dt><dd><code>null (still open)</code></dd></div>
+  </dl>
+  <div class="plots">
+    <figure>
+      <figcaption>NO₂ — 2025</figcaption>
+      <img src="cldp0541-no2-polar-2025.png?v=purple1" alt="NO2 polar plot 2025 for CLDP0541" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+    <figure>
+      <figcaption>PM₂.₅ — 2025</figcaption>
+      <img src="cldp0541-pm25-polar-2025.png?v=purple1" alt="PM2.5 polar plot 2025 for CLDP0541" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+  </div>
+</article>
+<article class="card" id="cldp0542">
+  <header class="card__head">
+    <h2>CLDP0542</h2>
+    <p class="card__site">Church Grove, Ladywell</p>
+  </header>
+  <dl class="meta">
+    <div><dt>Community group</dt><dd>Rural Urban Synthesis Society</dd></div>
+    <div><dt>Programme / site group</dt><dd>Community Programme Y3</dd></div>
+    <div><dt>Classification</dt><dd>Urban Background</dd></div>
+    <div><dt>Open date (StartDate)</dt><dd>2024-04-27</dd></div>
+    <div><dt>Closed date (EndDate)</dt><dd><code>null (still open)</code></dd></div>
+  </dl>
+  <div class="plots">
+    <figure>
+      <figcaption>NO₂ — 2025</figcaption>
+      <img src="cldp0542-no2-polar-2025.png?v=purple1" alt="NO2 polar plot 2025 for CLDP0542" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+    <figure>
+      <figcaption>PM₂.₅ — 2025</figcaption>
+      <img src="cldp0542-pm25-polar-2025.png?v=purple1" alt="PM2.5 polar plot 2025 for CLDP0542" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the east. This points to a contribution from that direction.</p>
+    </figure>
+  </div>
+</article>
+<article class="card" id="cldp0551">
+  <header class="card__head">
+    <h2>CLDP0551</h2>
+    <p class="card__site">Branch Road</p>
+  </header>
+  <dl class="meta">
+    <div><dt>Community group</dt><dd>Friends of Limehouse</dd></div>
+    <div><dt>Programme / site group</dt><dd>Community Programme Y3</dd></div>
+    <div><dt>Classification</dt><dd>Roadside</dd></div>
+    <div><dt>Open date (StartDate)</dt><dd>2023-11-02</dd></div>
+    <div><dt>Closed date (EndDate)</dt><dd><code>null (still open)</code></dd></div>
+  </dl>
+  <div class="plots">
+    <figure>
+      <figcaption>NO₂ — 2025</figcaption>
+      <img src="cldp0551-no2-polar-2025.png?v=purple1" alt="NO2 polar plot 2025 for CLDP0551" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+    <figure>
+      <figcaption>PM₂.₅ — 2025</figcaption>
+      <img src="cldp0551-pm25-polar-2025.png?v=purple1" alt="PM2.5 polar plot 2025 for CLDP0551" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+  </div>
+</article>
+<article class="card" id="cldp0552">
+  <header class="card__head">
+    <h2>CLDP0552</h2>
+    <p class="card__site">Northwood Air Quality - Green Lane</p>
+  </header>
+  <dl class="meta">
+    <div><dt>Community group</dt><dd>Northwood Air Quality</dd></div>
+    <div><dt>Programme / site group</dt><dd>Community Programme Y3</dd></div>
+    <div><dt>Classification</dt><dd>Roadside</dd></div>
+    <div><dt>Open date (StartDate)</dt><dd>2024-06-06</dd></div>
+    <div><dt>Closed date (EndDate)</dt><dd><code>null (still open)</code></dd></div>
+  </dl>
+  <div class="plots">
+    <figure>
+      <figcaption>NO₂ — 2025</figcaption>
+      <img src="cldp0552-no2-polar-2025.png?v=purple1" alt="NO2 polar plot 2025 for CLDP0552" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+    <figure>
+      <figcaption>PM₂.₅ — 2025</figcaption>
+      <img src="cldp0552-pm25-polar-2025.png?v=purple1" alt="PM2.5 polar plot 2025 for CLDP0552" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+  </div>
+</article>
+<article class="card" id="cldp0553">
+  <header class="card__head">
+    <h2>CLDP0553</h2>
+    <p class="card__site">R-Urban Poplar &amp; Leaders in Community</p>
+  </header>
+  <dl class="meta">
+    <div><dt>Community group</dt><dd>R-Urban Poplar and Leaders in Community</dd></div>
+    <div><dt>Programme / site group</dt><dd>Community Programme Y3</dd></div>
+    <div><dt>Classification</dt><dd>Urban Background</dd></div>
+    <div><dt>Open date (StartDate)</dt><dd>2023-12-15</dd></div>
+    <div><dt>Closed date (EndDate)</dt><dd><code>null (still open)</code></dd></div>
+  </dl>
+  <div class="plots">
+    <figure>
+      <figcaption>NO₂ — 2025</figcaption>
+      <img src="cldp0553-no2-polar-2025.png?v=purple1" alt="NO2 polar plot 2025 for CLDP0553" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+    <figure>
+      <figcaption>PM₂.₅ — 2025</figcaption>
+      <img src="cldp0553-pm25-polar-2025.png?v=purple1" alt="PM2.5 polar plot 2025 for CLDP0553" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+  </div>
+</article>
+<article class="card" id="cldp0554">
+  <header class="card__head">
+    <h2>CLDP0554</h2>
+    <p class="card__site">Elthorne Park &amp; Leighton Roads Residents Association</p>
+  </header>
+  <dl class="meta">
+    <div><dt>Community group</dt><dd>Elthorne Park &amp; Leighton Roads Residents Association</dd></div>
+    <div><dt>Programme / site group</dt><dd>Community Programme Y3</dd></div>
+    <div><dt>Classification</dt><dd>Roadside</dd></div>
+    <div><dt>Open date (StartDate)</dt><dd>2023-11-20</dd></div>
+    <div><dt>Closed date (EndDate)</dt><dd><code>null (still open)</code></dd></div>
+  </dl>
+  <div class="plots">
+    <figure>
+      <figcaption>NO₂ — 2025</figcaption>
+      <img src="cldp0554-no2-polar-2025.png?v=purple1" alt="NO2 polar plot 2025 for CLDP0554" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+    <figure>
+      <figcaption>PM₂.₅ — 2025</figcaption>
+      <img src="cldp0554-pm25-polar-2025.png?v=purple1" alt="PM2.5 polar plot 2025 for CLDP0554" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+  </div>
+</article>
+<article class="card" id="cldp0557">
+  <header class="card__head">
+    <h2>CLDP0557</h2>
+    <p class="card__site">Mary Immaculate and St. Peter&#x27;s Church</p>
+  </header>
+  <dl class="meta">
+    <div><dt>Community group</dt><dd>Chipping Barnet Food Bank</dd></div>
+    <div><dt>Programme / site group</dt><dd>Community Programme Y3</dd></div>
+    <div><dt>Classification</dt><dd>Urban Background</dd></div>
+    <div><dt>Open date (StartDate)</dt><dd>2023-11-17</dd></div>
+    <div><dt>Closed date (EndDate)</dt><dd><code>null (still open)</code></dd></div>
+  </dl>
+  <div class="plots">
+    <figure>
+      <figcaption>NO₂ — 2025</figcaption>
+      <img src="cldp0557-no2-polar-2025.png?v=purple1" alt="NO2 polar plot 2025 for CLDP0557" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+    <figure>
+      <figcaption>PM₂.₅ — 2025</figcaption>
+      <img src="cldp0557-pm25-polar-2025.png?v=purple1" alt="PM2.5 polar plot 2025 for CLDP0557" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+  </div>
+</article>
+<article class="card" id="cldp0558">
+  <header class="card__head">
+    <h2>CLDP0558</h2>
+    <p class="card__site">Connaught Village</p>
+  </header>
+  <dl class="meta">
+    <div><dt>Community group</dt><dd>HyPER (Hyde Park Estate Residents)</dd></div>
+    <div><dt>Programme / site group</dt><dd>Community Programme Y2</dd></div>
+    <div><dt>Classification</dt><dd>Roadside</dd></div>
+    <div><dt>Open date (StartDate)</dt><dd>2023-11-20</dd></div>
+    <div><dt>Closed date (EndDate)</dt><dd><code>null (still open)</code></dd></div>
+  </dl>
+  <div class="plots">
+    <figure>
+      <figcaption>NO₂ — 2025</figcaption>
+      <img src="cldp0558-no2-polar-2025.png?v=purple1" alt="NO2 polar plot 2025 for CLDP0558" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+    <figure>
+      <figcaption>PM₂.₅ — 2025</figcaption>
+      <img src="cldp0558-pm25-polar-2025.png?v=purple1" alt="PM2.5 polar plot 2025 for CLDP0558" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, any directional pattern is weaker: levels are only a little higher with winds from the south-east than from the north-west. This points to a contribution from the south-east.</p>
+    </figure>
+  </div>
+</article>
+<article class="card" id="cldp0559">
+  <header class="card__head">
+    <h2>CLDP0559</h2>
+    <p class="card__site">Surrey Docks Farm</p>
+  </header>
+  <dl class="meta">
+    <div><dt>Community group</dt><dd>Surrey Docks Farm</dd></div>
+    <div><dt>Programme / site group</dt><dd>Community Programme Y3</dd></div>
+    <div><dt>Classification</dt><dd>Urban Background</dd></div>
+    <div><dt>Open date (StartDate)</dt><dd>2023-11-24</dd></div>
+    <div><dt>Closed date (EndDate)</dt><dd><code>null (still open)</code></dd></div>
+  </dl>
+  <div class="plots">
+    <figure>
+      <figcaption>NO₂ — 2025</figcaption>
+      <img src="cldp0559-no2-polar-2025.png?v=purple1" alt="NO2 polar plot 2025 for CLDP0559" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+    <figure>
+      <figcaption>PM₂.₅ — 2025</figcaption>
+      <img src="cldp0559-pm25-polar-2025.png?v=purple1" alt="PM2.5 polar plot 2025 for CLDP0559" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+  </div>
+</article>
+<article class="card" id="cldp0561">
+  <header class="card__head">
+    <h2>CLDP0561</h2>
+    <p class="card__site">Wandsworth High Street</p>
+  </header>
+  <dl class="meta">
+    <div><dt>Community group</dt><dd>Wandsworth Community Roads</dd></div>
+    <div><dt>Programme / site group</dt><dd>Community Programme Y3</dd></div>
+    <div><dt>Classification</dt><dd>Roadside</dd></div>
+    <div><dt>Open date (StartDate)</dt><dd>2024-01-19</dd></div>
+    <div><dt>Closed date (EndDate)</dt><dd><code>null (still open)</code></dd></div>
+  </dl>
+  <div class="plots">
+    <figure>
+      <figcaption>NO₂ — 2025</figcaption>
+      <img src="cldp0561-no2-polar-2025.png?v=purple1" alt="NO2 polar plot 2025 for CLDP0561" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+    <figure>
+      <figcaption>PM₂.₅ — 2025</figcaption>
+      <img src="cldp0561-pm25-polar-2025.png?v=purple1" alt="PM2.5 polar plot 2025 for CLDP0561" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+  </div>
+</article>
+<article class="card" id="cldp0564">
+  <header class="card__head">
+    <h2>CLDP0564</h2>
+    <p class="card__site">Green Westbourne</p>
+  </header>
+  <dl class="meta">
+    <div><dt>Community group</dt><dd>Green Westbourne</dd></div>
+    <div><dt>Programme / site group</dt><dd>Community Programme Y3</dd></div>
+    <div><dt>Classification</dt><dd>Urban Background</dd></div>
+    <div><dt>Open date (StartDate)</dt><dd>2024-01-19</dd></div>
+    <div><dt>Closed date (EndDate)</dt><dd><code>null (still open)</code></dd></div>
+  </dl>
+  <div class="plots">
+    <figure>
+      <figcaption>NO₂ — 2025</figcaption>
+      <img src="cldp0564-no2-polar-2025.png?v=purple1" alt="NO2 polar plot 2025 for CLDP0564" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+    <figure>
+      <figcaption>PM₂.₅ — 2025</figcaption>
+      <img src="cldp0564-pm25-polar-2025.png?v=purple1" alt="PM2.5 polar plot 2025 for CLDP0564" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the east. This points to a contribution from that direction.</p>
+    </figure>
+  </div>
+</article>
+<article class="card" id="cldp0589">
+  <header class="card__head">
+    <h2>CLDP0589</h2>
+    <p class="card__site">Thames Life</p>
+  </header>
+  <dl class="meta">
+    <div><dt>Community group</dt><dd>Thames Life</dd></div>
+    <div><dt>Programme / site group</dt><dd>Community Programme Y3</dd></div>
+    <div><dt>Classification</dt><dd>Roadside</dd></div>
+    <div><dt>Open date (StartDate)</dt><dd>2024-05-23</dd></div>
+    <div><dt>Closed date (EndDate)</dt><dd><code>null (still open)</code></dd></div>
+  </dl>
+  <div class="plots">
+    <figure>
+      <figcaption>NO₂ — 2025</figcaption>
+      <img src="cldp0589-no2-polar-2025.png?v=purple1" alt="NO2 polar plot 2025 for CLDP0589" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+    <figure>
+      <figcaption>PM₂.₅ — 2025</figcaption>
+      <img src="cldp0589-pm25-polar-2025.png?v=purple1" alt="PM2.5 polar plot 2025 for CLDP0589" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction.</p>
+    </figure>
+  </div>
+</article>
+<article class="card" id="cldp0651">
+  <header class="card__head">
+    <h2>CLDP0651</h2>
+    <p class="card__site">British Library</p>
+  </header>
+  <dl class="meta">
+    <div><dt>Community group</dt><dd>British Library</dd></div>
+    <div><dt>Programme / site group</dt><dd>Cultural Centres</dd></div>
+    <div><dt>Classification</dt><dd>Urban Background</dd></div>
+    <div><dt>Open date (StartDate)</dt><dd>2025-04-28</dd></div>
+    <div><dt>Closed date (EndDate)</dt><dd><code>null (still open)</code></dd></div>
+  </dl>
+  <div class="plots">
+    <figure>
+      <figcaption>NO₂ — 2025</figcaption>
+      <img src="cldp0651-no2-polar-2025.png?v=purple1" alt="NO2 polar plot 2025 for CLDP0651" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the east. This points to a contribution from that direction.</p>
+    </figure>
+    <figure>
+      <figcaption>PM₂.₅ — 2025</figcaption>
+      <img src="cldp0651-pm25-polar-2025.png?v=purple1" alt="PM2.5 polar plot 2025 for CLDP0651" loading="lazy">
+      <p class="summary">The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.<br><br>When winds are stronger, levels are highest when the wind is from the east. This points to a contribution from that direction.</p>
+    </figure>
+  </div>
+</article>
+<article class="card" id="cldp0664">
+  <header class="card__head">
+    <h2>CLDP0664</h2>
+    <p class="card__site">International House</p>
+  </header>
+  <dl class="meta">
+    <div><dt>Community group</dt><dd>Neon Performing Arts X LIVE + BREATHE</dd></div>
+    <div><dt>Programme / site group</dt><dd>Community Programme Y3</dd></div>
+    <div><dt>Classification</dt><dd>Roadside</dd></div>
+    <div><dt>Open date (StartDate)</dt><dd>2026-01-06</dd></div>
+    <div><dt>Closed date (EndDate)</dt><dd><code>null (still open)</code></dd></div>
+  </dl>
+  <div class="plots">
+    <figure>
+      <figcaption>NO₂ — 2025</figcaption>
+      <p class="missing">No plot</p>
+      <p class="summary">No 2025 NO₂ polar plot (insufficient or missing data).</p>
+    </figure>
+    <figure>
+      <figcaption>PM₂.₅ — 2025</figcaption>
+      <p class="missing">No plot</p>
+      <p class="summary">No 2025 PM₂.₅ polar plot (insufficient or missing data).</p>
+    </figure>
+  </div>
+</article>
+  </div>
+</body>
+</html>

@@ -12,8 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script type="module" crossorigin src="/bl-polar-plots/node-info/assets/index-DniXU6F8.js"></script>
-  <link rel="stylesheet" crossorigin href="/bl-polar-plots/node-info/assets/index-DqOXYlry.css">
+  <script type="module" crossorigin src="/bl-polar-plots/node-info/assets/index-tAOBvCEE.js"></script>
+  <link rel="stylesheet" crossorigin href="/bl-polar-plots/node-info/assets/index-CE_Rpjin.css">
 </head>
 <body class="node-info-mirror">
     <header class="demo-header">
@@ -92,6 +92,7 @@
                 <header class="polar-plot-slot__header">
                     <p class="polar-plot-slot__eyebrow" aria-hidden="true">How to read the wind</p>
                     <h2 id="polar-plot-heading">Polar plots</h2>
+                    <p class="polar-plot-slot__year">2025</p>
                     <p class="polar-plot-slot__studio-sub">A year of pollution, drawn by the wind</p>
                 </header>
 
@@ -184,19 +185,21 @@
                                     </div>
                                     <div class="polar-map-opacity" id="polar-map-opacity-control">
                                         <label class="polar-map-opacity__label" for="polar-map-opacity">Plot opacity</label>
-                                        <input
-                                            type="range"
-                                            id="polar-map-opacity"
-                                            class="polar-map-opacity__slider"
-                                            min="0"
-                                            max="100"
-                                            value="50"
-                                            step="1"
-                                            aria-valuemin="0"
-                                            aria-valuemax="100"
-                                            aria-valuenow="50"
-                                        />
-                                        <span class="polar-map-opacity__value" id="polar-map-opacity-value" aria-hidden="true">50%</span>
+                                        <div class="polar-map-opacity__row">
+                                            <input
+                                                type="range"
+                                                id="polar-map-opacity"
+                                                class="polar-map-opacity__slider"
+                                                min="0"
+                                                max="100"
+                                                value="70"
+                                                step="1"
+                                                aria-valuemin="0"
+                                                aria-valuemax="100"
+                                                aria-valuenow="70"
+                                            />
+                                            <span class="polar-map-opacity__value" id="polar-map-opacity-value" aria-hidden="true">70%</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -206,16 +209,20 @@
 
                     <div class="polar-plot-layout__copy">
                         <p class="polar-plot-slot__lede">
-                            These plots show how pollution at this sensor relates to wind over a full year.
+                            This plot shows how pollution measured at this node relates to wind speed and direction over the course of a year.
+                            Switch NO<sub>2</sub> / PM<sub>2.5</sub> to see the difference.
                         </p>
                         <ul class="polar-plot-slot__guide">
-                            <li><strong>Direction</strong> around the circle is where the wind came from (N, E, S, W).</li>
-                            <li><strong>Distance from the centre</strong> is wind speed — calm near the middle, stronger winds toward the edge.</li>
-                            <li><strong>Colour</strong> shows the average concentration (µg/m³) for that wind combination — not the yearly site average. Warmer colours can sit well above the annual mean because they reflect specific wind conditions when levels were higher.</li>
+                            <li><strong>Direction</strong> — where the wind came from (N, S, E, W).</li>
+                            <li><strong>Circles</strong> — these show wind speed in metres per second, increasing from the middle outwards.</li>
+                            <li><strong>Colour</strong> — average concentrations recorded for that wind speed and direction.</li>
                         </ul>
-                        <p class="polar-plot-slot__lede polar-plot-slot__lede--follow">
-                            Look for warmer patches to see which directions pollution tends to arrive from. Switch between NO<sub>2</sub> and PM<sub>2.5</sub> above the plot — patterns can differ by pollutant.
-                        </p>
+
+                        <!-- Site-specific reading: filled from polar-readings-2025.json; hidden if no entry -->
+                        <div class="polar-reading" id="polar-reading" hidden>
+                            <h3 class="polar-reading__title">What this plot suggests</h3>
+                            <div class="polar-reading__body" id="polar-reading-body"></div>
+                        </div>
                     </div>
                 </div>
             </div>
