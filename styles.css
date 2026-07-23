@@ -23,6 +23,73 @@ body.node-info-mirror {
     background: #fff;
 }
 
+/* Pages section links (GitHub Pages) — sticky above the Squarespace-style header */
+.pages-site-nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #0b1f4a;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.pages-site-nav__inner {
+    max-width: var(--bl-content-max);
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px;
+    min-height: 42px;
+}
+
+.pages-site-nav__label {
+    margin-right: 8px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: rgba(224, 224, 255, 0.75);
+    white-space: nowrap;
+}
+
+.pages-site-nav a {
+    display: inline-block;
+    padding: 10px 12px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #e8eaf2;
+    text-decoration: none;
+    border-radius: 4px;
+    white-space: nowrap;
+}
+
+.pages-site-nav a:hover,
+.pages-site-nav a:focus-visible {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    outline: none;
+}
+
+.pages-site-nav a[aria-current="page"] {
+    color: #fff;
+    background: rgba(8, 132, 118, 0.55);
+}
+
+@media (max-width: 640px) {
+    .pages-site-nav__inner {
+        padding: 6px 10px 8px;
+    }
+    .pages-site-nav__label {
+        width: 100%;
+        margin: 2px 0 0;
+    }
+    .pages-site-nav a {
+        padding: 8px 10px;
+        font-size: 0.78rem;
+    }
+}
+
 /* Header — dark bar like production Squarespace theme (logo + nav) */
 .demo-header {
     display: flex;
@@ -429,6 +496,172 @@ body.node-info-mirror {
     opacity: 0.88;
 }
 
+/* Map-mode caveat + example sources — layout grid item (under map on desktop) */
+.polar-plot-slot__map-caveat {
+    display: none;
+    margin: 14px 0 0;
+    padding: 10px 12px 12px;
+    font-size: 0.85rem;
+    line-height: 1.45;
+    font-weight: 400;
+    color: var(--bl-navy);
+    background: rgba(4, 0, 205, 0.06);
+    border-left: 3px solid var(--bl-blue);
+    min-width: 0;
+}
+
+.polar-plot-slot--map .polar-plot-slot__map-caveat {
+    display: block;
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.polar-plot-slot__map-caveat-text {
+    margin: 0;
+}
+
+.polar-plot-slot__map-caveat .polar-examples {
+    margin-top: 12px;
+    min-width: 0;
+}
+
+.polar-plot-slot__map-caveat .polar-examples__heading {
+    margin: 0 0 8px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: var(--bl-navy);
+}
+
+.polar-plot-slot__map-caveat .polar-examples__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.polar-plot-slot__map-caveat .polar-examples__card {
+    margin: 0;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.55);
+    border: 1px solid rgba(11, 31, 74, 0.1);
+    border-radius: 6px;
+}
+
+.polar-plot-slot__map-caveat .polar-examples__label {
+    margin: 0 0 6px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: var(--bl-navy);
+}
+
+.polar-plot-slot__map-caveat .polar-examples__diagram {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6px;
+}
+
+.polar-plot-slot__map-caveat .polar-examples__diagram svg {
+    width: 100%;
+    max-width: 110px;
+    height: auto;
+}
+
+.polar-plot-slot__map-caveat .polar-examples__copy {
+    margin: 0;
+    font-size: 0.75rem;
+    line-height: 1.4;
+    color: var(--bl-navy);
+    opacity: 0.88;
+}
+
+@media (max-width: 560px) {
+    .polar-plot-slot__map-caveat .polar-examples__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Full-width Explore more below the two-column layout (seasonal plots only) */
+.polar-explore {
+    display: none;
+    width: 100%;
+    margin: 28px 0 0;
+    border: 1px solid rgba(4, 0, 205, 0.16);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.55);
+    overflow: hidden;
+}
+
+.polar-plot-slot--map .polar-explore {
+    display: block;
+}
+
+.polar-explore__summary {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 6px 14px;
+    padding: 14px 18px;
+    cursor: pointer;
+    list-style: none;
+    font-family: inherit;
+    color: var(--bl-navy);
+    user-select: none;
+}
+
+.polar-explore__summary::-webkit-details-marker {
+    display: none;
+}
+
+.polar-explore__summary::before {
+    content: '';
+    width: 0.45em;
+    height: 0.45em;
+    margin-right: 2px;
+    border-right: 2px solid var(--bl-blue);
+    border-bottom: 2px solid var(--bl-blue);
+    transform: rotate(-45deg);
+    transition: transform 0.15s ease;
+    flex-shrink: 0;
+    align-self: center;
+}
+
+.polar-explore[open] .polar-explore__summary::before {
+    transform: rotate(45deg);
+}
+
+.polar-explore__summary-label {
+    font-size: 1.02rem;
+    font-weight: 600;
+    color: var(--bl-chart-title);
+}
+
+.polar-explore__summary-hint {
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--bl-caption);
+}
+
+.polar-explore__body {
+    padding: 0 18px 18px;
+    border-top: 1px solid rgba(4, 0, 205, 0.1);
+}
+
+.polar-explore__heading {
+    margin: 16px 0 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--bl-chart-title);
+}
+
+.polar-explore__lede {
+    margin: 0 0 14px;
+    font-size: 0.88rem;
+    line-height: 1.45;
+    color: var(--bl-caption);
+    max-width: 62ch;
+}
+
 .polar-plot-slot__guide {
     margin: 12px 0 0;
     padding: 0 0 0 1.15em;
@@ -476,6 +709,118 @@ body.node-info-mirror {
 
 .polar-reading__body p:last-child {
     margin-bottom: 0;
+}
+
+/* Seasonal plots (inside Explore more) */
+.polar-seasonal {
+    min-width: 0;
+}
+
+.polar-seasonal__lede {
+    margin: 0 0 14px;
+    max-width: 62ch;
+    font-size: 0.88rem;
+    line-height: 1.45;
+    color: var(--bl-caption);
+}
+
+.polar-seasonal__field {
+    min-width: 0;
+}
+
+.polar-seasonal__label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--bl-caption);
+}
+
+.polar-seasonal__presets {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.polar-seasonal__preset {
+    appearance: none;
+    border: 1px solid rgba(11, 31, 74, 0.16);
+    background: #f7f7fc;
+    color: var(--bl-navy);
+    font-family: inherit;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.polar-seasonal__preset:hover {
+    border-color: var(--bl-blue);
+    color: var(--bl-blue);
+    background: #fff;
+}
+
+.polar-seasonal__preset.is-active {
+    background: var(--bl-blue);
+    border-color: var(--bl-blue);
+    color: #fff;
+}
+
+.polar-seasonal__stage {
+    margin-top: 16px;
+}
+
+.polar-seasonal__result-range {
+    margin: 0 0 10px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--bl-chart-title);
+}
+
+.polar-seasonal__figure {
+    margin: 0;
+    max-width: 420px;
+}
+
+.polar-seasonal__figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.polar-seasonal__figure figcaption {
+    margin-top: 10px;
+    font-size: 0.82rem;
+    line-height: 1.45;
+    color: var(--bl-caption);
+}
+
+.polar-seasonal__summary {
+    margin: 10px 0 0;
+    max-width: 42ch;
+    font-size: 0.84rem;
+    line-height: 1.45;
+    color: var(--bl-navy);
+    opacity: 0.88;
+}
+
+.polar-seasonal__summary[hidden] {
+    display: none;
+}
+
+.polar-seasonal__soon-copy {
+    margin: 4px 0 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--bl-caption);
+}
+
+.polar-plot-slot--studio .polar-seasonal {
+    background: transparent;
 }
 
 /* Pollutant tabs — coloured to match graph bars (NO2 purple / PM2.5 grey) */
@@ -602,7 +947,7 @@ body.node-info-mirror {
     display: flex;
     flex-direction: column;
     grid-column: 1;
-    grid-row: 2 / 4;
+    grid-row: 2;
     align-self: start;
     width: 100%;
     min-width: 0;
@@ -611,8 +956,9 @@ body.node-info-mirror {
 
 .polar-plot-slot--map .polar-plot-layout {
     grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+    /* switcher | map+copy | caveat under map */
     grid-template-rows: auto auto auto;
-    align-items: stretch;
+    align-items: start;
 }
 
 /* Map + controls stack fills the map-view column. */
@@ -648,11 +994,12 @@ body.node-info-mirror {
 .polar-map-controls {
     display: flex;
     flex-direction: row;
-    align-items: stretch;
-    gap: 0;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 10px 16px;
     box-sizing: border-box;
     width: 100%;
-    padding: 10px 14px;
+    padding: 6px 12px;
     background: #f4f5f9;
     border: 1px solid rgba(11, 31, 74, 0.12);
     border-top: none;
@@ -664,13 +1011,13 @@ body.node-info-mirror {
 .polar-map-basemap,
 .polar-map-opacity {
     display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 6px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 8px;
     box-sizing: border-box;
-    flex: 1 1 0;
     min-width: 0;
-    padding: 0 14px;
+    padding: 0;
     background: transparent;
     border: none;
     font-size: 0.85rem;
@@ -678,52 +1025,47 @@ body.node-info-mirror {
 }
 
 .polar-map-basemap {
-    padding-left: 0;
-    border-right: 1px solid rgba(11, 31, 74, 0.1);
+    flex: 1 1 auto;
+    max-width: 220px;
 }
 
 .polar-map-opacity {
-    padding-right: 0;
+    flex: 0 0 auto;
+    max-width: none;
 }
 
 .polar-map-basemap__label,
 .polar-map-opacity__label {
     margin: 0;
     font-weight: 600;
-    font-size: 0.72rem;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: var(--bl-caption);
+    font-size: 0.8rem;
+    letter-spacing: 0.01em;
+    text-transform: none;
+    color: var(--bl-navy);
     white-space: nowrap;
     cursor: pointer;
     flex-shrink: 0;
 }
 
-.polar-map-basemap__temp {
-    font-weight: 500;
-    text-transform: none;
-    letter-spacing: 0;
-    opacity: 0.65;
-}
-
 .polar-map-basemap__select {
-    width: 100%;
+    flex: 1 1 auto;
+    min-width: 0;
+    width: auto;
     max-width: none;
-    padding: 7px 10px;
+    padding: 4px 28px 4px 8px;
     border: 1px solid rgba(11, 31, 74, 0.18);
-    border-radius: 6px;
-    background: #fff;
+    border-radius: 5px;
+    background-color: #fff;
     color: var(--bl-navy);
     font: inherit;
-    font-size: 0.85rem;
-    line-height: 1.3;
+    font-size: 0.82rem;
+    line-height: 1.25;
     cursor: pointer;
     appearance: none;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%230b1f4a' d='M1.4 0.6L6 5.2 10.6 0.6 12 2 6 8 0 2z'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
-    background-position: right 10px center;
-    background-size: 10px 7px;
-    padding-right: 28px;
+    background-position: right 8px center;
+    background-size: 9px 6px;
 }
 
 .polar-map-basemap__select:focus {
@@ -736,48 +1078,25 @@ body.node-info-mirror {
     cursor: not-allowed;
 }
 
-.polar-map-basemap__note {
-    margin: 0;
-    font-size: 0.78rem;
-    line-height: 1.35;
-    opacity: 0.72;
-}
-
-.polar-map-basemap__note[hidden] {
-    display: none !important;
-}
-
-.polar-map-opacity__row {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    min-height: 34px;
-    padding: 0 4px;
-}
-
 .polar-map-opacity__slider {
-    flex: 1 1 auto;
-    width: auto;
-    min-width: 0;
+    flex: 0 0 auto;
+    width: 72px;
+    max-width: 88px;
+    min-width: 48px;
     height: 4px;
     accent-color: var(--bl-blue);
     cursor: pointer;
 }
 
 .polar-map-opacity__value {
-    min-width: 2.75em;
+    min-width: 2.5em;
     font-variant-numeric: tabular-nums;
-    font-size: 0.85rem;
+    font-size: 0.82rem;
     font-weight: 600;
     color: var(--bl-navy);
     opacity: 0.85;
     flex-shrink: 0;
     text-align: right;
-}
-
-.polar-plot-slot--map .polar-plot-layout__copy {
-    grid-column: 2;
-    grid-row: 2;
 }
 
 .polar-map {
@@ -791,10 +1110,6 @@ body.node-info-mirror {
     border-radius: 6px;
     overflow: hidden;
     background: #e8eef5;
-}
-
-.polar-map .mapboxgl-canvas {
-    outline: none;
 }
 
 .polar-map-sensor-dot {
@@ -820,7 +1135,7 @@ body.node-info-mirror {
     display: block;
     max-width: none;
     background: transparent;
-    /* Keep plot above tiles but below Leaflet/Mapbox UI chrome where possible */
+    /* Keep plot above tiles but below Leaflet UI chrome where possible */
     filter: drop-shadow(0 1px 2px rgba(11, 31, 74, 0.12));
 }
 
@@ -907,9 +1222,10 @@ body.node-info-mirror {
 
     .polar-map-controls {
         margin: 0;
-        flex-direction: column;
-        gap: 12px;
-        padding: 12px 14px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 8px 12px;
+        padding: 6px 10px;
     }
 
     .polar-map-basemap,
@@ -919,13 +1235,28 @@ body.node-info-mirror {
     }
 
     .polar-map-basemap {
-        padding-bottom: 12px;
-        border-bottom: 1px solid rgba(11, 31, 74, 0.1);
+        flex: 1 1 auto;
+        max-width: none;
+        min-width: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+
+    .polar-map-opacity__slider {
+        width: 56px;
+        max-width: 64px;
     }
 
     .polar-plot-slot--map .polar-plot-layout {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
+    }
+
+    /* Narrow stack (DOM order): map → intro/guide/reading → caveat → Explore */
+    .polar-plot-slot--map .polar-plot-slot__map-caveat {
+        grid-column: 1;
+        grid-row: auto;
+        margin-top: 20px;
     }
 
     .polar-plot-layout__copy {

@@ -21,6 +21,17 @@ export async function loadPolarReadings() {
 }
 
 /**
+ * Short season + pollutant summary for a site, if prepared.
+ * @returns {string | null}
+ */
+export function getSeasonalReading(siteCode, pollutant = 'no2', season = 'winter') {
+    const code = (siteCode || '').toUpperCase();
+    const key = pollutant === 'pm25' ? 'pm25' : 'no2';
+    const text = readingsCache?.[code]?.[key]?.seasons?.[season];
+    return typeof text === 'string' && text.trim() ? text.trim() : null;
+}
+
+/**
  * Fill the site reading beside the plot for the current sitecode + pollutant.
  * Hides the block when this sitecode has no prepared reading.
  */

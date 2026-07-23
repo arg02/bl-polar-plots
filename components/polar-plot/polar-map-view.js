@@ -1,60 +1,46 @@
 /**
- * Polar plot map overlay view (?polarMap=1)
+ * Polar plot map overlay view (default polar presentation).
  *
- * Centres a transparent polar PNG on the sensor lat/lon.
- * Prefers Mapbox when VITE_MAPBOX_ACCESS_TOKEN works; falls back to Leaflet + OSM
- * if the token is missing or WebGL fails (common in some headless / restricted envs).
+ * Centres a transparent polar PNG on the sensor lat/lon using Leaflet
+ * (same stack as the site’s other maps) with a switchable free basemap.
  */
-import mapboxgl from 'mapbox-gl';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { fetchSensorMetadata } from '../../services/api.js';
 import {
-    DEFAULT_MAPBOX_STYLE,
-    MAPBOX_BASEMAP_STYLES,
-    initializeMap
-} from '../../utils/mapbox-overlay.js';
+    DEFAULT_BASEMAP_ID,
+    LEAFLET_BASEMAPS,
+    createBasemapLayer,
+    getBasemap
+} from '../../utils/leaflet-basemaps.js';
 export { polarImageUrl } from './polar-image-url.js';
 import { polarImageUrl } from './polar-image-url.js';
 
 /** Default plot opacity so streets remain visible under the PNG. */
 const DEFAULT_OVERLAY_OPACITY = 0.7;
 
-/** sessionStorage key for the temporary basemap style picker. */
-const BASEMAP_STYLE_STORAGE_KEY = 'polar-map-basemap-style';
+/** localStorage key for basemap choice (v3 = Leaflet ids, not Mapbox style URLs). */
+const BASEMAP_STORAGE_KEY = 'polar-map-basemap-v3';
 
-const ALLOWED_BASEMAP_STYLE_URLS = new Set(
-    MAPBOX_BASEMAP_STYLES.map((entry) => entry.url)
-);
+const ALLOWED_BASEMAP_IDS = new Set(LEAFLET_BASEMAPS.map((entry) => entry.id));
 
-function readStoredBasemapStyle() {
+function readStoredBasemapId() {
     try {
-        const stored = sessionStorage.getItem(BASEMAP_STYLE_STORAGE_KEY);
-        if (stored && ALLOWED_BASEMAP_STYLE_URLS.has(stored)) return stored;
+        const stored = localStorage.getItem(BASEMAP_STORAGE_KEY);
+        if (stored && ALLOWED_BASEMAP_IDS.has(stored)) return stored;
     } catch {
         /* private mode / blocked storage */
     }
-    return DEFAULT_MAPBOX_STYLE;
+    return DEFAULT_BASEMAP_ID;
 }
 
-function storeBasemapStyle(styleUrl) {
+function storeBasemapId(id) {
     try {
-        sessionStorage.setItem(BASEMAP_STYLE_STORAGE_KEY, styleUrl);
+        localStorage.setItem(BASEMAP_STORAGE_KEY, id);
     } catch {
         /* ignore */
     }
 }
-
-function webglAvailable() {
-    try {
-        const canvas = document.createElement('canvas');
-        return !!(canvas.getContext('webgl2') || canvas.getContext('webgl'));
-    } catch {
-        return false;
-    }
-}
-
-
 
 function bindOpacitySlider(slot, mapApi) {
     const input = slot.querySelector('#polar-map-opacity');
@@ -75,8 +61,7 @@ function bindOpacitySlider(slot, mapApi) {
 }
 
 /**
- * Temporary Mapbox basemap style selector.
- * HTML Markers (plot + sensor dot) are not style layers, so they survive setStyle.
+ * Basemap tile-layer selector (Leaflet).
  */
 function bindBasemapStyleSelector(slot, mapApi) {
     const select = slot.querySelector('#polar-map-basemap-style');
@@ -84,24 +69,20 @@ function bindBasemapStyleSelector(slot, mapApi) {
     const control = slot.querySelector('#polar-map-basemap-control');
     if (!select || !control) return;
 
-    const isMapbox = mapApi?.engine === 'mapbox' && mapApi?.map;
-    select.disabled = !isMapbox;
-    if (note) note.hidden = isMapbox;
+    if (note) note.hidden = true;
+    select.disabled = !(mapApi?.map && typeof mapApi.setBasemap === 'function');
+    if (select.disabled) return;
 
-    if (!isMapbox) return;
-
-    const initial = ALLOWED_BASEMAP_STYLE_URLS.has(select.value)
+    const initial = ALLOWED_BASEMAP_IDS.has(select.value)
         ? select.value
-        : readStoredBasemapStyle();
+        : readStoredBasemapId();
     select.value = initial;
 
     select.addEventListener('change', () => {
-        const styleUrl = select.value;
-        if (!ALLOWED_BASEMAP_STYLE_URLS.has(styleUrl)) return;
-
-        storeBasemapStyle(styleUrl);
-        // Markers are DOM overlays and persist across style swaps; only basemap tiles change.
-        mapApi.map.setStyle(styleUrl);
+        const id = select.value;
+        if (!ALLOWED_BASEMAP_IDS.has(id)) return;
+        storeBasemapId(id);
+        mapApi.setBasemap(id);
     });
 }
 
@@ -115,7 +96,7 @@ function syncMapHeightToCopy(slot, mapApi) {
     const apply = () => {
         const copyHeight = Math.round(copy.getBoundingClientRect().height);
         const controlsHeight = controls ? controls.offsetHeight : 0;
-        // Map + controls (basemap + opacity) match the explanation column height
+        // Map + controls match the explanation column; caveat sits below the stack
         const mapHeight = Math.max(0, copyHeight - controlsHeight);
         if (stack && copyHeight > 0) {
             stack.style.height = `${copyHeight}px`;
@@ -125,10 +106,8 @@ function syncMapHeightToCopy(slot, mapApi) {
             // Avoid locking min-height to a stale full-column value before controls measure
             mapEl.style.minHeight = '0';
         }
-        if (mapApi?.engine === 'leaflet' && mapApi.map) {
+        if (mapApi?.map) {
             mapApi.map.invalidateSize();
-        } else if (mapApi?.engine === 'mapbox' && mapApi.map) {
-            mapApi.map.resize();
         }
     };
 
@@ -187,28 +166,32 @@ function makePlotImg(url, sizePx, opacity) {
 }
 
 /**
- * Leaflet + OSM: marker-based plot (fixed pixels — map zoom does not scale the PNG).
+ * Leaflet: marker-based plot (fixed pixels — map zoom does not scale the PNG).
  */
-function initLeafletPolarMap({ sitecode, center, lat, lng }) {
+function initLeafletPolarMap({ sitecode, lat, lng }) {
     const mapEl = document.getElementById('polar-map');
-    if (!mapEl) return { setPollutant: () => {}, setOpacity: () => {}, map: null, engine: 'leaflet' };
+    if (!mapEl) return { setPollutant: () => {}, setOpacity: () => {}, setBasemap: () => {}, map: null, engine: 'leaflet' };
 
     mapEl.innerHTML = '';
 
     let overlayOpacity = DEFAULT_OVERLAY_OPACITY;
     let currentPollutant = 'no2';
     let sizePx = plotDisplaySize(mapEl);
+    let basemapId = readStoredBasemapId();
 
     const map = L.map(mapEl, {
         center: [lat, lng],
-        zoom: 15,
-        zoomControl: true
+        zoom: 16,
+        zoomControl: true,
+        scrollWheelZoom: false
     });
+    // Keep scroll-wheel zoom off so page scroll isn’t captured by the map
+    map.scrollWheelZoom.disable();
 
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-        maxZoom: 19
-    }).addTo(map);
+    let basemapLayer = createBasemapLayer(L, basemapId).addTo(map);
+
+    const styleSelect = document.getElementById('polar-map-basemap-style');
+    if (styleSelect) styleSelect.value = getBasemap(basemapId).id;
 
     const buildIcon = (url) => {
         const heightPx = Math.round(sizePx * (840 / 800));
@@ -226,14 +209,6 @@ function initLeafletPolarMap({ sitecode, center, lat, lng }) {
         keyboard: false,
         zIndexOffset: 400
     }).addTo(map);
-
-    const dot = L.divIcon({
-        className: 'polar-map-sensor-dot-wrap',
-        html: '<div class="polar-map-sensor-dot" title="' + sitecode + '"></div>',
-        iconSize: [10, 10],
-        iconAnchor: [5, 5]
-    });
-    L.marker([lat, lng], { icon: dot, interactive: false, zIndexOffset: 600 }).addTo(map);
 
     const refreshPlotIcon = () => {
         plotMarker.setIcon(buildIcon(polarImageUrl(sitecode, currentPollutant)));
@@ -256,6 +231,14 @@ function initLeafletPolarMap({ sitecode, center, lat, lng }) {
     return {
         map,
         engine: 'leaflet',
+        setBasemap(id) {
+            if (!ALLOWED_BASEMAP_IDS.has(id) || id === basemapId) return;
+            basemapId = id;
+            map.removeLayer(basemapLayer);
+            basemapLayer = createBasemapLayer(L, id).addTo(map);
+            // Keep plot marker above the new tile pane
+            basemapLayer.bringToBack();
+        },
         setPollutant(pollutant) {
             currentPollutant = pollutant === 'pm25' ? 'pm25' : 'no2';
             refreshPlotIcon();
@@ -265,95 +248,6 @@ function initLeafletPolarMap({ sitecode, center, lat, lng }) {
             const img = mapEl.querySelector('.polar-map-plot-img');
             if (img) img.style.opacity = String(overlayOpacity);
             else refreshPlotIcon();
-        }
-    };
-}
-
-/**
- * Mapbox GL: marker-based plot (fixed pixels — map zoom does not scale the PNG).
- */
-async function initMapboxPolarMap({ sitecode, center, lat, lng, mapToken }) {
-    const mapEl = document.getElementById('polar-map');
-    const initialStyle = readStoredBasemapStyle();
-    const map = initializeMap('polar-map', center, 15, mapToken, initialStyle);
-    if (!map) throw new Error('Mapbox map failed to construct');
-
-    const styleSelect = document.getElementById('polar-map-basemap-style');
-    if (styleSelect) styleSelect.value = initialStyle;
-
-    map.addControl(new mapboxgl.NavigationControl({ showCompass: true }), 'top-right');
-
-    let currentPollutant = 'no2';
-    let overlayOpacity = DEFAULT_OVERLAY_OPACITY;
-
-    await new Promise((resolve, reject) => {
-        const timeout = setTimeout(() => {
-            reject(new Error('Mapbox style load timed out'));
-        }, 8000);
-
-        const onError = (e) => {
-            clearTimeout(timeout);
-            reject(e?.error || e || new Error('Mapbox error'));
-        };
-
-        map.once('error', onError);
-        if (map.loaded()) {
-            clearTimeout(timeout);
-            map.off('error', onError);
-            resolve();
-        } else {
-            map.once('load', () => {
-                clearTimeout(timeout);
-                map.off('error', onError);
-                resolve();
-            });
-        }
-    });
-
-    map.resize();
-
-    const sizePx = () => plotDisplaySize(mapEl || document.getElementById('polar-map'));
-
-    const plotRoot = document.createElement('div');
-    plotRoot.className = 'polar-map-plot-marker';
-    let plotImg = makePlotImg(polarImageUrl(sitecode, currentPollutant), sizePx(), overlayOpacity);
-    plotRoot.appendChild(plotImg);
-
-    const plotMarker = new mapboxgl.Marker({ element: plotRoot, anchor: 'center' })
-        .setLngLat(center)
-        .addTo(map);
-
-    const sensorDot = document.createElement('div');
-    sensorDot.className = 'polar-map-sensor-dot';
-    sensorDot.title = sitecode;
-    new mapboxgl.Marker({ element: sensorDot, anchor: 'center' })
-        .setLngLat(center)
-        .addTo(map);
-
-    const resizePlot = () => {
-        const px = sizePx();
-        if (plotImg) {
-            plotImg.style.width = `${px}px`;
-        }
-    };
-
-    map.on('resize', resizePlot);
-    map.once('idle', () => {
-        map.resize();
-        resizePlot();
-    });
-
-    return {
-        map,
-        engine: 'mapbox',
-        plotMarker,
-        setPollutant(pollutant) {
-            currentPollutant = pollutant === 'pm25' ? 'pm25' : 'no2';
-            if (plotImg) plotImg.src = polarImageUrl(sitecode, currentPollutant);
-        },
-        setOpacity(opacity) {
-            overlayOpacity = Math.max(0, Math.min(1, Number(opacity)));
-            if (plotImg) plotImg.style.opacity = String(overlayOpacity);
         }
     };
 }
@@ -379,7 +273,7 @@ export async function initPolarMapView({ sitecode, slot }) {
             const detail = err?.message ? ` (${err.message})` : '';
             statusEl.textContent = `Could not load sensor location for ${sitecode}.${detail}`;
         }
-        return { setPollutant: () => {}, setOpacity: () => {}, map: null, engine: null };
+        return { setPollutant: () => {}, setOpacity: () => {}, setBasemap: () => {}, map: null, engine: null };
     }
 
     const lat = Number(sensor.Latitude ?? sensor.latitude);
@@ -389,28 +283,11 @@ export async function initPolarMapView({ sitecode, slot }) {
             statusEl.hidden = false;
             statusEl.textContent = 'Sensor is missing valid latitude/longitude.';
         }
-        return { setPollutant: () => {}, setOpacity: () => {}, map: null, engine: null };
+        return { setPollutant: () => {}, setOpacity: () => {}, setBasemap: () => {}, map: null, engine: null };
     }
 
-    const center = [lng, lat];
-    const mapToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN;
-    const preferMapbox = Boolean(mapToken) && webglAvailable();
-
     try {
-        let result;
-        if (preferMapbox) {
-            try {
-                result = await initMapboxPolarMap({ sitecode, center, lat, lng, mapToken });
-            } catch (err) {
-                console.warn('Mapbox polar overlay failed; falling back to Leaflet:', err);
-                // Clear any half-initialised Mapbox DOM before Leaflet takes over
-                const mapEl = document.getElementById('polar-map');
-                if (mapEl) mapEl.innerHTML = '';
-                result = initLeafletPolarMap({ sitecode, center, lat, lng });
-            }
-        } else {
-            result = initLeafletPolarMap({ sitecode, center, lat, lng });
-        }
+        const result = initLeafletPolarMap({ sitecode, lat, lng });
 
         if (statusEl) statusEl.hidden = true;
         bindBasemapStyleSelector(slot, result);
@@ -423,6 +300,6 @@ export async function initPolarMapView({ sitecode, slot }) {
             statusEl.hidden = false;
             statusEl.textContent = 'Could not initialise the polar map overlay.';
         }
-        return { setPollutant: () => {}, setOpacity: () => {}, map: null, engine: null };
+        return { setPollutant: () => {}, setOpacity: () => {}, setBasemap: () => {}, map: null, engine: null };
     }
 }

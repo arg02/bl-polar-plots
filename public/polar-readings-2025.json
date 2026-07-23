@@ -4,13 +4,25 @@
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest NO₂ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the south-east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer the peak is less centred on calm air: levels are highest with moderate winds from the east, suggesting a contribution arriving from that direction as well as local build-up in still conditions.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     },
     "pm25": {
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest PM₂.₅ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, PM₂.₅ is highest with moderate-to-stronger winds from the east–south-east, suggesting a contribution from that direction.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east and south."
+      }
     }
   },
   "CLDP0299": {
@@ -18,13 +30,25 @@
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest NO₂ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer the peak is less centred on calm air: levels are highest with moderate winds from the east, suggesting a contribution arriving from that direction as well as local build-up in still conditions.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     },
     "pm25": {
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest PM₂.₅ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, PM₂.₅ is highest with moderate-to-stronger winds from the east–south-east, suggesting a contribution from that direction.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     }
   },
   "CLDP0300": {
@@ -32,13 +56,25 @@
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, any directional pattern is weaker: levels are only a little higher with winds from the south-east than from the south-west. This points to a contribution from the south-east."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest NO₂ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, NO₂ stays highest in calm air. Moderate winds show a clearer lift from the east–south-east than from other directions.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the north–north-west."
+      }
     },
     "pm25": {
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest PM₂.₅ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, PM₂.₅ is highest with moderate-to-stronger winds from the south-east, suggesting a contribution from that direction. Levels also stay elevated in calm air.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the south."
+      }
     }
   },
   "CLDP0306": {
@@ -46,13 +82,51 @@
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest NO₂ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, NO₂ stays highest in calm air. Moderate winds show a clearer lift from the east–south-east than from other directions.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east and south."
+      }
     },
     "pm25": {
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest PM₂.₅ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, PM₂.₅ is highest with moderate-to-stronger winds from the south-east, suggesting a contribution from that direction.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the south."
+      }
+    }
+  },
+  "CLDP0308": {
+    "no2": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ],
+      "seasons": {
+        "winter": "Highest NO₂ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, NO₂ stays highest in calm air. Moderate winds show a clearer lift from the east–south-east than from other directions.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east and south."
+      }
+    },
+    "pm25": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ],
+      "seasons": {
+        "winter": "Highest PM₂.₅ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east–south-east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, PM₂.₅ is highest with moderate-to-stronger winds from the south-east, suggesting a contribution from that direction.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east and south."
+      }
     }
   },
   "CLDP0316": {
@@ -60,13 +134,25 @@
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest NO₂ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, NO₂ stays highest in calm air. Moderate winds show a clearer lift from the east–south-east than from other directions.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the south."
+      }
     },
     "pm25": {
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest PM₂.₅ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, PM₂.₅ is highest with moderate-to-stronger winds from the south-east, suggesting a contribution from that direction.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the south."
+      }
     }
   },
   "CLDP0317": {
@@ -74,13 +160,25 @@
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest NO₂ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, NO₂ stays highest in calm air. Moderate winds show a clearer lift from the east–south-east than from other directions.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the north-west."
+      }
     },
     "pm25": {
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest PM₂.₅ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, PM₂.₅ is highest with moderate-to-stronger winds from the south-east, suggesting a contribution from that direction.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     }
   },
   "CLDP0353": {
@@ -88,13 +186,25 @@
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest NO₂ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the north-west appears at stronger winds.",
+        "summer": "In summer, NO₂ is highest with moderate-to-stronger winds from the east, suggesting a contribution from that direction. Levels also stay elevated in calm air.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     },
     "pm25": {
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest PM₂.₅ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the east–south-east appears at stronger winds.",
+        "summer": "In summer, PM₂.₅ is highest with moderate-to-stronger winds from the east–south-east, suggesting a contribution from that direction.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     }
   },
   "CLDP0362": {
@@ -102,13 +212,25 @@
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest NO₂ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, NO₂ is highest with moderate-to-stronger winds from the east, suggesting a contribution from that direction. Levels also stay elevated in calm air.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     },
     "pm25": {
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest PM₂.₅ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the east appears at stronger winds.",
+        "summer": "In summer, PM₂.₅ is highest with moderate-to-stronger winds from the east–south-east, suggesting a contribution from that direction.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     }
   },
   "CLDP0384": {
@@ -116,13 +238,25 @@
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest NO₂ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the east appears at stronger winds.",
+        "summer": "In summer, NO₂ is highest with moderate-to-stronger winds from the east, suggesting a contribution from that direction.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     },
     "pm25": {
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest PM₂.₅ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the east–south-east appears at stronger winds.",
+        "summer": "In summer, PM₂.₅ is highest with moderate-to-stronger winds from the east–south-east, suggesting a contribution from that direction.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     }
   },
   "CLDP0390": {
@@ -130,13 +264,25 @@
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest NO₂ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the south-east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer the peak is less centred on calm air: levels are highest with moderate winds from the east, suggesting a contribution arriving from that direction as well as local build-up in still conditions.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     },
     "pm25": {
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest PM₂.₅ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the south also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, PM₂.₅ is highest with moderate-to-stronger winds from the east–south-east, suggesting a contribution from that direction.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     }
   },
   "CLDP0391": {
@@ -144,13 +290,25 @@
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest NO₂ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the north-west appears at stronger winds.",
+        "summer": "In summer, NO₂ is highest with moderate-to-stronger winds from the east, suggesting a contribution from that direction. Levels also stay elevated in calm air.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     },
     "pm25": {
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest PM₂.₅ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the north-west also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the east appears at stronger winds.",
+        "summer": "In summer, PM₂.₅ is highest with moderate-to-stronger winds from the east, suggesting a contribution from that direction.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     }
   },
   "CLDP0392": {
@@ -172,13 +330,25 @@
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest NO₂ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, NO₂ stays highest in calm air. Moderate winds show a clearer lift from the east–south-east than from other directions.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     },
     "pm25": {
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest PM₂.₅ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the north-west also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, PM₂.₅ is highest with moderate-to-stronger winds from the south-east, suggesting a contribution from that direction.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     }
   },
   "CLDP0438": {
@@ -186,13 +356,25 @@
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest NO₂ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the south-east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer the peak is less centred on calm air: levels are highest with moderate winds from the east, suggesting a contribution arriving from that direction as well as local build-up in still conditions.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     },
     "pm25": {
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest PM₂.₅ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the east–south-east appears at stronger winds.",
+        "summer": "In summer, PM₂.₅ is highest with moderate-to-stronger winds from the east–south-east, suggesting a contribution from that direction.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     }
   },
   "CLDP0439": {
@@ -200,13 +382,25 @@
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest NO₂ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, NO₂ stays highest in calm air. Moderate winds show a clearer lift from the east–south-east than from other directions.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the south-west."
+      }
     },
     "pm25": {
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest PM₂.₅ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east–south-east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, PM₂.₅ is highest with moderate-to-stronger winds from the south-east, suggesting a contribution from that direction.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     }
   },
   "CLDP0444": {
@@ -214,13 +408,51 @@
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest NO₂ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, NO₂ stays highest in calm air. Moderate winds show a clearer lift from the east–south-east than from other directions.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the south."
+      }
     },
     "pm25": {
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest PM₂.₅ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, PM₂.₅ is highest with moderate-to-stronger winds from the south-east, suggesting a contribution from that direction.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east and south."
+      }
+    }
+  },
+  "CLDP0451": {
+    "no2": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ],
+      "seasons": {
+        "winter": "Highest NO₂ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the north-east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer the peak is less centred on calm air: levels are highest with moderate winds from the east, suggesting a contribution arriving from that direction as well as local build-up in still conditions.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
+    },
+    "pm25": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ],
+      "seasons": {
+        "winter": "Highest PM₂.₅ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the north-east–east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the east–south-east appears at stronger winds.",
+        "summer": "In summer, PM₂.₅ is highest with moderate-to-stronger winds from the east–south-east, suggesting a contribution from that direction.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     }
   },
   "CLDP0452": {
@@ -228,13 +460,25 @@
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest NO₂ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east–south-east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer the peak is less centred on calm air: levels are highest with moderate winds from the east, suggesting a contribution arriving from that direction as well as local build-up in still conditions.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     },
     "pm25": {
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest PM₂.₅ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the east–south-east appears at stronger winds.",
+        "summer": "In summer, PM₂.₅ is highest with moderate-to-stronger winds from the east–south-east, suggesting a contribution from that direction.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     }
   },
   "CLDP0454": {
@@ -242,13 +486,25 @@
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, any directional pattern is weaker: levels are only a little higher with winds from the south-east than from the south-west. This points to a contribution from the south-east."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest NO₂ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, NO₂ stays highest in calm air. Moderate winds show a clearer lift from the east–south-east than from other directions.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east and south."
+      }
     },
     "pm25": {
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest PM₂.₅ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east–south-east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, PM₂.₅ is highest with moderate-to-stronger winds from the south-east, suggesting a contribution from that direction.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     }
   },
   "CLDP0455": {
@@ -256,13 +512,25 @@
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, any directional pattern is weaker: levels are only a little higher with winds from the south-east than from the north-east. This points to a contribution from the south-east."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest NO₂ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the south also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the north-west appears at stronger winds.",
+        "summer": "In summer the peak is less centred on calm air: levels are highest with moderate winds from the east, suggesting a contribution arriving from that direction as well as local build-up in still conditions.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     },
     "pm25": {
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest PM₂.₅ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, PM₂.₅ is highest with moderate-to-stronger winds from the east–south-east, suggesting a contribution from that direction.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     }
   },
   "CLDP0466": {
@@ -270,13 +538,25 @@
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest NO₂ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east–south-east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, NO₂ stays highest in calm air. Moderate winds show a clearer lift from the east–south-east than from other directions.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the south."
+      }
     },
     "pm25": {
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest PM₂.₅ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east–south-east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, PM₂.₅ is highest with moderate-to-stronger winds from the south-east, suggesting a contribution from that direction.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     }
   },
   "CLDP0467": {
@@ -284,13 +564,25 @@
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest NO₂ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, NO₂ is highest with moderate-to-stronger winds from the east, suggesting a contribution from that direction.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     },
     "pm25": {
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, any directional pattern is weaker: levels are only a little higher with winds from the east than from the north-west. This points to a contribution from the east."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest PM₂.₅ with winds from the west at moderate-to-higher speeds, pointing to a contribution from that direction. Calm periods are less dominant than this directional signal.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the east–south-east appears at stronger winds.",
+        "summer": "In summer, PM₂.₅ is highest with moderate-to-stronger winds from the east–south-east, suggesting a contribution from that direction.",
+        "autumn": "Levels are highest with moderate-to-stronger winds from the south-west–west, suggesting a contribution from that direction rather than build-up in still air alone."
+      }
     }
   },
   "CLDP0468": {
@@ -298,13 +590,25 @@
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest NO₂ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, NO₂ stays highest in calm air. Moderate winds show a clearer lift from the east than from other directions.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the north-west."
+      }
     },
     "pm25": {
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest PM₂.₅ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, PM₂.₅ is highest with moderate-to-stronger winds from the east–south-east, suggesting a contribution from that direction.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the north."
+      }
     }
   },
   "CLDP0469": {
@@ -312,13 +616,25 @@
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest NO₂ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, NO₂ stays highest in calm air. Moderate winds show a clearer lift from the east–south-east than from other directions.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     },
     "pm25": {
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest PM₂.₅ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, PM₂.₅ is highest with moderate-to-stronger winds from the south-east, suggesting a contribution from that direction.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     }
   },
   "CLDP0470": {
@@ -326,13 +642,25 @@
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest NO₂ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the south-east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer the peak is less centred on calm air: levels are highest with moderate winds from the east, suggesting a contribution arriving from that direction as well as local build-up in still conditions.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the south-west."
+      }
     },
     "pm25": {
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest PM₂.₅ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the east–south-east appears at stronger winds.",
+        "summer": "In summer, PM₂.₅ is highest with moderate-to-stronger winds from the south-east, suggesting a contribution from that direction.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east and south."
+      }
     }
   },
   "CLDP0474": {
@@ -340,13 +668,25 @@
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest NO₂ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east–south-east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, NO₂ stays highest in calm air. Moderate winds show a clearer lift from the east than from other directions.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the south."
+      }
     },
     "pm25": {
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest PM₂.₅ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, PM₂.₅ is highest with moderate-to-stronger winds from the south-east, suggesting a contribution from that direction.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     }
   },
   "CLDP0475": {
@@ -354,13 +694,25 @@
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, any directional pattern is weaker: levels are only a little higher with winds from the north than from the north-east. This points to a contribution from the north."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest NO₂ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the north and south also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the north-west appears at stronger winds.",
+        "summer": "In summer, NO₂ is highest with moderate-to-stronger winds from the east, suggesting a contribution from that direction.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     },
     "pm25": {
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest PM₂.₅ with winds from the north-west at moderate-to-higher speeds, pointing to a contribution from that direction. Calm periods are less dominant than this directional signal.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, PM₂.₅ is highest with moderate-to-stronger winds from the east–south-east, suggesting a contribution from that direction.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the north-west."
+      }
     }
   },
   "CLDP0476": {
@@ -368,13 +720,25 @@
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest NO₂ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, NO₂ stays highest in calm air. Moderate winds show a clearer lift from the east–south-east than from other directions.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the south-west–west."
+      }
     },
     "pm25": {
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest PM₂.₅ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the east–south-east appears at stronger winds.",
+        "summer": "In summer, PM₂.₅ is highest with moderate-to-stronger winds from the east–south-east, suggesting a contribution from that direction.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     }
   },
   "CLDP0477": {
@@ -382,13 +746,51 @@
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest NO₂ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, NO₂ stays highest in calm air. Moderate winds show a clearer lift from the east–south-east than from other directions.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the south-west."
+      }
     },
     "pm25": {
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest PM₂.₅ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east–south-east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, PM₂.₅ is highest with moderate-to-stronger winds from the east–south-east, suggesting a contribution from that direction. Levels also stay elevated in calm air.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east and south."
+      }
+    }
+  },
+  "CLDP0517": {
+    "no2": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ],
+      "seasons": {
+        "winter": "Highest NO₂ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, NO₂ stays highest in calm air. Moderate winds show a clearer lift from the east–south-east than from other directions.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east and south."
+      }
+    },
+    "pm25": {
+      "paragraphs": [
+        "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
+        "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
+      ],
+      "seasons": {
+        "winter": "Highest PM₂.₅ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, PM₂.₅ is highest with moderate-to-stronger winds from the south-east, suggesting a contribution from that direction. Levels also stay elevated in calm air.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the south."
+      }
     }
   },
   "CLDP0531": {
@@ -396,13 +798,25 @@
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest NO₂ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, NO₂ stays highest in calm air. Moderate winds show a clearer lift from the east than from other directions.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     },
     "pm25": {
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest PM₂.₅ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east–south-east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the north appears at stronger winds.",
+        "summer": "In summer, PM₂.₅ is highest with moderate-to-stronger winds from the east, suggesting a contribution from that direction. Levels also stay elevated in calm air.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the south."
+      }
     }
   },
   "CLDP0533": {
@@ -410,13 +824,25 @@
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest NO₂ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer the peak is less centred on calm air: levels are highest with moderate winds from the east–south-east, suggesting a contribution arriving from that direction as well as local build-up in still conditions.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     },
     "pm25": {
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, any directional pattern is weaker: levels are only a little higher with winds from the south-east than from the north-west. This points to a contribution from the south-east."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest PM₂.₅ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the south-east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer the peak is less centred on calm air: levels are highest with moderate winds from the north-east and west, suggesting a contribution arriving from that direction as well as local build-up in still conditions.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     }
   },
   "CLDP0539": {
@@ -424,13 +850,25 @@
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest NO₂ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east–south-east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, NO₂ stays highest in calm air. Moderate winds show a clearer lift from the east than from other directions.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     },
     "pm25": {
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest PM₂.₅ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, PM₂.₅ is highest with moderate-to-stronger winds from the east, suggesting a contribution from that direction.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the south."
+      }
     }
   },
   "CLDP0541": {
@@ -438,13 +876,25 @@
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest NO₂ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the north-west also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, NO₂ stays highest in calm air. Moderate winds show a clearer lift from the east than from other directions.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     },
     "pm25": {
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest PM₂.₅ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, PM₂.₅ is highest with moderate-to-stronger winds from the east, suggesting a contribution from that direction.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the south."
+      }
     }
   },
   "CLDP0542": {
@@ -452,13 +902,25 @@
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest NO₂ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east–south-east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer the peak is less centred on calm air: levels are highest with moderate winds from the east, suggesting a contribution arriving from that direction as well as local build-up in still conditions.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     },
     "pm25": {
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest PM₂.₅ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the east–south-east appears at stronger winds.",
+        "summer": "In summer, PM₂.₅ is highest with moderate-to-stronger winds from the east, suggesting a contribution from that direction.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     }
   },
   "CLDP0551": {
@@ -466,13 +928,25 @@
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest NO₂ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, NO₂ stays highest in calm air. Moderate winds show a clearer lift from the south-east than from other directions.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     },
     "pm25": {
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest PM₂.₅ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east–south-east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, PM₂.₅ is highest with moderate-to-stronger winds from the east, suggesting a contribution from that direction. Levels also stay elevated in calm air.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     }
   },
   "CLDP0552": {
@@ -480,13 +954,25 @@
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest NO₂ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer the peak is less centred on calm air: levels are highest with moderate winds from the east–south-east, suggesting a contribution arriving from that direction as well as local build-up in still conditions.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     },
     "pm25": {
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest PM₂.₅ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the south-east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the east–south-east appears at stronger winds.",
+        "summer": "In summer, PM₂.₅ is highest with moderate-to-stronger winds from the east, suggesting a contribution from that direction. Levels also stay elevated in calm air.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     }
   },
   "CLDP0553": {
@@ -494,13 +980,25 @@
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest NO₂ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer the peak is less centred on calm air: levels are highest with moderate winds from the east, suggesting a contribution arriving from that direction as well as local build-up in still conditions.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     },
     "pm25": {
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest PM₂.₅ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, PM₂.₅ is highest with moderate-to-stronger winds from the east, suggesting a contribution from that direction.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     }
   },
   "CLDP0554": {
@@ -508,13 +1006,25 @@
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest NO₂ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, NO₂ stays highest in calm air. Moderate winds show a clearer lift from the east than from other directions.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the north–north-west."
+      }
     },
     "pm25": {
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest PM₂.₅ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the east–south-east appears at stronger winds.",
+        "summer": "In summer, PM₂.₅ is highest with moderate-to-stronger winds from the east, suggesting a contribution from that direction. Levels also stay elevated in calm air.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     }
   },
   "CLDP0557": {
@@ -522,13 +1032,25 @@
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest NO₂ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer the peak is less centred on calm air: levels are highest with moderate winds from the east, suggesting a contribution arriving from that direction as well as local build-up in still conditions.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     },
     "pm25": {
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest PM₂.₅ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, PM₂.₅ is highest with moderate-to-stronger winds from the east, suggesting a contribution from that direction.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     }
   },
   "CLDP0558": {
@@ -536,13 +1058,25 @@
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest NO₂ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, NO₂ stays highest in calm air. Moderate winds show a clearer lift from the east–south-east than from other directions.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     },
     "pm25": {
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, any directional pattern is weaker: levels are only a little higher with winds from the south-east than from the north-west. This points to a contribution from the south-east."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest PM₂.₅ when the air is still — local sources building up in calm winter weather. Stronger winds from the south-east–south also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the north and south-east appears at stronger winds.",
+        "summer": "In summer, PM₂.₅ is highest with moderate-to-stronger winds from the south-east, suggesting a contribution from that direction.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     }
   },
   "CLDP0559": {
@@ -550,13 +1084,25 @@
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest NO₂ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, NO₂ stays highest in calm air. Moderate winds show a clearer lift from the east than from other directions.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     },
     "pm25": {
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest PM₂.₅ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, PM₂.₅ is highest with moderate-to-stronger winds from the east, suggesting a contribution from that direction.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     }
   },
   "CLDP0561": {
@@ -564,13 +1110,25 @@
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest NO₂ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, NO₂ stays highest in calm air. Moderate winds show a clearer lift from the south-east than from other directions.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the north."
+      }
     },
     "pm25": {
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest PM₂.₅ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the east–south-east appears at stronger winds.",
+        "summer": "In summer the peak is less centred on calm air: levels are highest with moderate winds from the east, suggesting a contribution arriving from that direction as well as local build-up in still conditions.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the south."
+      }
     }
   },
   "CLDP0564": {
@@ -578,13 +1136,25 @@
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest NO₂ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer the peak is less centred on calm air: levels are highest with moderate winds from the east, suggesting a contribution arriving from that direction as well as local build-up in still conditions.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     },
     "pm25": {
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest PM₂.₅ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the east–south-east appears at stronger winds.",
+        "summer": "In summer, PM₂.₅ is highest with moderate-to-stronger winds from the east–south-east, suggesting a contribution from that direction.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     }
   },
   "CLDP0589": {
@@ -592,13 +1162,25 @@
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest NO₂ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer, NO₂ stays highest in calm air. Moderate winds show a clearer lift from the east–south-east than from other directions.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     },
     "pm25": {
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the south-east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest PM₂.₅ when the air is still — local sources building up in calm winter weather. Light-to-moderate winds from the east–south-east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. A signal from the south-east appears at stronger winds.",
+        "summer": "In summer the peak is less centred on calm air: levels are highest with moderate winds from the east–south-east, suggesting a contribution arriving from that direction as well as local build-up in still conditions.",
+        "autumn": "Highest when the air is still, pointing to local sources. Stronger winds show a contribution from the east."
+      }
     }
   },
   "CLDP0651": {
@@ -606,13 +1188,25 @@
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest NO₂ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest NO₂ when the air is still — local sources building up in calm winter weather. Stronger winds, especially from the west, bring cleaner air.",
+        "spring": "Highest when the air is still, with a clear signal from the east at light winds — pointing to nearby sources and a contribution from that direction.",
+        "summer": "In summer the peak is less centred on calm air: levels are highest with moderate winds from the east, suggesting a contribution arriving from that direction as well as local build-up in still conditions.",
+        "autumn": "Highest when the air is still, with elevated levels also when winds are from the east and north-east. Stronger winds from the west and south-west tend to bring cleaner air."
+      }
     },
     "pm25": {
       "paragraphs": [
         "The plot shows the highest concentrations near the centre. That means this node records its highest PM₂.₅ when the air is still — pointing to pollution sources near the sensor that build up when there is little wind to disperse them.",
         "When winds are stronger, levels are highest when the wind is from the east. This points to a contribution from that direction."
-      ]
+      ],
+      "seasons": {
+        "winter": "Highest PM₂.₅ when the air is still — local sources building up in calm winter weather. Light winds from the east and north-east also show elevated levels.",
+        "spring": "Highest when the air is still, pointing to nearby sources. There is also a secondary signal from the east at moderate wind speeds.",
+        "summer": "In summer, PM₂.₅ is highest with moderate winds from the east, suggesting a contribution from that direction. Levels also stay elevated in calm air.",
+        "autumn": "Highest when the air is still, pointing to local sources building up in calm weather. Levels fall quickly as wind speeds increase."
+      }
     }
   }
 }

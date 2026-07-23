@@ -20,7 +20,7 @@ Canonical process doc for generating, summarising, and deploying polar plots on 
 Show **wind–pollution polar plots** on each eligible community sensor’s node-info page so people can see whether high concentrations sit in calm air (local build-up) or arrive more clearly from a wind direction.
 
 - **Production:** Squarespace embed on `https://www.breathelondon-communities.org/sensor-info?sitecode=…`
-- **UI:** Leaflet map + transparent annual polar PNG overlay, pollutant switcher (NO₂ / PM₂.₅), site “reading” paragraphs, and **Explore more…** (example local vs distant source diagrams + seasonal plot picker when assets exist).
+- **UI:** Leaflet map + transparent annual polar PNG overlay, pollutant switcher (NO₂ / PM₂.₅), site “reading” paragraphs, example local vs distant source diagrams under the map caveat, and **Explore more…** (seasonal plot picker when assets exist).
 - **Audience sites:** Bloomberg Philanthropies community/cultural nodes that are still open (`EndDate` null), plus a small **allowlist** of non-Bloomberg sitecodes (same gate in the widget and in R batch scripts).
 
 Local development / batch generation happens in this repo (`bl-polar-plots` Vite mock). Production assets and the embed bundle ship from `sensor-polar-plot`.
@@ -204,7 +204,7 @@ Prefix: `https://storage.googleapis.com/static.erg.ic.ac.uk/sensor-polar-plot/di
 | `public/polar-seasonal-sites.json` | Sites with full seasonal set |
 | `public/community-polar-2025-season-stats.json` | Seasonal surface stats (optional copy) |
 | `sensor-polar-plot/src/main.js` | Embed entry + eligibility gate |
-| `sensor-polar-plot/src/widget-html.js` | Markup incl. Explore more / examples |
+| `sensor-polar-plot/src/widget-html.js` | Markup incl. Explore more (seasonals) / under-map examples |
 | `sensor-polar-plot/src/components/polar-plot/*` | Map, readings, seasonals, image URLs |
 | `.github/workflows/build-and-deploy-to-cloud.yml` | GCS deploy (prod repo) |
 
@@ -230,3 +230,9 @@ Prefix: `https://storage.googleapis.com/static.erg.ic.ac.uk/sensor-polar-plot/di
 - Summaries are **draft interpretive text**, not formal source attribution.
 - Don’t commit API keys into new files; reuse the existing R/env pattern.
 - Keep `EXTRA_SITECODES` and `POLAR_PLOT_ALLOWLIST` in sync across repos.
+
+---
+
+## 8. Roadmap (not started)
+
+- **Linked interpretation video** — add a short linked video (or embed) that explains how to read polar plots (calm/local vs wind-direction patterns, rings/colour). Do **not** implement until assets and copy are ready; track here so it isn’t forgotten when polishing the node-info UX.

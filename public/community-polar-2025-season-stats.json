@@ -1,0 +1,7136 @@
+{
+  "CLDP0298": {
+    "no2": {
+      "winter": {
+        "ok": true,
+        "hours": 2087,
+        "pattern": "calm-local",
+        "calmLevel": 32.92,
+        "calmMax": 39.75,
+        "directionalLevel": 18.27,
+        "directionalMax": 30.44,
+        "dirVsCalm": 0.55,
+        "contrast": 2.06,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "SW",
+          "W"
+        ],
+        "notes": "calm_mean=32.92 calm_max=39.75 best=SE best_mean=18.27 dir_vs_calm=0.55 contrast=2.06 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2158,
+        "pattern": "calm-local",
+        "calmLevel": 34.34,
+        "calmMax": 39.24,
+        "directionalLevel": 20.9,
+        "directionalMax": 35.1,
+        "dirVsCalm": 0.61,
+        "contrast": 2.71,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=34.34 calm_max=39.24 best=SE best_mean=20.90 dir_vs_calm=0.61 contrast=2.71 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2184,
+        "pattern": "mixed",
+        "calmLevel": 19.18,
+        "calmMax": 23.01,
+        "directionalLevel": 20.17,
+        "directionalMax": 30.69,
+        "dirVsCalm": 1.05,
+        "contrast": 2.59,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=19.18 calm_max=23.01 best=E best_mean=20.17 dir_vs_calm=1.05 contrast=2.59 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 28.39,
+        "calmMax": 34.23,
+        "directionalLevel": 17.24,
+        "directionalMax": 26.72,
+        "dirVsCalm": 0.61,
+        "contrast": 2.12,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "SW",
+          "W"
+        ],
+        "notes": "calm_mean=28.39 calm_max=34.23 best=E best_mean=17.24 dir_vs_calm=0.61 contrast=2.12 peak_gt_calm=FALSE"
+      }
+    },
+    "pm25": {
+      "winter": {
+        "ok": true,
+        "hours": 2069,
+        "pattern": "calm-local",
+        "calmLevel": 20.12,
+        "calmMax": 33.53,
+        "directionalLevel": 15.41,
+        "directionalMax": 27.95,
+        "dirVsCalm": 0.77,
+        "contrast": 8.03,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=20.12 calm_max=33.53 best=E best_mean=15.41 dir_vs_calm=0.77 contrast=8.03 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2152,
+        "pattern": "calm-local",
+        "calmLevel": 21.45,
+        "calmMax": 26.26,
+        "directionalLevel": 12.05,
+        "directionalMax": 21.73,
+        "dirVsCalm": 0.56,
+        "contrast": 2.28,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "NW",
+          "W"
+        ],
+        "notes": "calm_mean=21.45 calm_max=26.26 best=SE best_mean=12.05 dir_vs_calm=0.56 contrast=2.28 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "directional",
+        "calmLevel": 7.72,
+        "calmMax": 9.26,
+        "directionalLevel": 9.94,
+        "directionalMax": 12.8,
+        "dirVsCalm": 1.29,
+        "contrast": 2.83,
+        "primaryDirs": [
+          "SE",
+          "E"
+        ],
+        "cleanDirs": [
+          "NW"
+        ],
+        "notes": "calm_mean=7.72 calm_max=9.26 best=SE+E best_mean=9.94 dir_vs_calm=1.29 contrast=2.83 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 10.12,
+        "calmMax": 12,
+        "directionalLevel": 5.46,
+        "directionalMax": 9.08,
+        "dirVsCalm": 0.54,
+        "contrast": 1.53,
+        "primaryDirs": [
+          "E",
+          "S"
+        ],
+        "cleanDirs": [],
+        "notes": "calm_mean=10.12 calm_max=12.00 best=E+S best_mean=5.46 dir_vs_calm=0.54 contrast=1.53 peak_gt_calm=FALSE"
+      }
+    }
+  },
+  "CLDP0299": {
+    "no2": {
+      "winter": {
+        "ok": true,
+        "hours": 1974,
+        "pattern": "calm-local",
+        "calmLevel": 43.49,
+        "calmMax": 52.51,
+        "directionalLevel": 23.54,
+        "directionalMax": 40.25,
+        "dirVsCalm": 0.54,
+        "contrast": 2.29,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=43.49 calm_max=52.51 best=E best_mean=23.54 dir_vs_calm=0.54 contrast=2.29 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "calm-local",
+        "calmLevel": 44.16,
+        "calmMax": 52.6,
+        "directionalLevel": 22.56,
+        "directionalMax": 45.23,
+        "dirVsCalm": 0.51,
+        "contrast": 2.44,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=44.16 calm_max=52.60 best=SE best_mean=22.56 dir_vs_calm=0.51 contrast=2.44 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2184,
+        "pattern": "mixed",
+        "calmLevel": 24.85,
+        "calmMax": 30.47,
+        "directionalLevel": 26.62,
+        "directionalMax": 39.85,
+        "dirVsCalm": 1.07,
+        "contrast": 2.77,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [],
+        "notes": "calm_mean=24.85 calm_max=30.47 best=E best_mean=26.62 dir_vs_calm=1.07 contrast=2.77 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 37.41,
+        "calmMax": 44.34,
+        "directionalLevel": 28.06,
+        "directionalMax": 35.68,
+        "dirVsCalm": 0.75,
+        "contrast": 2.68,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "NE"
+        ],
+        "notes": "calm_mean=37.41 calm_max=44.34 best=E best_mean=28.06 dir_vs_calm=0.75 contrast=2.68 peak_gt_calm=FALSE"
+      }
+    },
+    "pm25": {
+      "winter": {
+        "ok": true,
+        "hours": 1972,
+        "pattern": "calm-local",
+        "calmLevel": 18.27,
+        "calmMax": 27.9,
+        "directionalLevel": 14.7,
+        "directionalMax": 25.58,
+        "dirVsCalm": 0.81,
+        "contrast": 4.27,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=18.27 calm_max=27.90 best=E best_mean=14.70 dir_vs_calm=0.81 contrast=4.27 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "calm-local",
+        "calmLevel": 17.08,
+        "calmMax": 20.18,
+        "directionalLevel": 9.48,
+        "directionalMax": 16.81,
+        "dirVsCalm": 0.55,
+        "contrast": 1.85,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "NW",
+          "SW"
+        ],
+        "notes": "calm_mean=17.08 calm_max=20.18 best=SE best_mean=9.48 dir_vs_calm=0.55 contrast=1.85 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "directional",
+        "calmLevel": 7.19,
+        "calmMax": 8.45,
+        "directionalLevel": 9.29,
+        "directionalMax": 11.9,
+        "dirVsCalm": 1.29,
+        "contrast": 2.7,
+        "primaryDirs": [
+          "E",
+          "SE"
+        ],
+        "cleanDirs": [
+          "NW",
+          "W"
+        ],
+        "notes": "calm_mean=7.19 calm_max=8.45 best=E+SE best_mean=9.29 dir_vs_calm=1.29 contrast=2.70 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 9.15,
+        "calmMax": 10.87,
+        "directionalLevel": 5.79,
+        "directionalMax": 8.91,
+        "dirVsCalm": 0.63,
+        "contrast": 1.55,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "NW",
+          "N"
+        ],
+        "notes": "calm_mean=9.15 calm_max=10.87 best=E best_mean=5.79 dir_vs_calm=0.63 contrast=1.55 peak_gt_calm=FALSE"
+      }
+    }
+  },
+  "CLDP0300": {
+    "no2": {
+      "winter": {
+        "ok": true,
+        "hours": 1984,
+        "pattern": "calm-local",
+        "calmLevel": 67.23,
+        "calmMax": 121.64,
+        "directionalLevel": 40.9,
+        "directionalMax": 66.6,
+        "dirVsCalm": 0.61,
+        "contrast": 1.96,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "SW",
+          "S"
+        ],
+        "notes": "calm_mean=67.23 calm_max=121.64 best=E best_mean=40.90 dir_vs_calm=0.61 contrast=1.96 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2176,
+        "pattern": "calm-local",
+        "calmLevel": 52.58,
+        "calmMax": 58.42,
+        "directionalLevel": 28.09,
+        "directionalMax": 50.88,
+        "dirVsCalm": 0.53,
+        "contrast": 2.03,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "NE"
+        ],
+        "notes": "calm_mean=52.58 calm_max=58.42 best=SE best_mean=28.09 dir_vs_calm=0.53 contrast=2.03 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2184,
+        "pattern": "calm-local",
+        "calmLevel": 26.7,
+        "calmMax": 35.28,
+        "directionalLevel": 22.76,
+        "directionalMax": 37.31,
+        "dirVsCalm": 0.85,
+        "contrast": 2.11,
+        "primaryDirs": [
+          "SE",
+          "E"
+        ],
+        "cleanDirs": [
+          "SW"
+        ],
+        "notes": "calm_mean=26.70 calm_max=35.28 best=SE+E best_mean=22.76 dir_vs_calm=0.85 contrast=2.11 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 39.37,
+        "calmMax": 44.2,
+        "directionalLevel": 22.04,
+        "directionalMax": 45.47,
+        "dirVsCalm": 0.56,
+        "contrast": 1.58,
+        "primaryDirs": [
+          "NW",
+          "N"
+        ],
+        "cleanDirs": [
+          "NE",
+          "W"
+        ],
+        "notes": "calm_mean=39.37 calm_max=44.20 best=NW+N best_mean=22.04 dir_vs_calm=0.56 contrast=1.58 peak_gt_calm=TRUE"
+      }
+    },
+    "pm25": {
+      "winter": {
+        "ok": true,
+        "hours": 1984,
+        "pattern": "calm-local",
+        "calmLevel": 17.3,
+        "calmMax": 22.68,
+        "directionalLevel": 10.17,
+        "directionalMax": 21.41,
+        "dirVsCalm": 0.59,
+        "contrast": 2.35,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "N"
+        ],
+        "notes": "calm_mean=17.30 calm_max=22.68 best=E best_mean=10.17 dir_vs_calm=0.59 contrast=2.35 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2146,
+        "pattern": "calm-local",
+        "calmLevel": 17.91,
+        "calmMax": 20.98,
+        "directionalLevel": 11.95,
+        "directionalMax": 17.64,
+        "dirVsCalm": 0.67,
+        "contrast": 3.1,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=17.91 calm_max=20.98 best=SE best_mean=11.95 dir_vs_calm=0.67 contrast=3.10 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "directional",
+        "calmLevel": 10.94,
+        "calmMax": 12.23,
+        "directionalLevel": 13.08,
+        "directionalMax": 15.99,
+        "dirVsCalm": 1.2,
+        "contrast": 2.19,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "NW",
+          "W"
+        ],
+        "notes": "calm_mean=10.94 calm_max=12.23 best=SE best_mean=13.08 dir_vs_calm=1.20 contrast=2.19 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 13.51,
+        "calmMax": 15.03,
+        "directionalLevel": 11.56,
+        "directionalMax": 14.02,
+        "dirVsCalm": 0.86,
+        "contrast": 2.06,
+        "primaryDirs": [
+          "S"
+        ],
+        "cleanDirs": [
+          "N",
+          "NE"
+        ],
+        "notes": "calm_mean=13.51 calm_max=15.03 best=S best_mean=11.56 dir_vs_calm=0.86 contrast=2.06 peak_gt_calm=FALSE"
+      }
+    }
+  },
+  "CLDP0306": {
+    "no2": {
+      "winter": {
+        "ok": true,
+        "hours": 2058,
+        "pattern": "calm-local",
+        "calmLevel": 31.74,
+        "calmMax": 39.74,
+        "directionalLevel": 23.4,
+        "directionalMax": 34.37,
+        "dirVsCalm": 0.74,
+        "contrast": 1.8,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "N",
+          "NW"
+        ],
+        "notes": "calm_mean=31.74 calm_max=39.74 best=E best_mean=23.40 dir_vs_calm=0.74 contrast=1.80 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2205,
+        "pattern": "calm-local",
+        "calmLevel": 34.15,
+        "calmMax": 40.34,
+        "directionalLevel": 21.3,
+        "directionalMax": 34.88,
+        "dirVsCalm": 0.62,
+        "contrast": 2.22,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "NW"
+        ],
+        "notes": "calm_mean=34.15 calm_max=40.34 best=SE best_mean=21.30 dir_vs_calm=0.62 contrast=2.22 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2116,
+        "pattern": "calm-local",
+        "calmLevel": 21.65,
+        "calmMax": 28.28,
+        "directionalLevel": 16.78,
+        "directionalMax": 27.09,
+        "dirVsCalm": 0.78,
+        "contrast": 2.08,
+        "primaryDirs": [
+          "E",
+          "SE"
+        ],
+        "cleanDirs": [
+          "N"
+        ],
+        "notes": "calm_mean=21.65 calm_max=28.28 best=E+SE best_mean=16.78 dir_vs_calm=0.78 contrast=2.08 peak_gt_calm=FALSE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1991,
+        "pattern": "calm-local",
+        "calmLevel": 27.5,
+        "calmMax": 33.94,
+        "directionalLevel": 15.3,
+        "directionalMax": 26.82,
+        "dirVsCalm": 0.56,
+        "contrast": 1.65,
+        "primaryDirs": [
+          "E",
+          "S"
+        ],
+        "cleanDirs": [
+          "W",
+          "NE"
+        ],
+        "notes": "calm_mean=27.50 calm_max=33.94 best=E+S best_mean=15.30 dir_vs_calm=0.56 contrast=1.65 peak_gt_calm=FALSE"
+      }
+    },
+    "pm25": {
+      "winter": {
+        "ok": true,
+        "hours": 2058,
+        "pattern": "calm-local",
+        "calmLevel": 16.1,
+        "calmMax": 23.61,
+        "directionalLevel": 11.54,
+        "directionalMax": 23.3,
+        "dirVsCalm": 0.72,
+        "contrast": 1.84,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "S"
+        ],
+        "notes": "calm_mean=16.10 calm_max=23.61 best=E best_mean=11.54 dir_vs_calm=0.72 contrast=1.84 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 1532,
+        "pattern": "calm-local",
+        "calmLevel": 17.63,
+        "calmMax": 21.4,
+        "directionalLevel": 14.44,
+        "directionalMax": 23.17,
+        "dirVsCalm": 0.82,
+        "contrast": 4.15,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=17.63 calm_max=21.40 best=SE best_mean=14.44 dir_vs_calm=0.82 contrast=4.15 peak_gt_calm=TRUE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2116,
+        "pattern": "directional",
+        "calmLevel": 10.41,
+        "calmMax": 11.99,
+        "directionalLevel": 13.67,
+        "directionalMax": 16.71,
+        "dirVsCalm": 1.31,
+        "contrast": 2.1,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "NW",
+          "N"
+        ],
+        "notes": "calm_mean=10.41 calm_max=11.99 best=SE best_mean=13.67 dir_vs_calm=1.31 contrast=2.10 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1984,
+        "pattern": "calm-local",
+        "calmLevel": 13.08,
+        "calmMax": 14.67,
+        "directionalLevel": 10.51,
+        "directionalMax": 12.93,
+        "dirVsCalm": 0.8,
+        "contrast": 1.39,
+        "primaryDirs": [
+          "S"
+        ],
+        "cleanDirs": [
+          "N",
+          "NE"
+        ],
+        "notes": "calm_mean=13.08 calm_max=14.67 best=S best_mean=10.51 dir_vs_calm=0.80 contrast=1.39 peak_gt_calm=FALSE"
+      }
+    }
+  },
+  "CLDP0308": {
+    "no2": {
+      "winter": {
+        "ok": true,
+        "hours": 1324,
+        "pattern": "calm-local",
+        "calmLevel": 37.32,
+        "calmMax": 47.31,
+        "directionalLevel": 26.29,
+        "directionalMax": 35.82,
+        "dirVsCalm": 0.7,
+        "contrast": 1.97,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "NW",
+          "N"
+        ],
+        "notes": "calm_mean=37.32 calm_max=47.31 best=E best_mean=26.29 dir_vs_calm=0.70 contrast=1.97 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "calm-local",
+        "calmLevel": 40.19,
+        "calmMax": 45.87,
+        "directionalLevel": 24.96,
+        "directionalMax": 40.87,
+        "dirVsCalm": 0.62,
+        "contrast": 2.31,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "NE",
+          "W"
+        ],
+        "notes": "calm_mean=40.19 calm_max=45.87 best=SE best_mean=24.96 dir_vs_calm=0.62 contrast=2.31 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2184,
+        "pattern": "calm-local",
+        "calmLevel": 22.77,
+        "calmMax": 31.9,
+        "directionalLevel": 20.36,
+        "directionalMax": 31.54,
+        "dirVsCalm": 0.89,
+        "contrast": 2.27,
+        "primaryDirs": [
+          "SE",
+          "E"
+        ],
+        "cleanDirs": [
+          "N",
+          "SW"
+        ],
+        "notes": "calm_mean=22.77 calm_max=31.90 best=SE+E best_mean=20.36 dir_vs_calm=0.89 contrast=2.27 peak_gt_calm=FALSE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1923,
+        "pattern": "calm-local",
+        "calmLevel": 31.69,
+        "calmMax": 37.67,
+        "directionalLevel": 19.62,
+        "directionalMax": 33.29,
+        "dirVsCalm": 0.62,
+        "contrast": 1.74,
+        "primaryDirs": [
+          "S",
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "NE"
+        ],
+        "notes": "calm_mean=31.69 calm_max=37.67 best=S+E best_mean=19.62 dir_vs_calm=0.62 contrast=1.74 peak_gt_calm=FALSE"
+      }
+    },
+    "pm25": {
+      "winter": {
+        "ok": true,
+        "hours": 1318,
+        "pattern": "calm-local",
+        "calmLevel": 16.22,
+        "calmMax": 23.16,
+        "directionalLevel": 12.63,
+        "directionalMax": 25.15,
+        "dirVsCalm": 0.78,
+        "contrast": 4.28,
+        "primaryDirs": [
+          "SE",
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "N"
+        ],
+        "notes": "calm_mean=16.22 calm_max=23.16 best=SE+E best_mean=12.63 dir_vs_calm=0.78 contrast=4.28 peak_gt_calm=TRUE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2121,
+        "pattern": "calm-local",
+        "calmLevel": 17.6,
+        "calmMax": 20.92,
+        "directionalLevel": 12.44,
+        "directionalMax": 18.45,
+        "dirVsCalm": 0.71,
+        "contrast": 2.48,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=17.60 calm_max=20.92 best=SE best_mean=12.44 dir_vs_calm=0.71 contrast=2.48 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "directional",
+        "calmLevel": 10,
+        "calmMax": 11.43,
+        "directionalLevel": 13.02,
+        "directionalMax": 17.56,
+        "dirVsCalm": 1.3,
+        "contrast": 2.26,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "NW",
+          "W"
+        ],
+        "notes": "calm_mean=10.00 calm_max=11.43 best=SE best_mean=13.02 dir_vs_calm=1.30 contrast=2.26 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1923,
+        "pattern": "calm-local",
+        "calmLevel": 13.03,
+        "calmMax": 14.08,
+        "directionalLevel": 10.12,
+        "directionalMax": 13.66,
+        "dirVsCalm": 0.78,
+        "contrast": 1.94,
+        "primaryDirs": [
+          "E",
+          "S"
+        ],
+        "cleanDirs": [
+          "N",
+          "NW"
+        ],
+        "notes": "calm_mean=13.03 calm_max=14.08 best=E+S best_mean=10.12 dir_vs_calm=0.78 contrast=1.94 peak_gt_calm=FALSE"
+      }
+    }
+  },
+  "CLDP0316": {
+    "no2": {
+      "winter": {
+        "ok": true,
+        "hours": 1938,
+        "pattern": "calm-local",
+        "calmLevel": 42.62,
+        "calmMax": 54.57,
+        "directionalLevel": 28.54,
+        "directionalMax": 41.45,
+        "dirVsCalm": 0.67,
+        "contrast": 2.18,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "N",
+          "SW"
+        ],
+        "notes": "calm_mean=42.62 calm_max=54.57 best=E best_mean=28.54 dir_vs_calm=0.67 contrast=2.18 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "calm-local",
+        "calmLevel": 39.49,
+        "calmMax": 43.35,
+        "directionalLevel": 28.75,
+        "directionalMax": 39.46,
+        "dirVsCalm": 0.73,
+        "contrast": 2.45,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "NE",
+          "W"
+        ],
+        "notes": "calm_mean=39.49 calm_max=43.35 best=SE best_mean=28.75 dir_vs_calm=0.73 contrast=2.45 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2184,
+        "pattern": "calm-local",
+        "calmLevel": 21.97,
+        "calmMax": 31.05,
+        "directionalLevel": 20.12,
+        "directionalMax": 28.25,
+        "dirVsCalm": 0.92,
+        "contrast": 2.01,
+        "primaryDirs": [
+          "SE",
+          "E"
+        ],
+        "cleanDirs": [
+          "N",
+          "SW"
+        ],
+        "notes": "calm_mean=21.97 calm_max=31.05 best=SE+E best_mean=20.12 dir_vs_calm=0.92 contrast=2.01 peak_gt_calm=FALSE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 34.93,
+        "calmMax": 41.34,
+        "directionalLevel": 21.25,
+        "directionalMax": 32.89,
+        "dirVsCalm": 0.61,
+        "contrast": 1.67,
+        "primaryDirs": [
+          "S"
+        ],
+        "cleanDirs": [
+          "W",
+          "N"
+        ],
+        "notes": "calm_mean=34.93 calm_max=41.34 best=S best_mean=21.25 dir_vs_calm=0.61 contrast=1.67 peak_gt_calm=FALSE"
+      }
+    },
+    "pm25": {
+      "winter": {
+        "ok": true,
+        "hours": 1934,
+        "pattern": "calm-local",
+        "calmLevel": 15.65,
+        "calmMax": 22.46,
+        "directionalLevel": 10.52,
+        "directionalMax": 21.93,
+        "dirVsCalm": 0.67,
+        "contrast": 2.16,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "N",
+          "W"
+        ],
+        "notes": "calm_mean=15.65 calm_max=22.46 best=E best_mean=10.52 dir_vs_calm=0.67 contrast=2.16 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2170,
+        "pattern": "calm-local",
+        "calmLevel": 16.97,
+        "calmMax": 19.44,
+        "directionalLevel": 12.49,
+        "directionalMax": 18.4,
+        "dirVsCalm": 0.74,
+        "contrast": 2.87,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "NW"
+        ],
+        "notes": "calm_mean=16.97 calm_max=19.44 best=SE best_mean=12.49 dir_vs_calm=0.74 contrast=2.87 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "directional",
+        "calmLevel": 10.16,
+        "calmMax": 11.46,
+        "directionalLevel": 13.04,
+        "directionalMax": 16.51,
+        "dirVsCalm": 1.28,
+        "contrast": 2.28,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "NW",
+          "N"
+        ],
+        "notes": "calm_mean=10.16 calm_max=11.46 best=SE best_mean=13.04 dir_vs_calm=1.28 contrast=2.28 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 12.64,
+        "calmMax": 13.69,
+        "directionalLevel": 9.27,
+        "directionalMax": 12.51,
+        "dirVsCalm": 0.73,
+        "contrast": 1.76,
+        "primaryDirs": [
+          "S"
+        ],
+        "cleanDirs": [
+          "N",
+          "NE"
+        ],
+        "notes": "calm_mean=12.64 calm_max=13.69 best=S best_mean=9.27 dir_vs_calm=0.73 contrast=1.76 peak_gt_calm=FALSE"
+      }
+    }
+  },
+  "CLDP0317": {
+    "no2": {
+      "winter": {
+        "ok": true,
+        "hours": 1807,
+        "pattern": "calm-local",
+        "calmLevel": 33.56,
+        "calmMax": 47.8,
+        "directionalLevel": 21.6,
+        "directionalMax": 29.36,
+        "dirVsCalm": 0.64,
+        "contrast": 1.7,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "S",
+          "SW"
+        ],
+        "notes": "calm_mean=33.56 calm_max=47.80 best=E best_mean=21.60 dir_vs_calm=0.64 contrast=1.70 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "calm-local",
+        "calmLevel": 34.65,
+        "calmMax": 38.97,
+        "directionalLevel": 22.74,
+        "directionalMax": 35.65,
+        "dirVsCalm": 0.66,
+        "contrast": 2.4,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "NE"
+        ],
+        "notes": "calm_mean=34.65 calm_max=38.97 best=SE best_mean=22.74 dir_vs_calm=0.66 contrast=2.40 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2184,
+        "pattern": "calm-local",
+        "calmLevel": 20.04,
+        "calmMax": 28.18,
+        "directionalLevel": 17.02,
+        "directionalMax": 27.68,
+        "dirVsCalm": 0.85,
+        "contrast": 1.93,
+        "primaryDirs": [
+          "SE",
+          "E"
+        ],
+        "cleanDirs": [
+          "SW"
+        ],
+        "notes": "calm_mean=20.04 calm_max=28.18 best=SE+E best_mean=17.02 dir_vs_calm=0.85 contrast=1.93 peak_gt_calm=FALSE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 29.78,
+        "calmMax": 35.28,
+        "directionalLevel": 16.69,
+        "directionalMax": 29.9,
+        "dirVsCalm": 0.56,
+        "contrast": 1.66,
+        "primaryDirs": [
+          "NW"
+        ],
+        "cleanDirs": [
+          "NE",
+          "W"
+        ],
+        "notes": "calm_mean=29.78 calm_max=35.28 best=NW best_mean=16.69 dir_vs_calm=0.56 contrast=1.66 peak_gt_calm=FALSE"
+      }
+    },
+    "pm25": {
+      "winter": {
+        "ok": true,
+        "hours": 1801,
+        "pattern": "calm-local",
+        "calmLevel": 15.65,
+        "calmMax": 21.76,
+        "directionalLevel": 9.49,
+        "directionalMax": 17.95,
+        "dirVsCalm": 0.61,
+        "contrast": 2.49,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "N"
+        ],
+        "notes": "calm_mean=15.65 calm_max=21.76 best=E best_mean=9.49 dir_vs_calm=0.61 contrast=2.49 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2131,
+        "pattern": "calm-local",
+        "calmLevel": 16.71,
+        "calmMax": 20.13,
+        "directionalLevel": 11.15,
+        "directionalMax": 16.14,
+        "dirVsCalm": 0.67,
+        "contrast": 2.52,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=16.71 calm_max=20.13 best=SE best_mean=11.15 dir_vs_calm=0.67 contrast=2.52 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "directional",
+        "calmLevel": 9.64,
+        "calmMax": 10.82,
+        "directionalLevel": 12.23,
+        "directionalMax": 15.91,
+        "dirVsCalm": 1.27,
+        "contrast": 2.17,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "NW",
+          "N"
+        ],
+        "notes": "calm_mean=9.64 calm_max=10.82 best=SE best_mean=12.23 dir_vs_calm=1.27 contrast=2.17 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 12.42,
+        "calmMax": 13.83,
+        "directionalLevel": 9.42,
+        "directionalMax": 12.46,
+        "dirVsCalm": 0.76,
+        "contrast": 1.75,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "N",
+          "NE"
+        ],
+        "notes": "calm_mean=12.42 calm_max=13.83 best=E best_mean=9.42 dir_vs_calm=0.76 contrast=1.75 peak_gt_calm=FALSE"
+      }
+    }
+  },
+  "CLDP0353": {
+    "no2": {
+      "winter": {
+        "ok": true,
+        "hours": 2063,
+        "pattern": "calm-local",
+        "calmLevel": 44.01,
+        "calmMax": 57.13,
+        "directionalLevel": 26.38,
+        "directionalMax": 37.17,
+        "dirVsCalm": 0.6,
+        "contrast": 2.4,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=44.01 calm_max=57.13 best=E best_mean=26.38 dir_vs_calm=0.60 contrast=2.40 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "calm-local",
+        "calmLevel": 44.26,
+        "calmMax": 53.14,
+        "directionalLevel": 25.73,
+        "directionalMax": 49.76,
+        "dirVsCalm": 0.58,
+        "contrast": 1.94,
+        "primaryDirs": [
+          "NW"
+        ],
+        "cleanDirs": [
+          "W",
+          "NE"
+        ],
+        "notes": "calm_mean=44.26 calm_max=53.14 best=NW best_mean=25.73 dir_vs_calm=0.58 contrast=1.94 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2184,
+        "pattern": "directional",
+        "calmLevel": 27.67,
+        "calmMax": 34.79,
+        "directionalLevel": 33.96,
+        "directionalMax": 53.92,
+        "dirVsCalm": 1.23,
+        "contrast": 3.44,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "S",
+          "SW"
+        ],
+        "notes": "calm_mean=27.67 calm_max=34.79 best=E best_mean=33.96 dir_vs_calm=1.23 contrast=3.44 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1990,
+        "pattern": "calm-local",
+        "calmLevel": 39.67,
+        "calmMax": 47.92,
+        "directionalLevel": 33.57,
+        "directionalMax": 43.62,
+        "dirVsCalm": 0.85,
+        "contrast": 2.85,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "NE"
+        ],
+        "notes": "calm_mean=39.67 calm_max=47.92 best=E best_mean=33.57 dir_vs_calm=0.85 contrast=2.85 peak_gt_calm=FALSE"
+      }
+    },
+    "pm25": {
+      "winter": {
+        "ok": true,
+        "hours": 2052,
+        "pattern": "calm-local",
+        "calmLevel": 14.67,
+        "calmMax": 22.86,
+        "directionalLevel": 12.24,
+        "directionalMax": 21.61,
+        "dirVsCalm": 0.83,
+        "contrast": 5.25,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "NW"
+        ],
+        "notes": "calm_mean=14.67 calm_max=22.86 best=E best_mean=12.24 dir_vs_calm=0.83 contrast=5.25 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "calm-local",
+        "calmLevel": 15.89,
+        "calmMax": 19.48,
+        "directionalLevel": 9.68,
+        "directionalMax": 16.81,
+        "dirVsCalm": 0.61,
+        "contrast": 2.23,
+        "primaryDirs": [
+          "SE",
+          "E"
+        ],
+        "cleanDirs": [
+          "NW",
+          "SW"
+        ],
+        "notes": "calm_mean=15.89 calm_max=19.48 best=SE+E best_mean=9.68 dir_vs_calm=0.61 contrast=2.23 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "directional",
+        "calmLevel": 6.72,
+        "calmMax": 8.03,
+        "directionalLevel": 9.9,
+        "directionalMax": 13.08,
+        "dirVsCalm": 1.47,
+        "contrast": 2.82,
+        "primaryDirs": [
+          "E",
+          "SE"
+        ],
+        "cleanDirs": [
+          "NW",
+          "W"
+        ],
+        "notes": "calm_mean=6.72 calm_max=8.03 best=E+SE best_mean=9.90 dir_vs_calm=1.47 contrast=2.82 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1990,
+        "pattern": "calm-local",
+        "calmLevel": 7.9,
+        "calmMax": 10.11,
+        "directionalLevel": 5.61,
+        "directionalMax": 8.24,
+        "dirVsCalm": 0.71,
+        "contrast": 1.82,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "NW",
+          "N"
+        ],
+        "notes": "calm_mean=7.90 calm_max=10.11 best=E best_mean=5.61 dir_vs_calm=0.71 contrast=1.82 peak_gt_calm=FALSE"
+      }
+    }
+  },
+  "CLDP0362": {
+    "no2": {
+      "winter": {
+        "ok": true,
+        "hours": 2063,
+        "pattern": "calm-local",
+        "calmLevel": 36.02,
+        "calmMax": 49.55,
+        "directionalLevel": 20.98,
+        "directionalMax": 35.39,
+        "dirVsCalm": 0.58,
+        "contrast": 2.56,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "SW",
+          "W"
+        ],
+        "notes": "calm_mean=36.02 calm_max=49.55 best=E best_mean=20.98 dir_vs_calm=0.58 contrast=2.56 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "calm-local",
+        "calmLevel": 33.44,
+        "calmMax": 38.79,
+        "directionalLevel": 21.81,
+        "directionalMax": 38.74,
+        "dirVsCalm": 0.65,
+        "contrast": 2.8,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=33.44 calm_max=38.79 best=SE best_mean=21.81 dir_vs_calm=0.65 contrast=2.80 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2184,
+        "pattern": "directional",
+        "calmLevel": 20.54,
+        "calmMax": 24.49,
+        "directionalLevel": 25.25,
+        "directionalMax": 36.81,
+        "dirVsCalm": 1.23,
+        "contrast": 2.95,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "S",
+          "SW"
+        ],
+        "notes": "calm_mean=20.54 calm_max=24.49 best=E best_mean=25.25 dir_vs_calm=1.23 contrast=2.95 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 27.43,
+        "calmMax": 33.55,
+        "directionalLevel": 20.65,
+        "directionalMax": 32.08,
+        "dirVsCalm": 0.75,
+        "contrast": 2.28,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "NE"
+        ],
+        "notes": "calm_mean=27.43 calm_max=33.55 best=E best_mean=20.65 dir_vs_calm=0.75 contrast=2.28 peak_gt_calm=FALSE"
+      }
+    },
+    "pm25": {
+      "winter": {
+        "ok": true,
+        "hours": 2041,
+        "pattern": "calm-local",
+        "calmLevel": 18.82,
+        "calmMax": 30.96,
+        "directionalLevel": 13.77,
+        "directionalMax": 23.58,
+        "dirVsCalm": 0.73,
+        "contrast": 6.28,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "NW"
+        ],
+        "notes": "calm_mean=18.82 calm_max=30.96 best=E best_mean=13.77 dir_vs_calm=0.73 contrast=6.28 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "calm-local",
+        "calmLevel": 18.25,
+        "calmMax": 22.03,
+        "directionalLevel": 8.65,
+        "directionalMax": 15.42,
+        "dirVsCalm": 0.47,
+        "contrast": 1.74,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "SW",
+          "NW"
+        ],
+        "notes": "calm_mean=18.25 calm_max=22.03 best=E best_mean=8.65 dir_vs_calm=0.47 contrast=1.74 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "directional",
+        "calmLevel": 7,
+        "calmMax": 8,
+        "directionalLevel": 9.25,
+        "directionalMax": 11.21,
+        "dirVsCalm": 1.32,
+        "contrast": 2.76,
+        "primaryDirs": [
+          "E",
+          "SE"
+        ],
+        "cleanDirs": [
+          "NW",
+          "W"
+        ],
+        "notes": "calm_mean=7.00 calm_max=8.00 best=E+SE best_mean=9.25 dir_vs_calm=1.32 contrast=2.76 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 8.9,
+        "calmMax": 12.1,
+        "directionalLevel": 5.7,
+        "directionalMax": 8.93,
+        "dirVsCalm": 0.64,
+        "contrast": 1.8,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "NW"
+        ],
+        "notes": "calm_mean=8.90 calm_max=12.10 best=E best_mean=5.70 dir_vs_calm=0.64 contrast=1.80 peak_gt_calm=FALSE"
+      }
+    }
+  },
+  "CLDP0384": {
+    "no2": {
+      "winter": {
+        "ok": true,
+        "hours": 2063,
+        "pattern": "calm-local",
+        "calmLevel": 41.7,
+        "calmMax": 55.37,
+        "directionalLevel": 24.71,
+        "directionalMax": 44.29,
+        "dirVsCalm": 0.59,
+        "contrast": 2.37,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "SW",
+          "W"
+        ],
+        "notes": "calm_mean=41.70 calm_max=55.37 best=E best_mean=24.71 dir_vs_calm=0.59 contrast=2.37 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "calm-local",
+        "calmLevel": 48.86,
+        "calmMax": 59.49,
+        "directionalLevel": 28.23,
+        "directionalMax": 58.17,
+        "dirVsCalm": 0.58,
+        "contrast": 2.07,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "NE"
+        ],
+        "notes": "calm_mean=48.86 calm_max=59.49 best=E best_mean=28.23 dir_vs_calm=0.58 contrast=2.07 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2184,
+        "pattern": "directional",
+        "calmLevel": 31.17,
+        "calmMax": 41.93,
+        "directionalLevel": 40.27,
+        "directionalMax": 65.93,
+        "dirVsCalm": 1.29,
+        "contrast": 3.61,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "S",
+          "N"
+        ],
+        "notes": "calm_mean=31.17 calm_max=41.93 best=E best_mean=40.27 dir_vs_calm=1.29 contrast=3.61 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 42.71,
+        "calmMax": 50.86,
+        "directionalLevel": 36.54,
+        "directionalMax": 49.03,
+        "dirVsCalm": 0.86,
+        "contrast": 2.94,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "NE"
+        ],
+        "notes": "calm_mean=42.71 calm_max=50.86 best=E best_mean=36.54 dir_vs_calm=0.86 contrast=2.94 peak_gt_calm=FALSE"
+      }
+    },
+    "pm25": {
+      "winter": {
+        "ok": true,
+        "hours": 2049,
+        "pattern": "calm-local",
+        "calmLevel": 16.75,
+        "calmMax": 26.69,
+        "directionalLevel": 14.5,
+        "directionalMax": 23.73,
+        "dirVsCalm": 0.87,
+        "contrast": 5.09,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=16.75 calm_max=26.69 best=E best_mean=14.50 dir_vs_calm=0.87 contrast=5.09 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "calm-local",
+        "calmLevel": 16.51,
+        "calmMax": 19.65,
+        "directionalLevel": 9.49,
+        "directionalMax": 16.93,
+        "dirVsCalm": 0.57,
+        "contrast": 1.94,
+        "primaryDirs": [
+          "SE",
+          "E"
+        ],
+        "cleanDirs": [
+          "SW",
+          "NW"
+        ],
+        "notes": "calm_mean=16.51 calm_max=19.65 best=SE+E best_mean=9.49 dir_vs_calm=0.57 contrast=1.94 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "directional",
+        "calmLevel": 6.57,
+        "calmMax": 7.83,
+        "directionalLevel": 9.42,
+        "directionalMax": 11.9,
+        "dirVsCalm": 1.43,
+        "contrast": 2.68,
+        "primaryDirs": [
+          "E",
+          "SE"
+        ],
+        "cleanDirs": [
+          "NW"
+        ],
+        "notes": "calm_mean=6.57 calm_max=7.83 best=E+SE best_mean=9.42 dir_vs_calm=1.43 contrast=2.68 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 8.8,
+        "calmMax": 10.63,
+        "directionalLevel": 5.56,
+        "directionalMax": 8.49,
+        "dirVsCalm": 0.63,
+        "contrast": 1.56,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "N",
+          "NW"
+        ],
+        "notes": "calm_mean=8.80 calm_max=10.63 best=E best_mean=5.56 dir_vs_calm=0.63 contrast=1.56 peak_gt_calm=FALSE"
+      }
+    }
+  },
+  "CLDP0390": {
+    "no2": {
+      "winter": {
+        "ok": true,
+        "hours": 1110,
+        "pattern": "calm-local",
+        "calmLevel": 37.37,
+        "calmMax": 51.46,
+        "directionalLevel": 21.62,
+        "directionalMax": 28.49,
+        "dirVsCalm": 0.58,
+        "contrast": 1.89,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=37.37 calm_max=51.46 best=SE best_mean=21.62 dir_vs_calm=0.58 contrast=1.89 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "calm-local",
+        "calmLevel": 38.54,
+        "calmMax": 45.72,
+        "directionalLevel": 22.19,
+        "directionalMax": 40.48,
+        "dirVsCalm": 0.58,
+        "contrast": 2.41,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=38.54 calm_max=45.72 best=SE best_mean=22.19 dir_vs_calm=0.58 contrast=2.41 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2183,
+        "pattern": "mixed",
+        "calmLevel": 22.96,
+        "calmMax": 28.47,
+        "directionalLevel": 25.45,
+        "directionalMax": 38.54,
+        "dirVsCalm": 1.11,
+        "contrast": 2.81,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [],
+        "notes": "calm_mean=22.96 calm_max=28.47 best=E best_mean=25.45 dir_vs_calm=1.11 contrast=2.81 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 33.23,
+        "calmMax": 41.02,
+        "directionalLevel": 20.02,
+        "directionalMax": 33.66,
+        "dirVsCalm": 0.6,
+        "contrast": 2.04,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "NE",
+          "W"
+        ],
+        "notes": "calm_mean=33.23 calm_max=41.02 best=E best_mean=20.02 dir_vs_calm=0.60 contrast=2.04 peak_gt_calm=FALSE"
+      }
+    },
+    "pm25": {
+      "winter": {
+        "ok": true,
+        "hours": 1098,
+        "pattern": "calm-local",
+        "calmLevel": 21.12,
+        "calmMax": 31.99,
+        "directionalLevel": 8.43,
+        "directionalMax": 16.56,
+        "dirVsCalm": 0.4,
+        "contrast": 3.01,
+        "primaryDirs": [
+          "S"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=21.12 calm_max=31.99 best=S best_mean=8.43 dir_vs_calm=0.40 contrast=3.01 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "calm-local",
+        "calmLevel": 19.34,
+        "calmMax": 22.5,
+        "directionalLevel": 10.07,
+        "directionalMax": 18.13,
+        "dirVsCalm": 0.52,
+        "contrast": 2.03,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "NW",
+          "SW"
+        ],
+        "notes": "calm_mean=19.34 calm_max=22.50 best=SE best_mean=10.07 dir_vs_calm=0.52 contrast=2.03 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2207,
+        "pattern": "directional",
+        "calmLevel": 7.22,
+        "calmMax": 8.45,
+        "directionalLevel": 9.63,
+        "directionalMax": 12.19,
+        "dirVsCalm": 1.33,
+        "contrast": 2.92,
+        "primaryDirs": [
+          "E",
+          "SE"
+        ],
+        "cleanDirs": [
+          "NW",
+          "W"
+        ],
+        "notes": "calm_mean=7.22 calm_max=8.45 best=E+SE best_mean=9.63 dir_vs_calm=1.33 contrast=2.92 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 9.92,
+        "calmMax": 12.69,
+        "directionalLevel": 6.13,
+        "directionalMax": 9.63,
+        "dirVsCalm": 0.62,
+        "contrast": 2.08,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "NW",
+          "N"
+        ],
+        "notes": "calm_mean=9.92 calm_max=12.69 best=E best_mean=6.13 dir_vs_calm=0.62 contrast=2.08 peak_gt_calm=FALSE"
+      }
+    }
+  },
+  "CLDP0391": {
+    "no2": {
+      "winter": {
+        "ok": true,
+        "hours": 1296,
+        "pattern": "calm-local",
+        "calmLevel": 60.88,
+        "calmMax": 76.49,
+        "directionalLevel": 40.51,
+        "directionalMax": 74.86,
+        "dirVsCalm": 0.67,
+        "contrast": 2.26,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "N"
+        ],
+        "notes": "calm_mean=60.88 calm_max=76.49 best=E best_mean=40.51 dir_vs_calm=0.67 contrast=2.26 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "calm-local",
+        "calmLevel": 54.89,
+        "calmMax": 68.45,
+        "directionalLevel": 34.51,
+        "directionalMax": 62.95,
+        "dirVsCalm": 0.63,
+        "contrast": 2.07,
+        "primaryDirs": [
+          "NW"
+        ],
+        "cleanDirs": [
+          "NE",
+          "W"
+        ],
+        "notes": "calm_mean=54.89 calm_max=68.45 best=NW best_mean=34.51 dir_vs_calm=0.63 contrast=2.07 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2183,
+        "pattern": "directional",
+        "calmLevel": 36.14,
+        "calmMax": 45.7,
+        "directionalLevel": 43.2,
+        "directionalMax": 65.45,
+        "dirVsCalm": 1.2,
+        "contrast": 3.71,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "S",
+          "N"
+        ],
+        "notes": "calm_mean=36.14 calm_max=45.70 best=E best_mean=43.20 dir_vs_calm=1.20 contrast=3.71 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 54.29,
+        "calmMax": 62.7,
+        "directionalLevel": 41.99,
+        "directionalMax": 58.04,
+        "dirVsCalm": 0.77,
+        "contrast": 2.94,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "NE",
+          "W"
+        ],
+        "notes": "calm_mean=54.29 calm_max=62.70 best=E best_mean=41.99 dir_vs_calm=0.77 contrast=2.94 peak_gt_calm=FALSE"
+      }
+    },
+    "pm25": {
+      "winter": {
+        "ok": true,
+        "hours": 1259,
+        "pattern": "calm-local",
+        "calmLevel": 19.61,
+        "calmMax": 29.29,
+        "directionalLevel": 7.42,
+        "directionalMax": 14.28,
+        "dirVsCalm": 0.38,
+        "contrast": 2.6,
+        "primaryDirs": [
+          "NW"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=19.61 calm_max=29.29 best=NW best_mean=7.42 dir_vs_calm=0.38 contrast=2.60 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "calm-local",
+        "calmLevel": 17.82,
+        "calmMax": 21.48,
+        "directionalLevel": 8.74,
+        "directionalMax": 16.29,
+        "dirVsCalm": 0.49,
+        "contrast": 1.85,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "SW",
+          "W"
+        ],
+        "notes": "calm_mean=17.82 calm_max=21.48 best=E best_mean=8.74 dir_vs_calm=0.49 contrast=1.85 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2207,
+        "pattern": "directional",
+        "calmLevel": 6.56,
+        "calmMax": 7.54,
+        "directionalLevel": 9.4,
+        "directionalMax": 11.77,
+        "dirVsCalm": 1.43,
+        "contrast": 2.89,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "NW",
+          "N"
+        ],
+        "notes": "calm_mean=6.56 calm_max=7.54 best=E best_mean=9.40 dir_vs_calm=1.43 contrast=2.89 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 9.06,
+        "calmMax": 11.59,
+        "directionalLevel": 5.98,
+        "directionalMax": 9.6,
+        "dirVsCalm": 0.66,
+        "contrast": 1.71,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "NE",
+          "N"
+        ],
+        "notes": "calm_mean=9.06 calm_max=11.59 best=E best_mean=5.98 dir_vs_calm=0.66 contrast=1.71 peak_gt_calm=FALSE"
+      }
+    }
+  },
+  "CLDP0394": {
+    "no2": {
+      "winter": {
+        "ok": true,
+        "hours": 1488,
+        "pattern": "calm-local",
+        "calmLevel": 43.59,
+        "calmMax": 57.6,
+        "directionalLevel": 33.66,
+        "directionalMax": 44.7,
+        "dirVsCalm": 0.77,
+        "contrast": 2.3,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "SW",
+          "N"
+        ],
+        "notes": "calm_mean=43.59 calm_max=57.60 best=E best_mean=33.66 dir_vs_calm=0.77 contrast=2.30 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2176,
+        "pattern": "calm-local",
+        "calmLevel": 39.06,
+        "calmMax": 43.08,
+        "directionalLevel": 27.02,
+        "directionalMax": 39.14,
+        "dirVsCalm": 0.69,
+        "contrast": 2.45,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "NE",
+          "W"
+        ],
+        "notes": "calm_mean=39.06 calm_max=43.08 best=SE best_mean=27.02 dir_vs_calm=0.69 contrast=2.45 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2184,
+        "pattern": "calm-local",
+        "calmLevel": 21.68,
+        "calmMax": 30.06,
+        "directionalLevel": 19.61,
+        "directionalMax": 30.85,
+        "dirVsCalm": 0.9,
+        "contrast": 2.09,
+        "primaryDirs": [
+          "E",
+          "SE"
+        ],
+        "cleanDirs": [
+          "SW",
+          "N"
+        ],
+        "notes": "calm_mean=21.68 calm_max=30.06 best=E+SE best_mean=19.61 dir_vs_calm=0.90 contrast=2.09 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 34.32,
+        "calmMax": 45.79,
+        "directionalLevel": 17.76,
+        "directionalMax": 32.13,
+        "dirVsCalm": 0.52,
+        "contrast": 1.66,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "SW",
+          "W"
+        ],
+        "notes": "calm_mean=34.32 calm_max=45.79 best=E best_mean=17.76 dir_vs_calm=0.52 contrast=1.66 peak_gt_calm=FALSE"
+      }
+    },
+    "pm25": {
+      "winter": {
+        "ok": true,
+        "hours": 1486,
+        "pattern": "calm-local",
+        "calmLevel": 15.17,
+        "calmMax": 22.24,
+        "directionalLevel": 7.06,
+        "directionalMax": 11.07,
+        "dirVsCalm": 0.47,
+        "contrast": 2.26,
+        "primaryDirs": [
+          "NW"
+        ],
+        "cleanDirs": [
+          "W",
+          "S"
+        ],
+        "notes": "calm_mean=15.17 calm_max=22.24 best=NW best_mean=7.06 dir_vs_calm=0.47 contrast=2.26 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2119,
+        "pattern": "calm-local",
+        "calmLevel": 18.57,
+        "calmMax": 24.68,
+        "directionalLevel": 12.89,
+        "directionalMax": 19.19,
+        "dirVsCalm": 0.69,
+        "contrast": 2.68,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "NW"
+        ],
+        "notes": "calm_mean=18.57 calm_max=24.68 best=SE best_mean=12.89 dir_vs_calm=0.69 contrast=2.68 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2205,
+        "pattern": "directional",
+        "calmLevel": 10.17,
+        "calmMax": 13.11,
+        "directionalLevel": 13.26,
+        "directionalMax": 17.05,
+        "dirVsCalm": 1.3,
+        "contrast": 2.55,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "NW",
+          "N"
+        ],
+        "notes": "calm_mean=10.17 calm_max=13.11 best=SE best_mean=13.26 dir_vs_calm=1.30 contrast=2.55 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 13.19,
+        "calmMax": 14.46,
+        "directionalLevel": 9.63,
+        "directionalMax": 13.66,
+        "dirVsCalm": 0.73,
+        "contrast": 1.87,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "N",
+          "NW"
+        ],
+        "notes": "calm_mean=13.19 calm_max=14.46 best=E best_mean=9.63 dir_vs_calm=0.73 contrast=1.87 peak_gt_calm=FALSE"
+      }
+    }
+  },
+  "CLDP0438": {
+    "no2": {
+      "winter": {
+        "ok": true,
+        "hours": 1796,
+        "pattern": "calm-local",
+        "calmLevel": 31.53,
+        "calmMax": 38.83,
+        "directionalLevel": 21.92,
+        "directionalMax": 32.69,
+        "dirVsCalm": 0.7,
+        "contrast": 2.76,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=31.53 calm_max=38.83 best=SE best_mean=21.92 dir_vs_calm=0.70 contrast=2.76 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2206,
+        "pattern": "calm-local",
+        "calmLevel": 32.37,
+        "calmMax": 37.8,
+        "directionalLevel": 21.34,
+        "directionalMax": 32.08,
+        "dirVsCalm": 0.66,
+        "contrast": 3.16,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=32.37 calm_max=37.80 best=SE best_mean=21.34 dir_vs_calm=0.66 contrast=3.16 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "mixed",
+        "calmLevel": 18.21,
+        "calmMax": 22.24,
+        "directionalLevel": 19.41,
+        "directionalMax": 26.37,
+        "dirVsCalm": 1.07,
+        "contrast": 2.63,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "NW",
+          "SW"
+        ],
+        "notes": "calm_mean=18.21 calm_max=22.24 best=E best_mean=19.41 dir_vs_calm=1.07 contrast=2.63 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1952,
+        "pattern": "calm-local",
+        "calmLevel": 24.65,
+        "calmMax": 31.99,
+        "directionalLevel": 16.32,
+        "directionalMax": 25.72,
+        "dirVsCalm": 0.66,
+        "contrast": 2.16,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=24.65 calm_max=31.99 best=E best_mean=16.32 dir_vs_calm=0.66 contrast=2.16 peak_gt_calm=FALSE"
+      }
+    },
+    "pm25": {
+      "winter": {
+        "ok": true,
+        "hours": 1776,
+        "pattern": "calm-local",
+        "calmLevel": 16.06,
+        "calmMax": 23.29,
+        "directionalLevel": 13.51,
+        "directionalMax": 22.71,
+        "dirVsCalm": 0.84,
+        "contrast": 5.95,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "NW"
+        ],
+        "notes": "calm_mean=16.06 calm_max=23.29 best=E best_mean=13.51 dir_vs_calm=0.84 contrast=5.95 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2206,
+        "pattern": "calm-local",
+        "calmLevel": 15.46,
+        "calmMax": 17.86,
+        "directionalLevel": 8.51,
+        "directionalMax": 14.66,
+        "dirVsCalm": 0.55,
+        "contrast": 2.29,
+        "primaryDirs": [
+          "SE",
+          "E"
+        ],
+        "cleanDirs": [
+          "NW",
+          "SW"
+        ],
+        "notes": "calm_mean=15.46 calm_max=17.86 best=SE+E best_mean=8.51 dir_vs_calm=0.55 contrast=2.29 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "directional",
+        "calmLevel": 6.13,
+        "calmMax": 7.14,
+        "directionalLevel": 8.82,
+        "directionalMax": 10.83,
+        "dirVsCalm": 1.44,
+        "contrast": 2.93,
+        "primaryDirs": [
+          "E",
+          "SE"
+        ],
+        "cleanDirs": [
+          "NW",
+          "W"
+        ],
+        "notes": "calm_mean=6.13 calm_max=7.14 best=E+SE best_mean=8.82 dir_vs_calm=1.44 contrast=2.93 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1952,
+        "pattern": "calm-local",
+        "calmLevel": 7.84,
+        "calmMax": 9.83,
+        "directionalLevel": 6.1,
+        "directionalMax": 8.45,
+        "dirVsCalm": 0.78,
+        "contrast": 2.23,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "NW",
+          "N"
+        ],
+        "notes": "calm_mean=7.84 calm_max=9.83 best=E best_mean=6.10 dir_vs_calm=0.78 contrast=2.23 peak_gt_calm=FALSE"
+      }
+    }
+  },
+  "CLDP0439": {
+    "no2": {
+      "winter": {
+        "ok": true,
+        "hours": 2088,
+        "pattern": "calm-local",
+        "calmLevel": 48.25,
+        "calmMax": 56.08,
+        "directionalLevel": 25.56,
+        "directionalMax": 48.5,
+        "dirVsCalm": 0.53,
+        "contrast": 1.32,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "NE",
+          "N"
+        ],
+        "notes": "calm_mean=48.25 calm_max=56.08 best=E best_mean=25.56 dir_vs_calm=0.53 contrast=1.32 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2177,
+        "pattern": "calm-local",
+        "calmLevel": 48.07,
+        "calmMax": 51.25,
+        "directionalLevel": 29.27,
+        "directionalMax": 46.79,
+        "dirVsCalm": 0.61,
+        "contrast": 2.27,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "NE",
+          "W"
+        ],
+        "notes": "calm_mean=48.07 calm_max=51.25 best=SE best_mean=29.27 dir_vs_calm=0.61 contrast=2.27 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2184,
+        "pattern": "calm-local",
+        "calmLevel": 26.84,
+        "calmMax": 36.87,
+        "directionalLevel": 23.36,
+        "directionalMax": 38.44,
+        "dirVsCalm": 0.87,
+        "contrast": 2.12,
+        "primaryDirs": [
+          "E",
+          "SE"
+        ],
+        "cleanDirs": [
+          "N",
+          "NE"
+        ],
+        "notes": "calm_mean=26.84 calm_max=36.87 best=E+SE best_mean=23.36 dir_vs_calm=0.87 contrast=2.12 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 35.56,
+        "calmMax": 40.13,
+        "directionalLevel": 22.1,
+        "directionalMax": 32.98,
+        "dirVsCalm": 0.62,
+        "contrast": 1.99,
+        "primaryDirs": [
+          "SW"
+        ],
+        "cleanDirs": [
+          "NE",
+          "N"
+        ],
+        "notes": "calm_mean=35.56 calm_max=40.13 best=SW best_mean=22.10 dir_vs_calm=0.62 contrast=1.99 peak_gt_calm=FALSE"
+      }
+    },
+    "pm25": {
+      "winter": {
+        "ok": true,
+        "hours": 2076,
+        "pattern": "calm-local",
+        "calmLevel": 16.6,
+        "calmMax": 23.67,
+        "directionalLevel": 11.1,
+        "directionalMax": 24.55,
+        "dirVsCalm": 0.67,
+        "contrast": 2.61,
+        "primaryDirs": [
+          "E",
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "N"
+        ],
+        "notes": "calm_mean=16.60 calm_max=23.67 best=E+SE best_mean=11.10 dir_vs_calm=0.67 contrast=2.61 peak_gt_calm=TRUE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2133,
+        "pattern": "calm-local",
+        "calmLevel": 18.32,
+        "calmMax": 20.89,
+        "directionalLevel": 13.18,
+        "directionalMax": 19.81,
+        "dirVsCalm": 0.72,
+        "contrast": 2.48,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=18.32 calm_max=20.89 best=SE best_mean=13.18 dir_vs_calm=0.72 contrast=2.48 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2206,
+        "pattern": "directional",
+        "calmLevel": 10.29,
+        "calmMax": 12.35,
+        "directionalLevel": 13.41,
+        "directionalMax": 17.29,
+        "dirVsCalm": 1.3,
+        "contrast": 2.49,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "NW",
+          "N"
+        ],
+        "notes": "calm_mean=10.29 calm_max=12.35 best=SE best_mean=13.41 dir_vs_calm=1.30 contrast=2.49 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1790,
+        "pattern": "calm-local",
+        "calmLevel": 13.14,
+        "calmMax": 14.43,
+        "directionalLevel": 9.69,
+        "directionalMax": 13.74,
+        "dirVsCalm": 0.74,
+        "contrast": 2.08,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "N",
+          "NW"
+        ],
+        "notes": "calm_mean=13.14 calm_max=14.43 best=E best_mean=9.69 dir_vs_calm=0.74 contrast=2.08 peak_gt_calm=FALSE"
+      }
+    }
+  },
+  "CLDP0444": {
+    "no2": {
+      "winter": {
+        "ok": true,
+        "hours": 1743,
+        "pattern": "calm-local",
+        "calmLevel": 36.45,
+        "calmMax": 47.17,
+        "directionalLevel": 24.17,
+        "directionalMax": 35.25,
+        "dirVsCalm": 0.66,
+        "contrast": 2.08,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "SW",
+          "W"
+        ],
+        "notes": "calm_mean=36.45 calm_max=47.17 best=E best_mean=24.17 dir_vs_calm=0.66 contrast=2.08 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2176,
+        "pattern": "calm-local",
+        "calmLevel": 37.51,
+        "calmMax": 40.93,
+        "directionalLevel": 25.1,
+        "directionalMax": 38.16,
+        "dirVsCalm": 0.67,
+        "contrast": 2.34,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "NE",
+          "W"
+        ],
+        "notes": "calm_mean=37.51 calm_max=40.93 best=SE best_mean=25.10 dir_vs_calm=0.67 contrast=2.34 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2184,
+        "pattern": "calm-local",
+        "calmLevel": 21.94,
+        "calmMax": 31.01,
+        "directionalLevel": 17.51,
+        "directionalMax": 30.01,
+        "dirVsCalm": 0.8,
+        "contrast": 1.92,
+        "primaryDirs": [
+          "E",
+          "SE"
+        ],
+        "cleanDirs": [
+          "N",
+          "SW"
+        ],
+        "notes": "calm_mean=21.94 calm_max=31.01 best=E+SE best_mean=17.51 dir_vs_calm=0.80 contrast=1.92 peak_gt_calm=FALSE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1985,
+        "pattern": "calm-local",
+        "calmLevel": 31.7,
+        "calmMax": 37.59,
+        "directionalLevel": 18.55,
+        "directionalMax": 33.49,
+        "dirVsCalm": 0.59,
+        "contrast": 1.73,
+        "primaryDirs": [
+          "S"
+        ],
+        "cleanDirs": [
+          "NE",
+          "W"
+        ],
+        "notes": "calm_mean=31.70 calm_max=37.59 best=S best_mean=18.55 dir_vs_calm=0.59 contrast=1.73 peak_gt_calm=FALSE"
+      }
+    },
+    "pm25": {
+      "winter": {
+        "ok": true,
+        "hours": 1746,
+        "pattern": "calm-local",
+        "calmLevel": 16.49,
+        "calmMax": 21.9,
+        "directionalLevel": 11.2,
+        "directionalMax": 24.05,
+        "dirVsCalm": 0.68,
+        "contrast": 2.64,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "N"
+        ],
+        "notes": "calm_mean=16.49 calm_max=21.90 best=E best_mean=11.20 dir_vs_calm=0.68 contrast=2.64 peak_gt_calm=TRUE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2139,
+        "pattern": "calm-local",
+        "calmLevel": 17.06,
+        "calmMax": 20.27,
+        "directionalLevel": 12.42,
+        "directionalMax": 18.17,
+        "dirVsCalm": 0.73,
+        "contrast": 2.95,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "NW"
+        ],
+        "notes": "calm_mean=17.06 calm_max=20.27 best=SE best_mean=12.42 dir_vs_calm=0.73 contrast=2.95 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "directional",
+        "calmLevel": 9.89,
+        "calmMax": 11.23,
+        "directionalLevel": 13.01,
+        "directionalMax": 17.65,
+        "dirVsCalm": 1.32,
+        "contrast": 2.18,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "NW",
+          "N"
+        ],
+        "notes": "calm_mean=9.89 calm_max=11.23 best=SE best_mean=13.01 dir_vs_calm=1.32 contrast=2.18 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1985,
+        "pattern": "calm-local",
+        "calmLevel": 12.51,
+        "calmMax": 13.69,
+        "directionalLevel": 9.66,
+        "directionalMax": 12.97,
+        "dirVsCalm": 0.77,
+        "contrast": 1.96,
+        "primaryDirs": [
+          "S",
+          "E"
+        ],
+        "cleanDirs": [
+          "N",
+          "NE"
+        ],
+        "notes": "calm_mean=12.51 calm_max=13.69 best=S+E best_mean=9.66 dir_vs_calm=0.77 contrast=1.96 peak_gt_calm=FALSE"
+      }
+    }
+  },
+  "CLDP0451": {
+    "no2": {
+      "winter": {
+        "ok": true,
+        "hours": 1406,
+        "pattern": "calm-local",
+        "calmLevel": 38.63,
+        "calmMax": 50.56,
+        "directionalLevel": 21.39,
+        "directionalMax": 35.1,
+        "dirVsCalm": 0.55,
+        "contrast": 1.73,
+        "primaryDirs": [
+          "NE"
+        ],
+        "cleanDirs": [
+          "SW",
+          "NW"
+        ],
+        "notes": "calm_mean=38.63 calm_max=50.56 best=NE best_mean=21.39 dir_vs_calm=0.55 contrast=1.73 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2206,
+        "pattern": "calm-local",
+        "calmLevel": 44.21,
+        "calmMax": 52.64,
+        "directionalLevel": 23.99,
+        "directionalMax": 46.99,
+        "dirVsCalm": 0.54,
+        "contrast": 2.52,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=44.21 calm_max=52.64 best=SE best_mean=23.99 dir_vs_calm=0.54 contrast=2.52 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2184,
+        "pattern": "mixed",
+        "calmLevel": 25.78,
+        "calmMax": 32.97,
+        "directionalLevel": 28.76,
+        "directionalMax": 41.69,
+        "dirVsCalm": 1.12,
+        "contrast": 2.92,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [],
+        "notes": "calm_mean=25.78 calm_max=32.97 best=E best_mean=28.76 dir_vs_calm=1.12 contrast=2.92 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1796,
+        "pattern": "calm-local",
+        "calmLevel": 37.09,
+        "calmMax": 43.08,
+        "directionalLevel": 24.56,
+        "directionalMax": 33.33,
+        "dirVsCalm": 0.66,
+        "contrast": 2.44,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "NE"
+        ],
+        "notes": "calm_mean=37.09 calm_max=43.08 best=E best_mean=24.56 dir_vs_calm=0.66 contrast=2.44 peak_gt_calm=FALSE"
+      }
+    },
+    "pm25": {
+      "winter": {
+        "ok": true,
+        "hours": 1398,
+        "pattern": "calm-local",
+        "calmLevel": 22.07,
+        "calmMax": 35.42,
+        "directionalLevel": 18.43,
+        "directionalMax": 35.82,
+        "dirVsCalm": 0.83,
+        "contrast": 5.58,
+        "primaryDirs": [
+          "E",
+          "NE"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=22.07 calm_max=35.42 best=E+NE best_mean=18.43 dir_vs_calm=0.83 contrast=5.58 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2206,
+        "pattern": "calm-local",
+        "calmLevel": 18.36,
+        "calmMax": 22.32,
+        "directionalLevel": 10.71,
+        "directionalMax": 18.57,
+        "dirVsCalm": 0.58,
+        "contrast": 2.01,
+        "primaryDirs": [
+          "SE",
+          "E"
+        ],
+        "cleanDirs": [
+          "SW",
+          "NW"
+        ],
+        "notes": "calm_mean=18.36 calm_max=22.32 best=SE+E best_mean=10.71 dir_vs_calm=0.58 contrast=2.01 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "directional",
+        "calmLevel": 7.43,
+        "calmMax": 8.82,
+        "directionalLevel": 10.43,
+        "directionalMax": 14.66,
+        "dirVsCalm": 1.4,
+        "contrast": 2.68,
+        "primaryDirs": [
+          "E",
+          "SE"
+        ],
+        "cleanDirs": [
+          "NW",
+          "W"
+        ],
+        "notes": "calm_mean=7.43 calm_max=8.82 best=E+SE best_mean=10.43 dir_vs_calm=1.40 contrast=2.68 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1796,
+        "pattern": "calm-local",
+        "calmLevel": 9.6,
+        "calmMax": 11.78,
+        "directionalLevel": 7.16,
+        "directionalMax": 9.85,
+        "dirVsCalm": 0.75,
+        "contrast": 2.12,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "N",
+          "NW"
+        ],
+        "notes": "calm_mean=9.60 calm_max=11.78 best=E best_mean=7.16 dir_vs_calm=0.75 contrast=2.12 peak_gt_calm=FALSE"
+      }
+    }
+  },
+  "CLDP0452": {
+    "no2": {
+      "winter": {
+        "ok": true,
+        "hours": 1848,
+        "pattern": "calm-local",
+        "calmLevel": 43.33,
+        "calmMax": 52.94,
+        "directionalLevel": 26.38,
+        "directionalMax": 40.11,
+        "dirVsCalm": 0.61,
+        "contrast": 2.66,
+        "primaryDirs": [
+          "E",
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=43.33 calm_max=52.94 best=E+SE best_mean=26.38 dir_vs_calm=0.61 contrast=2.66 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "calm-local",
+        "calmLevel": 40.28,
+        "calmMax": 48.99,
+        "directionalLevel": 26.9,
+        "directionalMax": 44.39,
+        "dirVsCalm": 0.67,
+        "contrast": 2.8,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=40.28 calm_max=48.99 best=SE best_mean=26.90 dir_vs_calm=0.67 contrast=2.80 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2184,
+        "pattern": "mixed",
+        "calmLevel": 23.3,
+        "calmMax": 28.37,
+        "directionalLevel": 23.82,
+        "directionalMax": 36.3,
+        "dirVsCalm": 1.02,
+        "contrast": 2.47,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [],
+        "notes": "calm_mean=23.30 calm_max=28.37 best=E best_mean=23.82 dir_vs_calm=1.02 contrast=2.47 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 35.82,
+        "calmMax": 46.36,
+        "directionalLevel": 23.03,
+        "directionalMax": 38.48,
+        "dirVsCalm": 0.64,
+        "contrast": 2.41,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "NE",
+          "W"
+        ],
+        "notes": "calm_mean=35.82 calm_max=46.36 best=E best_mean=23.03 dir_vs_calm=0.64 contrast=2.41 peak_gt_calm=FALSE"
+      }
+    },
+    "pm25": {
+      "winter": {
+        "ok": true,
+        "hours": 1828,
+        "pattern": "calm-local",
+        "calmLevel": 23.3,
+        "calmMax": 32.29,
+        "directionalLevel": 18.86,
+        "directionalMax": 30.56,
+        "dirVsCalm": 0.81,
+        "contrast": 6.27,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=23.30 calm_max=32.29 best=E best_mean=18.86 dir_vs_calm=0.81 contrast=6.27 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "calm-local",
+        "calmLevel": 19.32,
+        "calmMax": 22.39,
+        "directionalLevel": 10.03,
+        "directionalMax": 17.96,
+        "dirVsCalm": 0.52,
+        "contrast": 1.95,
+        "primaryDirs": [
+          "SE",
+          "E"
+        ],
+        "cleanDirs": [
+          "SW",
+          "W"
+        ],
+        "notes": "calm_mean=19.32 calm_max=22.39 best=SE+E best_mean=10.03 dir_vs_calm=0.52 contrast=1.95 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "directional",
+        "calmLevel": 7.31,
+        "calmMax": 8.54,
+        "directionalLevel": 10.29,
+        "directionalMax": 13.09,
+        "dirVsCalm": 1.41,
+        "contrast": 2.98,
+        "primaryDirs": [
+          "E",
+          "SE"
+        ],
+        "cleanDirs": [
+          "NW",
+          "N"
+        ],
+        "notes": "calm_mean=7.31 calm_max=8.54 best=E+SE best_mean=10.29 dir_vs_calm=1.41 contrast=2.98 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 10.24,
+        "calmMax": 14.91,
+        "directionalLevel": 6.88,
+        "directionalMax": 10.48,
+        "dirVsCalm": 0.67,
+        "contrast": 1.95,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "NE",
+          "N"
+        ],
+        "notes": "calm_mean=10.24 calm_max=14.91 best=E best_mean=6.88 dir_vs_calm=0.67 contrast=1.95 peak_gt_calm=FALSE"
+      }
+    }
+  },
+  "CLDP0454": {
+    "no2": {
+      "winter": {
+        "ok": true,
+        "hours": 1756,
+        "pattern": "calm-local",
+        "calmLevel": 37.84,
+        "calmMax": 50.39,
+        "directionalLevel": 27.15,
+        "directionalMax": 35.04,
+        "dirVsCalm": 0.72,
+        "contrast": 2.17,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "N",
+          "NW"
+        ],
+        "notes": "calm_mean=37.84 calm_max=50.39 best=E best_mean=27.15 dir_vs_calm=0.72 contrast=2.17 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2206,
+        "pattern": "calm-local",
+        "calmLevel": 37.93,
+        "calmMax": 39.91,
+        "directionalLevel": 25.07,
+        "directionalMax": 35.28,
+        "dirVsCalm": 0.66,
+        "contrast": 2.34,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "NE"
+        ],
+        "notes": "calm_mean=37.93 calm_max=39.91 best=SE best_mean=25.07 dir_vs_calm=0.66 contrast=2.34 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "calm-local",
+        "calmLevel": 21.52,
+        "calmMax": 30.33,
+        "directionalLevel": 17.33,
+        "directionalMax": 28.87,
+        "dirVsCalm": 0.81,
+        "contrast": 1.86,
+        "primaryDirs": [
+          "E",
+          "SE"
+        ],
+        "cleanDirs": [
+          "N"
+        ],
+        "notes": "calm_mean=21.52 calm_max=30.33 best=E+SE best_mean=17.33 dir_vs_calm=0.81 contrast=1.86 peak_gt_calm=FALSE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1980,
+        "pattern": "calm-local",
+        "calmLevel": 32.46,
+        "calmMax": 40.98,
+        "directionalLevel": 18.65,
+        "directionalMax": 30.88,
+        "dirVsCalm": 0.57,
+        "contrast": 1.56,
+        "primaryDirs": [
+          "S",
+          "E"
+        ],
+        "cleanDirs": [
+          "NE",
+          "W"
+        ],
+        "notes": "calm_mean=32.46 calm_max=40.98 best=S+E best_mean=18.65 dir_vs_calm=0.57 contrast=1.56 peak_gt_calm=FALSE"
+      }
+    },
+    "pm25": {
+      "winter": {
+        "ok": true,
+        "hours": 1755,
+        "pattern": "calm-local",
+        "calmLevel": 18.37,
+        "calmMax": 24.35,
+        "directionalLevel": 13.86,
+        "directionalMax": 26.4,
+        "dirVsCalm": 0.75,
+        "contrast": 3.28,
+        "primaryDirs": [
+          "SE",
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "N"
+        ],
+        "notes": "calm_mean=18.37 calm_max=24.35 best=SE+E best_mean=13.86 dir_vs_calm=0.75 contrast=3.28 peak_gt_calm=TRUE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2135,
+        "pattern": "calm-local",
+        "calmLevel": 18,
+        "calmMax": 21.34,
+        "directionalLevel": 13.03,
+        "directionalMax": 19.91,
+        "dirVsCalm": 0.72,
+        "contrast": 2.32,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "NW"
+        ],
+        "notes": "calm_mean=18.00 calm_max=21.34 best=SE best_mean=13.03 dir_vs_calm=0.72 contrast=2.32 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2206,
+        "pattern": "directional",
+        "calmLevel": 10.63,
+        "calmMax": 12.02,
+        "directionalLevel": 13.78,
+        "directionalMax": 17.61,
+        "dirVsCalm": 1.3,
+        "contrast": 2.43,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "NW",
+          "N"
+        ],
+        "notes": "calm_mean=10.63 calm_max=12.02 best=SE best_mean=13.78 dir_vs_calm=1.30 contrast=2.43 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1980,
+        "pattern": "calm-local",
+        "calmLevel": 13.01,
+        "calmMax": 16.17,
+        "directionalLevel": 10.18,
+        "directionalMax": 14.25,
+        "dirVsCalm": 0.78,
+        "contrast": 1.88,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "N",
+          "NW"
+        ],
+        "notes": "calm_mean=13.01 calm_max=16.17 best=E best_mean=10.18 dir_vs_calm=0.78 contrast=1.88 peak_gt_calm=FALSE"
+      }
+    }
+  },
+  "CLDP0455": {
+    "no2": {
+      "winter": {
+        "ok": true,
+        "hours": 2067,
+        "pattern": "calm-local",
+        "calmLevel": 48.34,
+        "calmMax": 60.54,
+        "directionalLevel": 23.92,
+        "directionalMax": 39.99,
+        "dirVsCalm": 0.49,
+        "contrast": 1.78,
+        "primaryDirs": [
+          "S"
+        ],
+        "cleanDirs": [
+          "SW"
+        ],
+        "notes": "calm_mean=48.34 calm_max=60.54 best=S best_mean=23.92 dir_vs_calm=0.49 contrast=1.78 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2205,
+        "pattern": "calm-local",
+        "calmLevel": 42.46,
+        "calmMax": 51.88,
+        "directionalLevel": 27.77,
+        "directionalMax": 42.71,
+        "dirVsCalm": 0.65,
+        "contrast": 2.35,
+        "primaryDirs": [
+          "NW"
+        ],
+        "cleanDirs": [
+          "NE",
+          "W"
+        ],
+        "notes": "calm_mean=42.46 calm_max=51.88 best=NW best_mean=27.77 dir_vs_calm=0.65 contrast=2.35 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "mixed",
+        "calmLevel": 26.89,
+        "calmMax": 33.39,
+        "directionalLevel": 27.04,
+        "directionalMax": 42.07,
+        "dirVsCalm": 1.01,
+        "contrast": 2.7,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "S",
+          "SW"
+        ],
+        "notes": "calm_mean=26.89 calm_max=33.39 best=E best_mean=27.04 dir_vs_calm=1.01 contrast=2.70 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 36.42,
+        "calmMax": 46.98,
+        "directionalLevel": 23.04,
+        "directionalMax": 37.04,
+        "dirVsCalm": 0.63,
+        "contrast": 2.27,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "NE",
+          "NW"
+        ],
+        "notes": "calm_mean=36.42 calm_max=46.98 best=E best_mean=23.04 dir_vs_calm=0.63 contrast=2.27 peak_gt_calm=FALSE"
+      }
+    },
+    "pm25": {
+      "winter": {
+        "ok": true,
+        "hours": 2037,
+        "pattern": "calm-local",
+        "calmLevel": 18.13,
+        "calmMax": 26.55,
+        "directionalLevel": 15.22,
+        "directionalMax": 25.38,
+        "dirVsCalm": 0.84,
+        "contrast": 4.22,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "N",
+          "W"
+        ],
+        "notes": "calm_mean=18.13 calm_max=26.55 best=E best_mean=15.22 dir_vs_calm=0.84 contrast=4.22 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2205,
+        "pattern": "calm-local",
+        "calmLevel": 17.88,
+        "calmMax": 21.1,
+        "directionalLevel": 10.16,
+        "directionalMax": 17.85,
+        "dirVsCalm": 0.57,
+        "contrast": 2.28,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "NW",
+          "SW"
+        ],
+        "notes": "calm_mean=17.88 calm_max=21.10 best=SE best_mean=10.16 dir_vs_calm=0.57 contrast=2.28 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "directional",
+        "calmLevel": 6.74,
+        "calmMax": 7.79,
+        "directionalLevel": 9.6,
+        "directionalMax": 12.36,
+        "dirVsCalm": 1.42,
+        "contrast": 3.1,
+        "primaryDirs": [
+          "E",
+          "SE"
+        ],
+        "cleanDirs": [
+          "NW",
+          "W"
+        ],
+        "notes": "calm_mean=6.74 calm_max=7.79 best=E+SE best_mean=9.60 dir_vs_calm=1.42 contrast=3.10 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1991,
+        "pattern": "calm-local",
+        "calmLevel": 8.82,
+        "calmMax": 11.25,
+        "directionalLevel": 5.66,
+        "directionalMax": 8.64,
+        "dirVsCalm": 0.64,
+        "contrast": 2.03,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "NW",
+          "N"
+        ],
+        "notes": "calm_mean=8.82 calm_max=11.25 best=E best_mean=5.66 dir_vs_calm=0.64 contrast=2.03 peak_gt_calm=FALSE"
+      }
+    }
+  },
+  "CLDP0466": {
+    "no2": {
+      "winter": {
+        "ok": true,
+        "hours": 2001,
+        "pattern": "calm-local",
+        "calmLevel": 51.87,
+        "calmMax": 65.99,
+        "directionalLevel": 33.58,
+        "directionalMax": 53.77,
+        "dirVsCalm": 0.65,
+        "contrast": 1.95,
+        "primaryDirs": [
+          "SE",
+          "E"
+        ],
+        "cleanDirs": [
+          "SW",
+          "NW"
+        ],
+        "notes": "calm_mean=51.87 calm_max=65.99 best=SE+E best_mean=33.58 dir_vs_calm=0.65 contrast=1.95 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "calm-local",
+        "calmLevel": 46.22,
+        "calmMax": 50.04,
+        "directionalLevel": 27.12,
+        "directionalMax": 41.52,
+        "dirVsCalm": 0.59,
+        "contrast": 2.27,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "NE",
+          "W"
+        ],
+        "notes": "calm_mean=46.22 calm_max=50.04 best=SE best_mean=27.12 dir_vs_calm=0.59 contrast=2.27 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2184,
+        "pattern": "calm-local",
+        "calmLevel": 25.54,
+        "calmMax": 35.61,
+        "directionalLevel": 20.49,
+        "directionalMax": 33.54,
+        "dirVsCalm": 0.8,
+        "contrast": 2.01,
+        "primaryDirs": [
+          "E",
+          "SE"
+        ],
+        "cleanDirs": [
+          "N",
+          "NE"
+        ],
+        "notes": "calm_mean=25.54 calm_max=35.61 best=E+SE best_mean=20.49 dir_vs_calm=0.80 contrast=2.01 peak_gt_calm=FALSE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 40.98,
+        "calmMax": 48.72,
+        "directionalLevel": 22.63,
+        "directionalMax": 43.04,
+        "dirVsCalm": 0.55,
+        "contrast": 1.95,
+        "primaryDirs": [
+          "S"
+        ],
+        "cleanDirs": [
+          "NE"
+        ],
+        "notes": "calm_mean=40.98 calm_max=48.72 best=S best_mean=22.63 dir_vs_calm=0.55 contrast=1.95 peak_gt_calm=FALSE"
+      }
+    },
+    "pm25": {
+      "winter": {
+        "ok": true,
+        "hours": 2000,
+        "pattern": "calm-local",
+        "calmLevel": 18.54,
+        "calmMax": 26.18,
+        "directionalLevel": 12.53,
+        "directionalMax": 26.74,
+        "dirVsCalm": 0.68,
+        "contrast": 2.68,
+        "primaryDirs": [
+          "SE",
+          "E"
+        ],
+        "cleanDirs": [
+          "W"
+        ],
+        "notes": "calm_mean=18.54 calm_max=26.18 best=SE+E best_mean=12.53 dir_vs_calm=0.68 contrast=2.68 peak_gt_calm=TRUE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2156,
+        "pattern": "calm-local",
+        "calmLevel": 19.14,
+        "calmMax": 22.28,
+        "directionalLevel": 13.64,
+        "directionalMax": 20.86,
+        "dirVsCalm": 0.71,
+        "contrast": 3.08,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=19.14 calm_max=22.28 best=SE best_mean=13.64 dir_vs_calm=0.71 contrast=3.08 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "directional",
+        "calmLevel": 11,
+        "calmMax": 12.59,
+        "directionalLevel": 14.12,
+        "directionalMax": 17.98,
+        "dirVsCalm": 1.28,
+        "contrast": 2.26,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "NW",
+          "N"
+        ],
+        "notes": "calm_mean=11.00 calm_max=12.59 best=SE best_mean=14.12 dir_vs_calm=1.28 contrast=2.26 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 13.78,
+        "calmMax": 15.34,
+        "directionalLevel": 10.15,
+        "directionalMax": 14.89,
+        "dirVsCalm": 0.74,
+        "contrast": 1.74,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "N",
+          "NW"
+        ],
+        "notes": "calm_mean=13.78 calm_max=15.34 best=E best_mean=10.15 dir_vs_calm=0.74 contrast=1.74 peak_gt_calm=FALSE"
+      }
+    }
+  },
+  "CLDP0467": {
+    "no2": {
+      "winter": {
+        "ok": true,
+        "hours": 2054,
+        "pattern": "calm-local",
+        "calmLevel": 57.92,
+        "calmMax": 81.44,
+        "directionalLevel": 37.57,
+        "directionalMax": 55.28,
+        "dirVsCalm": 0.65,
+        "contrast": 2.24,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=57.92 calm_max=81.44 best=E best_mean=37.57 dir_vs_calm=0.65 contrast=2.24 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2206,
+        "pattern": "calm-local",
+        "calmLevel": 42.95,
+        "calmMax": 53.6,
+        "directionalLevel": 29.04,
+        "directionalMax": 53,
+        "dirVsCalm": 0.68,
+        "contrast": 2.4,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "NE"
+        ],
+        "notes": "calm_mean=42.95 calm_max=53.60 best=SE best_mean=29.04 dir_vs_calm=0.68 contrast=2.40 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2207,
+        "pattern": "directional",
+        "calmLevel": 27.19,
+        "calmMax": 33.17,
+        "directionalLevel": 36.94,
+        "directionalMax": 51.68,
+        "dirVsCalm": 1.36,
+        "contrast": 3.64,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "S",
+          "N"
+        ],
+        "notes": "calm_mean=27.19 calm_max=33.17 best=E best_mean=36.94 dir_vs_calm=1.36 contrast=3.64 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 42.78,
+        "calmMax": 48.79,
+        "directionalLevel": 32.78,
+        "directionalMax": 46,
+        "dirVsCalm": 0.77,
+        "contrast": 2.46,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "NE"
+        ],
+        "notes": "calm_mean=42.78 calm_max=48.79 best=E best_mean=32.78 dir_vs_calm=0.77 contrast=2.46 peak_gt_calm=FALSE"
+      }
+    },
+    "pm25": {
+      "winter": {
+        "ok": true,
+        "hours": 2054,
+        "pattern": "directional",
+        "calmLevel": 21.21,
+        "calmMax": 40.37,
+        "directionalLevel": 89.7,
+        "directionalMax": 497.47,
+        "dirVsCalm": 4.23,
+        "contrast": 8.68,
+        "primaryDirs": [
+          "W"
+        ],
+        "cleanDirs": [
+          "SE",
+          "NE"
+        ],
+        "notes": "calm_mean=21.21 calm_max=40.37 best=W best_mean=89.70 dir_vs_calm=4.23 contrast=8.68 peak_gt_calm=TRUE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2206,
+        "pattern": "calm-local",
+        "calmLevel": 19.1,
+        "calmMax": 22.7,
+        "directionalLevel": 10.2,
+        "directionalMax": 19.19,
+        "dirVsCalm": 0.53,
+        "contrast": 1.68,
+        "primaryDirs": [
+          "SE",
+          "E"
+        ],
+        "cleanDirs": [
+          "NW",
+          "W"
+        ],
+        "notes": "calm_mean=19.10 calm_max=22.70 best=SE+E best_mean=10.20 dir_vs_calm=0.53 contrast=1.68 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2207,
+        "pattern": "directional",
+        "calmLevel": 7.55,
+        "calmMax": 8.84,
+        "directionalLevel": 10.15,
+        "directionalMax": 14.13,
+        "dirVsCalm": 1.35,
+        "contrast": 2.65,
+        "primaryDirs": [
+          "E",
+          "SE"
+        ],
+        "cleanDirs": [
+          "NW"
+        ],
+        "notes": "calm_mean=7.55 calm_max=8.84 best=E+SE best_mean=10.15 dir_vs_calm=1.35 contrast=2.65 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "directional",
+        "calmLevel": 10.09,
+        "calmMax": 12.73,
+        "directionalLevel": 22.27,
+        "directionalMax": 151.95,
+        "dirVsCalm": 2.21,
+        "contrast": 5.15,
+        "primaryDirs": [
+          "SW",
+          "W"
+        ],
+        "cleanDirs": [
+          "SE",
+          "NE"
+        ],
+        "notes": "calm_mean=10.09 calm_max=12.73 best=SW+W best_mean=22.27 dir_vs_calm=2.21 contrast=5.15 peak_gt_calm=TRUE"
+      }
+    }
+  },
+  "CLDP0468": {
+    "no2": {
+      "winter": {
+        "ok": true,
+        "hours": 2059,
+        "pattern": "calm-local",
+        "calmLevel": 54.97,
+        "calmMax": 74.61,
+        "directionalLevel": 30.68,
+        "directionalMax": 43.45,
+        "dirVsCalm": 0.56,
+        "contrast": 1.69,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "N",
+          "S"
+        ],
+        "notes": "calm_mean=54.97 calm_max=74.61 best=E best_mean=30.68 dir_vs_calm=0.56 contrast=1.69 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2205,
+        "pattern": "calm-local",
+        "calmLevel": 46.19,
+        "calmMax": 48.63,
+        "directionalLevel": 27.67,
+        "directionalMax": 45.39,
+        "dirVsCalm": 0.6,
+        "contrast": 2.25,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "NE",
+          "W"
+        ],
+        "notes": "calm_mean=46.19 calm_max=48.63 best=SE best_mean=27.67 dir_vs_calm=0.60 contrast=2.25 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2207,
+        "pattern": "calm-local",
+        "calmLevel": 26.57,
+        "calmMax": 35.94,
+        "directionalLevel": 22.03,
+        "directionalMax": 34.62,
+        "dirVsCalm": 0.83,
+        "contrast": 1.99,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "NE",
+          "N"
+        ],
+        "notes": "calm_mean=26.57 calm_max=35.94 best=E best_mean=22.03 dir_vs_calm=0.83 contrast=1.99 peak_gt_calm=FALSE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 38.43,
+        "calmMax": 46.91,
+        "directionalLevel": 19.9,
+        "directionalMax": 39.52,
+        "dirVsCalm": 0.52,
+        "contrast": 1.72,
+        "primaryDirs": [
+          "NW"
+        ],
+        "cleanDirs": [
+          "NE",
+          "SW"
+        ],
+        "notes": "calm_mean=38.43 calm_max=46.91 best=NW best_mean=19.90 dir_vs_calm=0.52 contrast=1.72 peak_gt_calm=FALSE"
+      }
+    },
+    "pm25": {
+      "winter": {
+        "ok": true,
+        "hours": 2053,
+        "pattern": "calm-local",
+        "calmLevel": 18.37,
+        "calmMax": 28.12,
+        "directionalLevel": 11.5,
+        "directionalMax": 26.06,
+        "dirVsCalm": 0.63,
+        "contrast": 3,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "N"
+        ],
+        "notes": "calm_mean=18.37 calm_max=28.12 best=E best_mean=11.50 dir_vs_calm=0.63 contrast=3.00 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2132,
+        "pattern": "calm-local",
+        "calmLevel": 18.1,
+        "calmMax": 21.24,
+        "directionalLevel": 13.03,
+        "directionalMax": 20.54,
+        "dirVsCalm": 0.72,
+        "contrast": 2.64,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=18.10 calm_max=21.24 best=SE best_mean=13.03 dir_vs_calm=0.72 contrast=2.64 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2207,
+        "pattern": "directional",
+        "calmLevel": 10.18,
+        "calmMax": 11.64,
+        "directionalLevel": 13.12,
+        "directionalMax": 17.49,
+        "dirVsCalm": 1.29,
+        "contrast": 2.22,
+        "primaryDirs": [
+          "SE",
+          "E"
+        ],
+        "cleanDirs": [
+          "NW",
+          "N"
+        ],
+        "notes": "calm_mean=10.18 calm_max=11.64 best=SE+E best_mean=13.12 dir_vs_calm=1.29 contrast=2.22 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1007,
+        "pattern": "calm-local",
+        "calmLevel": 14.21,
+        "calmMax": 16.44,
+        "directionalLevel": 9.9,
+        "directionalMax": 12.67,
+        "dirVsCalm": 0.7,
+        "contrast": 1.7,
+        "primaryDirs": [
+          "N"
+        ],
+        "cleanDirs": [
+          "NE",
+          "SW"
+        ],
+        "notes": "calm_mean=14.21 calm_max=16.44 best=N best_mean=9.90 dir_vs_calm=0.70 contrast=1.70 peak_gt_calm=FALSE"
+      }
+    }
+  },
+  "CLDP0469": {
+    "no2": {
+      "winter": {
+        "ok": true,
+        "hours": 1731,
+        "pattern": "calm-local",
+        "calmLevel": 45.25,
+        "calmMax": 59.85,
+        "directionalLevel": 26.71,
+        "directionalMax": 45.85,
+        "dirVsCalm": 0.59,
+        "contrast": 2.08,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "S",
+          "SW"
+        ],
+        "notes": "calm_mean=45.25 calm_max=59.85 best=E best_mean=26.71 dir_vs_calm=0.59 contrast=2.08 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2206,
+        "pattern": "calm-local",
+        "calmLevel": 49.77,
+        "calmMax": 53.9,
+        "directionalLevel": 28.79,
+        "directionalMax": 48.72,
+        "dirVsCalm": 0.58,
+        "contrast": 2.35,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "NE"
+        ],
+        "notes": "calm_mean=49.77 calm_max=53.90 best=SE best_mean=28.79 dir_vs_calm=0.58 contrast=2.35 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "calm-local",
+        "calmLevel": 27.25,
+        "calmMax": 38.09,
+        "directionalLevel": 24.68,
+        "directionalMax": 41.4,
+        "dirVsCalm": 0.91,
+        "contrast": 2.25,
+        "primaryDirs": [
+          "E",
+          "SE"
+        ],
+        "cleanDirs": [
+          "SW",
+          "NE"
+        ],
+        "notes": "calm_mean=27.25 calm_max=38.09 best=E+SE best_mean=24.68 dir_vs_calm=0.91 contrast=2.25 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1950,
+        "pattern": "calm-local",
+        "calmLevel": 37.52,
+        "calmMax": 42.51,
+        "directionalLevel": 20.84,
+        "directionalMax": 36.68,
+        "dirVsCalm": 0.56,
+        "contrast": 1.75,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "NE",
+          "W"
+        ],
+        "notes": "calm_mean=37.52 calm_max=42.51 best=E best_mean=20.84 dir_vs_calm=0.56 contrast=1.75 peak_gt_calm=FALSE"
+      }
+    },
+    "pm25": {
+      "winter": {
+        "ok": true,
+        "hours": 1731,
+        "pattern": "calm-local",
+        "calmLevel": 17.75,
+        "calmMax": 28,
+        "directionalLevel": 11.44,
+        "directionalMax": 25.38,
+        "dirVsCalm": 0.64,
+        "contrast": 2.23,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "S"
+        ],
+        "notes": "calm_mean=17.75 calm_max=28.00 best=E best_mean=11.44 dir_vs_calm=0.64 contrast=2.23 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2155,
+        "pattern": "calm-local",
+        "calmLevel": 17.12,
+        "calmMax": 20.07,
+        "directionalLevel": 12.77,
+        "directionalMax": 19.63,
+        "dirVsCalm": 0.75,
+        "contrast": 3.11,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=17.12 calm_max=20.07 best=SE best_mean=12.77 dir_vs_calm=0.75 contrast=3.11 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "directional",
+        "calmLevel": 10.13,
+        "calmMax": 11.04,
+        "directionalLevel": 13.17,
+        "directionalMax": 17.52,
+        "dirVsCalm": 1.3,
+        "contrast": 2.16,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "NW",
+          "N"
+        ],
+        "notes": "calm_mean=10.13 calm_max=11.04 best=SE best_mean=13.17 dir_vs_calm=1.30 contrast=2.16 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1950,
+        "pattern": "calm-local",
+        "calmLevel": 13.2,
+        "calmMax": 14.26,
+        "directionalLevel": 10.1,
+        "directionalMax": 13.01,
+        "dirVsCalm": 0.76,
+        "contrast": 1.6,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "N"
+        ],
+        "notes": "calm_mean=13.20 calm_max=14.26 best=E best_mean=10.10 dir_vs_calm=0.76 contrast=1.60 peak_gt_calm=FALSE"
+      }
+    }
+  },
+  "CLDP0470": {
+    "no2": {
+      "winter": {
+        "ok": true,
+        "hours": 1958,
+        "pattern": "calm-local",
+        "calmLevel": 45.02,
+        "calmMax": 55.61,
+        "directionalLevel": 30.71,
+        "directionalMax": 52.62,
+        "dirVsCalm": 0.68,
+        "contrast": 1.67,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "N",
+          "NE"
+        ],
+        "notes": "calm_mean=45.02 calm_max=55.61 best=SE best_mean=30.71 dir_vs_calm=0.68 contrast=1.67 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2206,
+        "pattern": "calm-local",
+        "calmLevel": 52.97,
+        "calmMax": 57.27,
+        "directionalLevel": 33.46,
+        "directionalMax": 53.47,
+        "dirVsCalm": 0.63,
+        "contrast": 2.4,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "NE",
+          "W"
+        ],
+        "notes": "calm_mean=52.97 calm_max=57.27 best=SE best_mean=33.46 dir_vs_calm=0.63 contrast=2.40 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "mixed",
+        "calmLevel": 26.9,
+        "calmMax": 36.02,
+        "directionalLevel": 25.98,
+        "directionalMax": 40.18,
+        "dirVsCalm": 0.97,
+        "contrast": 2.51,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "N",
+          "NE"
+        ],
+        "notes": "calm_mean=26.90 calm_max=36.02 best=E best_mean=25.98 dir_vs_calm=0.97 contrast=2.51 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 37,
+        "calmMax": 41.49,
+        "directionalLevel": 24.55,
+        "directionalMax": 34.87,
+        "dirVsCalm": 0.66,
+        "contrast": 2,
+        "primaryDirs": [
+          "SW"
+        ],
+        "cleanDirs": [
+          "NE",
+          "N"
+        ],
+        "notes": "calm_mean=37.00 calm_max=41.49 best=SW best_mean=24.55 dir_vs_calm=0.66 contrast=2.00 peak_gt_calm=FALSE"
+      }
+    },
+    "pm25": {
+      "winter": {
+        "ok": true,
+        "hours": 1948,
+        "pattern": "calm-local",
+        "calmLevel": 19.03,
+        "calmMax": 26.02,
+        "directionalLevel": 11.31,
+        "directionalMax": 22.78,
+        "dirVsCalm": 0.59,
+        "contrast": 2.78,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "N"
+        ],
+        "notes": "calm_mean=19.03 calm_max=26.02 best=E best_mean=11.31 dir_vs_calm=0.59 contrast=2.78 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2133,
+        "pattern": "calm-local",
+        "calmLevel": 19.11,
+        "calmMax": 23.49,
+        "directionalLevel": 11.26,
+        "directionalMax": 18.22,
+        "dirVsCalm": 0.59,
+        "contrast": 2.16,
+        "primaryDirs": [
+          "SE",
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=19.11 calm_max=23.49 best=SE+E best_mean=11.26 dir_vs_calm=0.59 contrast=2.16 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "directional",
+        "calmLevel": 10.77,
+        "calmMax": 12.11,
+        "directionalLevel": 13.49,
+        "directionalMax": 17.08,
+        "dirVsCalm": 1.25,
+        "contrast": 2.46,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "NW",
+          "N"
+        ],
+        "notes": "calm_mean=10.77 calm_max=12.11 best=SE best_mean=13.49 dir_vs_calm=1.25 contrast=2.46 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 13.86,
+        "calmMax": 15.76,
+        "directionalLevel": 10.07,
+        "directionalMax": 13.81,
+        "dirVsCalm": 0.73,
+        "contrast": 1.97,
+        "primaryDirs": [
+          "S",
+          "E"
+        ],
+        "cleanDirs": [
+          "NW",
+          "N"
+        ],
+        "notes": "calm_mean=13.86 calm_max=15.76 best=S+E best_mean=10.07 dir_vs_calm=0.73 contrast=1.97 peak_gt_calm=FALSE"
+      }
+    }
+  },
+  "CLDP0474": {
+    "no2": {
+      "winter": {
+        "ok": true,
+        "hours": 1621,
+        "pattern": "calm-local",
+        "calmLevel": 50.57,
+        "calmMax": 56.95,
+        "directionalLevel": 30.35,
+        "directionalMax": 54.44,
+        "dirVsCalm": 0.6,
+        "contrast": 1.64,
+        "primaryDirs": [
+          "SE",
+          "E"
+        ],
+        "cleanDirs": [
+          "N"
+        ],
+        "notes": "calm_mean=50.57 calm_max=56.95 best=SE+E best_mean=30.35 dir_vs_calm=0.60 contrast=1.64 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "calm-local",
+        "calmLevel": 57.03,
+        "calmMax": 61.95,
+        "directionalLevel": 31.81,
+        "directionalMax": 53.84,
+        "dirVsCalm": 0.56,
+        "contrast": 2.04,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "NE",
+          "W"
+        ],
+        "notes": "calm_mean=57.03 calm_max=61.95 best=SE best_mean=31.81 dir_vs_calm=0.56 contrast=2.04 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2207,
+        "pattern": "calm-local",
+        "calmLevel": 29.8,
+        "calmMax": 41.13,
+        "directionalLevel": 25.31,
+        "directionalMax": 41.16,
+        "dirVsCalm": 0.85,
+        "contrast": 2.27,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "NE",
+          "N"
+        ],
+        "notes": "calm_mean=29.80 calm_max=41.13 best=E best_mean=25.31 dir_vs_calm=0.85 contrast=2.27 peak_gt_calm=FALSE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 43.11,
+        "calmMax": 48.69,
+        "directionalLevel": 25.05,
+        "directionalMax": 44.83,
+        "dirVsCalm": 0.58,
+        "contrast": 1.91,
+        "primaryDirs": [
+          "S"
+        ],
+        "cleanDirs": [
+          "NE",
+          "SE"
+        ],
+        "notes": "calm_mean=43.11 calm_max=48.69 best=S best_mean=25.05 dir_vs_calm=0.58 contrast=1.91 peak_gt_calm=FALSE"
+      }
+    },
+    "pm25": {
+      "winter": {
+        "ok": true,
+        "hours": 1601,
+        "pattern": "calm-local",
+        "calmLevel": 13.37,
+        "calmMax": 18.29,
+        "directionalLevel": 9.44,
+        "directionalMax": 20.01,
+        "dirVsCalm": 0.71,
+        "contrast": 2.49,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "N"
+        ],
+        "notes": "calm_mean=13.37 calm_max=18.29 best=E best_mean=9.44 dir_vs_calm=0.71 contrast=2.49 peak_gt_calm=TRUE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2084,
+        "pattern": "calm-local",
+        "calmLevel": 14.98,
+        "calmMax": 17.94,
+        "directionalLevel": 10.97,
+        "directionalMax": 16.1,
+        "dirVsCalm": 0.73,
+        "contrast": 2.7,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "NW"
+        ],
+        "notes": "calm_mean=14.98 calm_max=17.94 best=SE best_mean=10.97 dir_vs_calm=0.73 contrast=2.70 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2198,
+        "pattern": "directional",
+        "calmLevel": 7.88,
+        "calmMax": 9.11,
+        "directionalLevel": 11.17,
+        "directionalMax": 14.91,
+        "dirVsCalm": 1.42,
+        "contrast": 2.54,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "NW",
+          "N"
+        ],
+        "notes": "calm_mean=7.88 calm_max=9.11 best=SE best_mean=11.17 dir_vs_calm=1.42 contrast=2.54 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 10.78,
+        "calmMax": 11.8,
+        "directionalLevel": 8.67,
+        "directionalMax": 11.65,
+        "dirVsCalm": 0.8,
+        "contrast": 2.21,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "N",
+          "NW"
+        ],
+        "notes": "calm_mean=10.78 calm_max=11.80 best=E best_mean=8.67 dir_vs_calm=0.80 contrast=2.21 peak_gt_calm=FALSE"
+      }
+    }
+  },
+  "CLDP0475": {
+    "no2": {
+      "winter": {
+        "ok": true,
+        "hours": 1916,
+        "pattern": "calm-local",
+        "calmLevel": 53.67,
+        "calmMax": 75.78,
+        "directionalLevel": 36.17,
+        "directionalMax": 72.86,
+        "dirVsCalm": 0.67,
+        "contrast": 1.87,
+        "primaryDirs": [
+          "S",
+          "N"
+        ],
+        "cleanDirs": [
+          "SW",
+          "W"
+        ],
+        "notes": "calm_mean=53.67 calm_max=75.78 best=S+N best_mean=36.17 dir_vs_calm=0.67 contrast=1.87 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "calm-local",
+        "calmLevel": 58.97,
+        "calmMax": 70.59,
+        "directionalLevel": 49.34,
+        "directionalMax": 89.01,
+        "dirVsCalm": 0.84,
+        "contrast": 2.7,
+        "primaryDirs": [
+          "NW"
+        ],
+        "cleanDirs": [
+          "NE",
+          "W"
+        ],
+        "notes": "calm_mean=58.97 calm_max=70.59 best=NW best_mean=49.34 dir_vs_calm=0.84 contrast=2.70 peak_gt_calm=TRUE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2184,
+        "pattern": "directional",
+        "calmLevel": 34.24,
+        "calmMax": 43.76,
+        "directionalLevel": 46.62,
+        "directionalMax": 69.29,
+        "dirVsCalm": 1.36,
+        "contrast": 3.73,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "S",
+          "N"
+        ],
+        "notes": "calm_mean=34.24 calm_max=43.76 best=E best_mean=46.62 dir_vs_calm=1.36 contrast=3.73 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1991,
+        "pattern": "calm-local",
+        "calmLevel": 58.01,
+        "calmMax": 66.57,
+        "directionalLevel": 47.03,
+        "directionalMax": 68.91,
+        "dirVsCalm": 0.81,
+        "contrast": 2.53,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "NE",
+          "W"
+        ],
+        "notes": "calm_mean=58.01 calm_max=66.57 best=E best_mean=47.03 dir_vs_calm=0.81 contrast=2.53 peak_gt_calm=TRUE"
+      }
+    },
+    "pm25": {
+      "winter": {
+        "ok": true,
+        "hours": 1921,
+        "pattern": "directional",
+        "calmLevel": 18.14,
+        "calmMax": 26.17,
+        "directionalLevel": 36.82,
+        "directionalMax": 139.12,
+        "dirVsCalm": 2.03,
+        "contrast": 6.49,
+        "primaryDirs": [
+          "NW"
+        ],
+        "cleanDirs": [
+          "SW",
+          "S"
+        ],
+        "notes": "calm_mean=18.14 calm_max=26.17 best=NW best_mean=36.82 dir_vs_calm=2.03 contrast=6.49 peak_gt_calm=TRUE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "calm-local",
+        "calmLevel": 16.22,
+        "calmMax": 19.94,
+        "directionalLevel": 10.63,
+        "directionalMax": 19.91,
+        "dirVsCalm": 0.66,
+        "contrast": 1.68,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "S",
+          "SW"
+        ],
+        "notes": "calm_mean=16.22 calm_max=19.94 best=SE best_mean=10.63 dir_vs_calm=0.66 contrast=1.68 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "directional",
+        "calmLevel": 7.8,
+        "calmMax": 8.95,
+        "directionalLevel": 10.55,
+        "directionalMax": 13.57,
+        "dirVsCalm": 1.35,
+        "contrast": 1.95,
+        "primaryDirs": [
+          "E",
+          "SE"
+        ],
+        "cleanDirs": [
+          "NW",
+          "W"
+        ],
+        "notes": "calm_mean=7.80 calm_max=8.95 best=E+SE best_mean=10.55 dir_vs_calm=1.35 contrast=1.95 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "mixed",
+        "calmLevel": 9.3,
+        "calmMax": 11.27,
+        "directionalLevel": 9.29,
+        "directionalMax": 14.37,
+        "dirVsCalm": 1,
+        "contrast": 1.73,
+        "primaryDirs": [
+          "NW"
+        ],
+        "cleanDirs": [
+          "SE",
+          "SW"
+        ],
+        "notes": "calm_mean=9.30 calm_max=11.27 best=NW best_mean=9.29 dir_vs_calm=1.00 contrast=1.73 peak_gt_calm=TRUE"
+      }
+    }
+  },
+  "CLDP0476": {
+    "no2": {
+      "winter": {
+        "ok": true,
+        "hours": 2048,
+        "pattern": "calm-local",
+        "calmLevel": 43.72,
+        "calmMax": 59.35,
+        "directionalLevel": 30.69,
+        "directionalMax": 44.84,
+        "dirVsCalm": 0.7,
+        "contrast": 2.06,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "N",
+          "NW"
+        ],
+        "notes": "calm_mean=43.72 calm_max=59.35 best=E best_mean=30.69 dir_vs_calm=0.70 contrast=2.06 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2206,
+        "pattern": "calm-local",
+        "calmLevel": 46.17,
+        "calmMax": 50.11,
+        "directionalLevel": 27.83,
+        "directionalMax": 44.99,
+        "dirVsCalm": 0.6,
+        "contrast": 2.19,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "NE",
+          "N"
+        ],
+        "notes": "calm_mean=46.17 calm_max=50.11 best=SE best_mean=27.83 dir_vs_calm=0.60 contrast=2.19 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2160,
+        "pattern": "calm-local",
+        "calmLevel": 30.19,
+        "calmMax": 40.96,
+        "directionalLevel": 25.73,
+        "directionalMax": 47.42,
+        "dirVsCalm": 0.85,
+        "contrast": 2.37,
+        "primaryDirs": [
+          "E",
+          "SE"
+        ],
+        "cleanDirs": [
+          "N",
+          "NE"
+        ],
+        "notes": "calm_mean=30.19 calm_max=40.96 best=E+SE best_mean=25.73 dir_vs_calm=0.85 contrast=2.37 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 34.44,
+        "calmMax": 39.06,
+        "directionalLevel": 18.47,
+        "directionalMax": 32.92,
+        "dirVsCalm": 0.54,
+        "contrast": 1.68,
+        "primaryDirs": [
+          "SW",
+          "W"
+        ],
+        "cleanDirs": [
+          "NE",
+          "W"
+        ],
+        "notes": "calm_mean=34.44 calm_max=39.06 best=SW+W best_mean=18.47 dir_vs_calm=0.54 contrast=1.68 peak_gt_calm=FALSE"
+      }
+    },
+    "pm25": {
+      "winter": {
+        "ok": true,
+        "hours": 2036,
+        "pattern": "calm-local",
+        "calmLevel": 18.05,
+        "calmMax": 26.25,
+        "directionalLevel": 11.24,
+        "directionalMax": 23.68,
+        "dirVsCalm": 0.62,
+        "contrast": 3.61,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "N"
+        ],
+        "notes": "calm_mean=18.05 calm_max=26.25 best=E best_mean=11.24 dir_vs_calm=0.62 contrast=3.61 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2117,
+        "pattern": "calm-local",
+        "calmLevel": 18.32,
+        "calmMax": 22.18,
+        "directionalLevel": 11.77,
+        "directionalMax": 18.42,
+        "dirVsCalm": 0.64,
+        "contrast": 2.49,
+        "primaryDirs": [
+          "SE",
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=18.32 calm_max=22.18 best=SE+E best_mean=11.77 dir_vs_calm=0.64 contrast=2.49 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2199,
+        "pattern": "directional",
+        "calmLevel": 10.44,
+        "calmMax": 11.58,
+        "directionalLevel": 13.05,
+        "directionalMax": 16.72,
+        "dirVsCalm": 1.25,
+        "contrast": 2.42,
+        "primaryDirs": [
+          "SE",
+          "E"
+        ],
+        "cleanDirs": [
+          "NW",
+          "N"
+        ],
+        "notes": "calm_mean=10.44 calm_max=11.58 best=SE+E best_mean=13.05 dir_vs_calm=1.25 contrast=2.42 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1991,
+        "pattern": "calm-local",
+        "calmLevel": 13.28,
+        "calmMax": 15.66,
+        "directionalLevel": 10.04,
+        "directionalMax": 13.83,
+        "dirVsCalm": 0.76,
+        "contrast": 2.25,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "NW",
+          "N"
+        ],
+        "notes": "calm_mean=13.28 calm_max=15.66 best=E best_mean=10.04 dir_vs_calm=0.76 contrast=2.25 peak_gt_calm=FALSE"
+      }
+    }
+  },
+  "CLDP0477": {
+    "no2": {
+      "winter": {
+        "ok": true,
+        "hours": 1725,
+        "pattern": "calm-local",
+        "calmLevel": 38.69,
+        "calmMax": 48.6,
+        "directionalLevel": 26.73,
+        "directionalMax": 38.06,
+        "dirVsCalm": 0.69,
+        "contrast": 2.24,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "N",
+          "NW"
+        ],
+        "notes": "calm_mean=38.69 calm_max=48.60 best=E best_mean=26.73 dir_vs_calm=0.69 contrast=2.24 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2207,
+        "pattern": "calm-local",
+        "calmLevel": 40.8,
+        "calmMax": 45.37,
+        "directionalLevel": 30.76,
+        "directionalMax": 42.9,
+        "dirVsCalm": 0.75,
+        "contrast": 2.53,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "NE",
+          "W"
+        ],
+        "notes": "calm_mean=40.80 calm_max=45.37 best=SE best_mean=30.76 dir_vs_calm=0.75 contrast=2.53 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "calm-local",
+        "calmLevel": 25.15,
+        "calmMax": 34.75,
+        "directionalLevel": 23.54,
+        "directionalMax": 36.25,
+        "dirVsCalm": 0.94,
+        "contrast": 2.24,
+        "primaryDirs": [
+          "E",
+          "SE"
+        ],
+        "cleanDirs": [
+          "N",
+          "SW"
+        ],
+        "notes": "calm_mean=25.15 calm_max=34.75 best=E+SE best_mean=23.54 dir_vs_calm=0.94 contrast=2.24 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1955,
+        "pattern": "calm-local",
+        "calmLevel": 33.06,
+        "calmMax": 39.15,
+        "directionalLevel": 21.2,
+        "directionalMax": 33.36,
+        "dirVsCalm": 0.64,
+        "contrast": 1.76,
+        "primaryDirs": [
+          "SW"
+        ],
+        "cleanDirs": [
+          "NE",
+          "N"
+        ],
+        "notes": "calm_mean=33.06 calm_max=39.15 best=SW best_mean=21.20 dir_vs_calm=0.64 contrast=1.76 peak_gt_calm=FALSE"
+      }
+    },
+    "pm25": {
+      "winter": {
+        "ok": true,
+        "hours": 1721,
+        "pattern": "calm-local",
+        "calmLevel": 19.65,
+        "calmMax": 26.14,
+        "directionalLevel": 12.88,
+        "directionalMax": 26.02,
+        "dirVsCalm": 0.66,
+        "contrast": 2.99,
+        "primaryDirs": [
+          "E",
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "N"
+        ],
+        "notes": "calm_mean=19.65 calm_max=26.14 best=E+SE best_mean=12.88 dir_vs_calm=0.66 contrast=2.99 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2149,
+        "pattern": "calm-local",
+        "calmLevel": 19.08,
+        "calmMax": 23.24,
+        "directionalLevel": 12.83,
+        "directionalMax": 19.28,
+        "dirVsCalm": 0.67,
+        "contrast": 2.5,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=19.08 calm_max=23.24 best=SE best_mean=12.83 dir_vs_calm=0.67 contrast=2.50 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2200,
+        "pattern": "directional",
+        "calmLevel": 10.99,
+        "calmMax": 12.46,
+        "directionalLevel": 13.53,
+        "directionalMax": 16.46,
+        "dirVsCalm": 1.23,
+        "contrast": 2.36,
+        "primaryDirs": [
+          "SE",
+          "E"
+        ],
+        "cleanDirs": [
+          "NW",
+          "N"
+        ],
+        "notes": "calm_mean=10.99 calm_max=12.46 best=SE+E best_mean=13.53 dir_vs_calm=1.23 contrast=2.36 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1955,
+        "pattern": "calm-local",
+        "calmLevel": 13.51,
+        "calmMax": 16.83,
+        "directionalLevel": 10.21,
+        "directionalMax": 14.49,
+        "dirVsCalm": 0.76,
+        "contrast": 1.85,
+        "primaryDirs": [
+          "E",
+          "S"
+        ],
+        "cleanDirs": [
+          "N",
+          "NW"
+        ],
+        "notes": "calm_mean=13.51 calm_max=16.83 best=E+S best_mean=10.21 dir_vs_calm=0.76 contrast=1.85 peak_gt_calm=FALSE"
+      }
+    }
+  },
+  "CLDP0517": {
+    "no2": {
+      "winter": {
+        "ok": true,
+        "hours": 2080,
+        "pattern": "calm-local",
+        "calmLevel": 37.89,
+        "calmMax": 48.78,
+        "directionalLevel": 21.92,
+        "directionalMax": 34.18,
+        "dirVsCalm": 0.58,
+        "contrast": 1.67,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "N"
+        ],
+        "notes": "calm_mean=37.89 calm_max=48.78 best=E best_mean=21.92 dir_vs_calm=0.58 contrast=1.67 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2205,
+        "pattern": "calm-local",
+        "calmLevel": 35.07,
+        "calmMax": 38.48,
+        "directionalLevel": 23.86,
+        "directionalMax": 35.01,
+        "dirVsCalm": 0.68,
+        "contrast": 2.43,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "NE"
+        ],
+        "notes": "calm_mean=35.07 calm_max=38.48 best=SE best_mean=23.86 dir_vs_calm=0.68 contrast=2.43 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "calm-local",
+        "calmLevel": 20.4,
+        "calmMax": 26.81,
+        "directionalLevel": 17.65,
+        "directionalMax": 26.37,
+        "dirVsCalm": 0.86,
+        "contrast": 1.87,
+        "primaryDirs": [
+          "E",
+          "SE"
+        ],
+        "cleanDirs": [],
+        "notes": "calm_mean=20.40 calm_max=26.81 best=E+SE best_mean=17.65 dir_vs_calm=0.86 contrast=1.87 peak_gt_calm=FALSE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 31.33,
+        "calmMax": 42.49,
+        "directionalLevel": 17.12,
+        "directionalMax": 28.92,
+        "dirVsCalm": 0.55,
+        "contrast": 1.55,
+        "primaryDirs": [
+          "E",
+          "S"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=31.33 calm_max=42.49 best=E+S best_mean=17.12 dir_vs_calm=0.55 contrast=1.55 peak_gt_calm=FALSE"
+      }
+    },
+    "pm25": {
+      "winter": {
+        "ok": true,
+        "hours": 2070,
+        "pattern": "calm-local",
+        "calmLevel": 17.06,
+        "calmMax": 25.99,
+        "directionalLevel": 10.02,
+        "directionalMax": 23.1,
+        "dirVsCalm": 0.59,
+        "contrast": 3.01,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "N"
+        ],
+        "notes": "calm_mean=17.06 calm_max=25.99 best=E best_mean=10.02 dir_vs_calm=0.59 contrast=3.01 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2121,
+        "pattern": "calm-local",
+        "calmLevel": 17.98,
+        "calmMax": 20.65,
+        "directionalLevel": 13.11,
+        "directionalMax": 18.66,
+        "dirVsCalm": 0.73,
+        "contrast": 2.48,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "NW"
+        ],
+        "notes": "calm_mean=17.98 calm_max=20.65 best=SE best_mean=13.11 dir_vs_calm=0.73 contrast=2.48 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2196,
+        "pattern": "directional",
+        "calmLevel": 11.26,
+        "calmMax": 14.06,
+        "directionalLevel": 13.28,
+        "directionalMax": 16.34,
+        "dirVsCalm": 1.18,
+        "contrast": 2.5,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "NW",
+          "N"
+        ],
+        "notes": "calm_mean=11.26 calm_max=14.06 best=SE best_mean=13.28 dir_vs_calm=1.18 contrast=2.50 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 14.26,
+        "calmMax": 17.3,
+        "directionalLevel": 9.43,
+        "directionalMax": 12.67,
+        "dirVsCalm": 0.66,
+        "contrast": 1.99,
+        "primaryDirs": [
+          "S"
+        ],
+        "cleanDirs": [
+          "N",
+          "NW"
+        ],
+        "notes": "calm_mean=14.26 calm_max=17.30 best=S best_mean=9.43 dir_vs_calm=0.66 contrast=1.99 peak_gt_calm=FALSE"
+      }
+    }
+  },
+  "CLDP0531": {
+    "no2": {
+      "winter": {
+        "ok": true,
+        "hours": 1624,
+        "pattern": "calm-local",
+        "calmLevel": 40.54,
+        "calmMax": 51.21,
+        "directionalLevel": 22.9,
+        "directionalMax": 37.95,
+        "dirVsCalm": 0.56,
+        "contrast": 2.12,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "NW",
+          "SW"
+        ],
+        "notes": "calm_mean=40.54 calm_max=51.21 best=E best_mean=22.90 dir_vs_calm=0.56 contrast=2.12 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "calm-local",
+        "calmLevel": 38.18,
+        "calmMax": 44.78,
+        "directionalLevel": 22.03,
+        "directionalMax": 40.96,
+        "dirVsCalm": 0.58,
+        "contrast": 2.49,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=38.18 calm_max=44.78 best=SE best_mean=22.03 dir_vs_calm=0.58 contrast=2.49 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 1512,
+        "pattern": "calm-local",
+        "calmLevel": 22.97,
+        "calmMax": 29.01,
+        "directionalLevel": 21.49,
+        "directionalMax": 33.28,
+        "dirVsCalm": 0.94,
+        "contrast": 2.68,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "S",
+          "SW"
+        ],
+        "notes": "calm_mean=22.97 calm_max=29.01 best=E best_mean=21.49 dir_vs_calm=0.94 contrast=2.68 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1914,
+        "pattern": "calm-local",
+        "calmLevel": 32.07,
+        "calmMax": 39.42,
+        "directionalLevel": 21.18,
+        "directionalMax": 29.92,
+        "dirVsCalm": 0.66,
+        "contrast": 2.17,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "NE"
+        ],
+        "notes": "calm_mean=32.07 calm_max=39.42 best=E best_mean=21.18 dir_vs_calm=0.66 contrast=2.17 peak_gt_calm=FALSE"
+      }
+    },
+    "pm25": {
+      "winter": {
+        "ok": true,
+        "hours": 1623,
+        "pattern": "calm-local",
+        "calmLevel": 19.47,
+        "calmMax": 29.9,
+        "directionalLevel": 10.47,
+        "directionalMax": 24.33,
+        "dirVsCalm": 0.54,
+        "contrast": 2.89,
+        "primaryDirs": [
+          "E",
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=19.47 calm_max=29.90 best=E+SE best_mean=10.47 dir_vs_calm=0.54 contrast=2.89 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "calm-local",
+        "calmLevel": 19.11,
+        "calmMax": 22.44,
+        "directionalLevel": 14.24,
+        "directionalMax": 39.63,
+        "dirVsCalm": 0.74,
+        "contrast": 2.39,
+        "primaryDirs": [
+          "N"
+        ],
+        "cleanDirs": [
+          "SW",
+          "W"
+        ],
+        "notes": "calm_mean=19.11 calm_max=22.44 best=N best_mean=14.24 dir_vs_calm=0.74 contrast=2.39 peak_gt_calm=TRUE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 1512,
+        "pattern": "directional",
+        "calmLevel": 8.16,
+        "calmMax": 9.8,
+        "directionalLevel": 9.71,
+        "directionalMax": 12.14,
+        "dirVsCalm": 1.19,
+        "contrast": 2.13,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "NW",
+          "W"
+        ],
+        "notes": "calm_mean=8.16 calm_max=9.80 best=E best_mean=9.71 dir_vs_calm=1.19 contrast=2.13 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1914,
+        "pattern": "calm-local",
+        "calmLevel": 9.76,
+        "calmMax": 11.83,
+        "directionalLevel": 7.57,
+        "directionalMax": 9.6,
+        "dirVsCalm": 0.78,
+        "contrast": 1.7,
+        "primaryDirs": [
+          "S"
+        ],
+        "cleanDirs": [
+          "NE"
+        ],
+        "notes": "calm_mean=9.76 calm_max=11.83 best=S best_mean=7.57 dir_vs_calm=0.78 contrast=1.70 peak_gt_calm=FALSE"
+      }
+    }
+  },
+  "CLDP0533": {
+    "no2": {
+      "winter": {
+        "ok": true,
+        "hours": 1816,
+        "pattern": "calm-local",
+        "calmLevel": 33.04,
+        "calmMax": 45.94,
+        "directionalLevel": 24.09,
+        "directionalMax": 33.18,
+        "dirVsCalm": 0.73,
+        "contrast": 2.2,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "SW",
+          "NW"
+        ],
+        "notes": "calm_mean=33.04 calm_max=45.94 best=E best_mean=24.09 dir_vs_calm=0.73 contrast=2.20 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2177,
+        "pattern": "calm-local",
+        "calmLevel": 33.91,
+        "calmMax": 36.77,
+        "directionalLevel": 22.8,
+        "directionalMax": 33.07,
+        "dirVsCalm": 0.67,
+        "contrast": 2.16,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "NE"
+        ],
+        "notes": "calm_mean=33.91 calm_max=36.77 best=SE best_mean=22.80 dir_vs_calm=0.67 contrast=2.16 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 1511,
+        "pattern": "mixed",
+        "calmLevel": 21,
+        "calmMax": 28.49,
+        "directionalLevel": 20.33,
+        "directionalMax": 29.34,
+        "dirVsCalm": 0.97,
+        "contrast": 2.49,
+        "primaryDirs": [
+          "E",
+          "SE"
+        ],
+        "cleanDirs": [
+          "S",
+          "SW"
+        ],
+        "notes": "calm_mean=21.00 calm_max=28.49 best=E+SE best_mean=20.33 dir_vs_calm=0.97 contrast=2.49 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 29.3,
+        "calmMax": 38.87,
+        "directionalLevel": 17.09,
+        "directionalMax": 27.61,
+        "dirVsCalm": 0.58,
+        "contrast": 1.67,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W"
+        ],
+        "notes": "calm_mean=29.30 calm_max=38.87 best=E best_mean=17.09 dir_vs_calm=0.58 contrast=1.67 peak_gt_calm=FALSE"
+      }
+    },
+    "pm25": {
+      "winter": {
+        "ok": true,
+        "hours": 1816,
+        "pattern": "calm-local",
+        "calmLevel": 18.51,
+        "calmMax": 25.61,
+        "directionalLevel": 12.83,
+        "directionalMax": 22.49,
+        "dirVsCalm": 0.69,
+        "contrast": 2.29,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "N",
+          "S"
+        ],
+        "notes": "calm_mean=18.51 calm_max=25.61 best=SE best_mean=12.83 dir_vs_calm=0.69 contrast=2.29 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2170,
+        "pattern": "calm-local",
+        "calmLevel": 17.99,
+        "calmMax": 21.11,
+        "directionalLevel": 11.87,
+        "directionalMax": 17.45,
+        "dirVsCalm": 0.66,
+        "contrast": 3,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=17.99 calm_max=21.11 best=SE best_mean=11.87 dir_vs_calm=0.66 contrast=3.00 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 1583,
+        "pattern": "mixed",
+        "calmLevel": 10.52,
+        "calmMax": 12.17,
+        "directionalLevel": 12.02,
+        "directionalMax": 14.56,
+        "dirVsCalm": 1.14,
+        "contrast": 1.93,
+        "primaryDirs": [
+          "NE",
+          "W"
+        ],
+        "cleanDirs": [
+          "NW",
+          "N"
+        ],
+        "notes": "calm_mean=10.52 calm_max=12.17 best=NE+W best_mean=12.02 dir_vs_calm=1.14 contrast=1.93 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 13.73,
+        "calmMax": 16.91,
+        "directionalLevel": 9.95,
+        "directionalMax": 13.74,
+        "dirVsCalm": 0.73,
+        "contrast": 1.74,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "N",
+          "NE"
+        ],
+        "notes": "calm_mean=13.73 calm_max=16.91 best=E best_mean=9.95 dir_vs_calm=0.73 contrast=1.74 peak_gt_calm=FALSE"
+      }
+    }
+  },
+  "CLDP0539": {
+    "no2": {
+      "winter": {
+        "ok": true,
+        "hours": 2087,
+        "pattern": "calm-local",
+        "calmLevel": 29.13,
+        "calmMax": 39.3,
+        "directionalLevel": 16.5,
+        "directionalMax": 27.27,
+        "dirVsCalm": 0.57,
+        "contrast": 2.15,
+        "primaryDirs": [
+          "E",
+          "SE"
+        ],
+        "cleanDirs": [
+          "SW",
+          "W"
+        ],
+        "notes": "calm_mean=29.13 calm_max=39.30 best=E+SE best_mean=16.50 dir_vs_calm=0.57 contrast=2.15 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "calm-local",
+        "calmLevel": 34.41,
+        "calmMax": 40.45,
+        "directionalLevel": 19.65,
+        "directionalMax": 35.31,
+        "dirVsCalm": 0.57,
+        "contrast": 3.08,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=34.41 calm_max=40.45 best=SE best_mean=19.65 dir_vs_calm=0.57 contrast=3.08 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 1512,
+        "pattern": "calm-local",
+        "calmLevel": 19.5,
+        "calmMax": 25.1,
+        "directionalLevel": 16.83,
+        "directionalMax": 23.48,
+        "dirVsCalm": 0.86,
+        "contrast": 2.35,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "SW"
+        ],
+        "notes": "calm_mean=19.50 calm_max=25.10 best=E best_mean=16.83 dir_vs_calm=0.86 contrast=2.35 peak_gt_calm=FALSE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 26.69,
+        "calmMax": 32.41,
+        "directionalLevel": 15.41,
+        "directionalMax": 25.14,
+        "dirVsCalm": 0.58,
+        "contrast": 2.11,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=26.69 calm_max=32.41 best=E best_mean=15.41 dir_vs_calm=0.58 contrast=2.11 peak_gt_calm=FALSE"
+      }
+    },
+    "pm25": {
+      "winter": {
+        "ok": true,
+        "hours": 2083,
+        "pattern": "calm-local",
+        "calmLevel": 16.52,
+        "calmMax": 24.55,
+        "directionalLevel": 14.92,
+        "directionalMax": 26.12,
+        "dirVsCalm": 0.9,
+        "contrast": 4.99,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "N"
+        ],
+        "notes": "calm_mean=16.52 calm_max=24.55 best=E best_mean=14.92 dir_vs_calm=0.90 contrast=4.99 peak_gt_calm=TRUE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "calm-local",
+        "calmLevel": 17.11,
+        "calmMax": 20.34,
+        "directionalLevel": 10.64,
+        "directionalMax": 18.27,
+        "dirVsCalm": 0.62,
+        "contrast": 1.94,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "SW",
+          "NW"
+        ],
+        "notes": "calm_mean=17.11 calm_max=20.34 best=SE best_mean=10.64 dir_vs_calm=0.62 contrast=1.94 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 1512,
+        "pattern": "directional",
+        "calmLevel": 6.73,
+        "calmMax": 8.49,
+        "directionalLevel": 9.73,
+        "directionalMax": 12.69,
+        "dirVsCalm": 1.44,
+        "contrast": 2.42,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "NW",
+          "S"
+        ],
+        "notes": "calm_mean=6.73 calm_max=8.49 best=E best_mean=9.73 dir_vs_calm=1.44 contrast=2.42 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 8.62,
+        "calmMax": 11.33,
+        "directionalLevel": 6.67,
+        "directionalMax": 9.61,
+        "dirVsCalm": 0.77,
+        "contrast": 1.89,
+        "primaryDirs": [
+          "S"
+        ],
+        "cleanDirs": [
+          "N",
+          "NE"
+        ],
+        "notes": "calm_mean=8.62 calm_max=11.33 best=S best_mean=6.67 dir_vs_calm=0.77 contrast=1.89 peak_gt_calm=FALSE"
+      }
+    }
+  },
+  "CLDP0541": {
+    "no2": {
+      "winter": {
+        "ok": true,
+        "hours": 2087,
+        "pattern": "calm-local",
+        "calmLevel": 34.62,
+        "calmMax": 49.83,
+        "directionalLevel": 18.77,
+        "directionalMax": 27.86,
+        "dirVsCalm": 0.54,
+        "contrast": 1.92,
+        "primaryDirs": [
+          "NW"
+        ],
+        "cleanDirs": [
+          "SW",
+          "W"
+        ],
+        "notes": "calm_mean=34.62 calm_max=49.83 best=NW best_mean=18.77 dir_vs_calm=0.54 contrast=1.92 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "calm-local",
+        "calmLevel": 36.62,
+        "calmMax": 41.9,
+        "directionalLevel": 20.7,
+        "directionalMax": 36.98,
+        "dirVsCalm": 0.57,
+        "contrast": 2.82,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=36.62 calm_max=41.90 best=SE best_mean=20.70 dir_vs_calm=0.57 contrast=2.82 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 1512,
+        "pattern": "calm-local",
+        "calmLevel": 21.01,
+        "calmMax": 27.12,
+        "directionalLevel": 17.51,
+        "directionalMax": 24.58,
+        "dirVsCalm": 0.83,
+        "contrast": 2.35,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "S",
+          "SW"
+        ],
+        "notes": "calm_mean=21.01 calm_max=27.12 best=E best_mean=17.51 dir_vs_calm=0.83 contrast=2.35 peak_gt_calm=FALSE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 29.77,
+        "calmMax": 36.21,
+        "directionalLevel": 16.94,
+        "directionalMax": 28.37,
+        "dirVsCalm": 0.57,
+        "contrast": 2.08,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "NE"
+        ],
+        "notes": "calm_mean=29.77 calm_max=36.21 best=E best_mean=16.94 dir_vs_calm=0.57 contrast=2.08 peak_gt_calm=FALSE"
+      }
+    },
+    "pm25": {
+      "winter": {
+        "ok": true,
+        "hours": 2087,
+        "pattern": "calm-local",
+        "calmLevel": 15.39,
+        "calmMax": 23.16,
+        "directionalLevel": 13.92,
+        "directionalMax": 24.04,
+        "dirVsCalm": 0.9,
+        "contrast": 3.5,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=15.39 calm_max=23.16 best=E best_mean=13.92 dir_vs_calm=0.90 contrast=3.50 peak_gt_calm=TRUE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "calm-local",
+        "calmLevel": 16.8,
+        "calmMax": 19.72,
+        "directionalLevel": 10.97,
+        "directionalMax": 18.84,
+        "dirVsCalm": 0.65,
+        "contrast": 1.8,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "SW"
+        ],
+        "notes": "calm_mean=16.80 calm_max=19.72 best=SE best_mean=10.97 dir_vs_calm=0.65 contrast=1.80 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 1512,
+        "pattern": "directional",
+        "calmLevel": 7.44,
+        "calmMax": 9.61,
+        "directionalLevel": 10.22,
+        "directionalMax": 13.3,
+        "dirVsCalm": 1.37,
+        "contrast": 2.43,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "NW",
+          "S"
+        ],
+        "notes": "calm_mean=7.44 calm_max=9.61 best=E best_mean=10.22 dir_vs_calm=1.37 contrast=2.43 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 8.85,
+        "calmMax": 10.99,
+        "directionalLevel": 5.94,
+        "directionalMax": 9.09,
+        "dirVsCalm": 0.67,
+        "contrast": 1.41,
+        "primaryDirs": [
+          "S"
+        ],
+        "cleanDirs": [
+          "N",
+          "NE"
+        ],
+        "notes": "calm_mean=8.85 calm_max=10.99 best=S best_mean=5.94 dir_vs_calm=0.67 contrast=1.41 peak_gt_calm=FALSE"
+      }
+    }
+  },
+  "CLDP0542": {
+    "no2": {
+      "winter": {
+        "ok": true,
+        "hours": 2079,
+        "pattern": "calm-local",
+        "calmLevel": 31.98,
+        "calmMax": 43.93,
+        "directionalLevel": 14.1,
+        "directionalMax": 28.74,
+        "dirVsCalm": 0.44,
+        "contrast": 1.77,
+        "primaryDirs": [
+          "E",
+          "SE"
+        ],
+        "cleanDirs": [
+          "SW",
+          "W"
+        ],
+        "notes": "calm_mean=31.98 calm_max=43.93 best=E+SE best_mean=14.10 dir_vs_calm=0.44 contrast=1.77 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2207,
+        "pattern": "calm-local",
+        "calmLevel": 34.39,
+        "calmMax": 42.2,
+        "directionalLevel": 20.18,
+        "directionalMax": 37.03,
+        "dirVsCalm": 0.59,
+        "contrast": 2.67,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=34.39 calm_max=42.20 best=SE best_mean=20.18 dir_vs_calm=0.59 contrast=2.67 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 1512,
+        "pattern": "mixed",
+        "calmLevel": 21.25,
+        "calmMax": 27.84,
+        "directionalLevel": 20.48,
+        "directionalMax": 30.3,
+        "dirVsCalm": 0.96,
+        "contrast": 2.91,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "SW",
+          "S"
+        ],
+        "notes": "calm_mean=21.25 calm_max=27.84 best=E best_mean=20.48 dir_vs_calm=0.96 contrast=2.91 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 27.02,
+        "calmMax": 32.9,
+        "directionalLevel": 16.48,
+        "directionalMax": 26.91,
+        "dirVsCalm": 0.61,
+        "contrast": 2.21,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "SW",
+          "W"
+        ],
+        "notes": "calm_mean=27.02 calm_max=32.90 best=E best_mean=16.48 dir_vs_calm=0.61 contrast=2.21 peak_gt_calm=FALSE"
+      }
+    },
+    "pm25": {
+      "winter": {
+        "ok": true,
+        "hours": 2076,
+        "pattern": "calm-local",
+        "calmLevel": 18.51,
+        "calmMax": 33.1,
+        "directionalLevel": 14.91,
+        "directionalMax": 25.62,
+        "dirVsCalm": 0.81,
+        "contrast": 4.63,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=18.51 calm_max=33.10 best=E best_mean=14.91 dir_vs_calm=0.81 contrast=4.63 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2207,
+        "pattern": "calm-local",
+        "calmLevel": 16.78,
+        "calmMax": 19.49,
+        "directionalLevel": 10.02,
+        "directionalMax": 17.68,
+        "dirVsCalm": 0.6,
+        "contrast": 1.88,
+        "primaryDirs": [
+          "SE",
+          "E"
+        ],
+        "cleanDirs": [
+          "SW",
+          "NW"
+        ],
+        "notes": "calm_mean=16.78 calm_max=19.49 best=SE+E best_mean=10.02 dir_vs_calm=0.60 contrast=1.88 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 1512,
+        "pattern": "directional",
+        "calmLevel": 7.35,
+        "calmMax": 8.88,
+        "directionalLevel": 9.7,
+        "directionalMax": 12.5,
+        "dirVsCalm": 1.32,
+        "contrast": 2.49,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "NW",
+          "S"
+        ],
+        "notes": "calm_mean=7.35 calm_max=8.88 best=E best_mean=9.70 dir_vs_calm=1.32 contrast=2.49 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 9.49,
+        "calmMax": 11.56,
+        "directionalLevel": 6,
+        "directionalMax": 8.53,
+        "dirVsCalm": 0.63,
+        "contrast": 1.52,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "SW"
+        ],
+        "notes": "calm_mean=9.49 calm_max=11.56 best=E best_mean=6.00 dir_vs_calm=0.63 contrast=1.52 peak_gt_calm=FALSE"
+      }
+    }
+  },
+  "CLDP0551": {
+    "no2": {
+      "winter": {
+        "ok": true,
+        "hours": 2000,
+        "pattern": "calm-local",
+        "calmLevel": 29.88,
+        "calmMax": 39.76,
+        "directionalLevel": 19.33,
+        "directionalMax": 27.57,
+        "dirVsCalm": 0.65,
+        "contrast": 1.82,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "SW",
+          "S"
+        ],
+        "notes": "calm_mean=29.88 calm_max=39.76 best=E best_mean=19.33 dir_vs_calm=0.65 contrast=1.82 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2176,
+        "pattern": "calm-local",
+        "calmLevel": 30.55,
+        "calmMax": 35.93,
+        "directionalLevel": 21.26,
+        "directionalMax": 32.29,
+        "dirVsCalm": 0.7,
+        "contrast": 2.34,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "NE"
+        ],
+        "notes": "calm_mean=30.55 calm_max=35.93 best=SE best_mean=21.26 dir_vs_calm=0.70 contrast=2.34 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 1512,
+        "pattern": "calm-local",
+        "calmLevel": 23.24,
+        "calmMax": 30.22,
+        "directionalLevel": 19,
+        "directionalMax": 30.54,
+        "dirVsCalm": 0.82,
+        "contrast": 2.17,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "N",
+          "SW"
+        ],
+        "notes": "calm_mean=23.24 calm_max=30.22 best=SE best_mean=19.00 dir_vs_calm=0.82 contrast=2.17 peak_gt_calm=FALSE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 29.38,
+        "calmMax": 37.89,
+        "directionalLevel": 15.72,
+        "directionalMax": 26.03,
+        "dirVsCalm": 0.54,
+        "contrast": 1.72,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "NE"
+        ],
+        "notes": "calm_mean=29.38 calm_max=37.89 best=E best_mean=15.72 dir_vs_calm=0.54 contrast=1.72 peak_gt_calm=FALSE"
+      }
+    },
+    "pm25": {
+      "winter": {
+        "ok": true,
+        "hours": 1999,
+        "pattern": "calm-local",
+        "calmLevel": 18.44,
+        "calmMax": 27.42,
+        "directionalLevel": 12.52,
+        "directionalMax": 26.16,
+        "dirVsCalm": 0.68,
+        "contrast": 4.1,
+        "primaryDirs": [
+          "SE",
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "N"
+        ],
+        "notes": "calm_mean=18.44 calm_max=27.42 best=SE+E best_mean=12.52 dir_vs_calm=0.68 contrast=4.10 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2131,
+        "pattern": "calm-local",
+        "calmLevel": 19.32,
+        "calmMax": 22.66,
+        "directionalLevel": 14,
+        "directionalMax": 20.84,
+        "dirVsCalm": 0.72,
+        "contrast": 2.45,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=19.32 calm_max=22.66 best=SE best_mean=14.00 dir_vs_calm=0.72 contrast=2.45 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 1584,
+        "pattern": "directional",
+        "calmLevel": 10.84,
+        "calmMax": 12.85,
+        "directionalLevel": 12.91,
+        "directionalMax": 15.4,
+        "dirVsCalm": 1.19,
+        "contrast": 2.12,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "NW",
+          "N"
+        ],
+        "notes": "calm_mean=10.84 calm_max=12.85 best=E best_mean=12.91 dir_vs_calm=1.19 contrast=2.12 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 13.6,
+        "calmMax": 14.72,
+        "directionalLevel": 10.11,
+        "directionalMax": 13.74,
+        "dirVsCalm": 0.74,
+        "contrast": 1.85,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "N",
+          "NW"
+        ],
+        "notes": "calm_mean=13.60 calm_max=14.72 best=E best_mean=10.11 dir_vs_calm=0.74 contrast=1.85 peak_gt_calm=FALSE"
+      }
+    }
+  },
+  "CLDP0552": {
+    "no2": {
+      "winter": {
+        "ok": true,
+        "hours": 1428,
+        "pattern": "calm-local",
+        "calmLevel": 29.88,
+        "calmMax": 34.72,
+        "directionalLevel": 21.63,
+        "directionalMax": 29.93,
+        "dirVsCalm": 0.72,
+        "contrast": 1.68,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [],
+        "notes": "calm_mean=29.88 calm_max=34.72 best=E best_mean=21.63 dir_vs_calm=0.72 contrast=1.68 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2206,
+        "pattern": "calm-local",
+        "calmLevel": 35.68,
+        "calmMax": 40.78,
+        "directionalLevel": 22.59,
+        "directionalMax": 36.13,
+        "dirVsCalm": 0.63,
+        "contrast": 2.14,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "NE"
+        ],
+        "notes": "calm_mean=35.68 calm_max=40.78 best=SE best_mean=22.59 dir_vs_calm=0.63 contrast=2.14 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 1680,
+        "pattern": "mixed",
+        "calmLevel": 20.94,
+        "calmMax": 29.12,
+        "directionalLevel": 21.3,
+        "directionalMax": 31.83,
+        "dirVsCalm": 1.02,
+        "contrast": 2.42,
+        "primaryDirs": [
+          "E",
+          "SE"
+        ],
+        "cleanDirs": [
+          "S",
+          "SW"
+        ],
+        "notes": "calm_mean=20.94 calm_max=29.12 best=E+SE best_mean=21.30 dir_vs_calm=1.02 contrast=2.42 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1847,
+        "pattern": "calm-local",
+        "calmLevel": 29.82,
+        "calmMax": 38.02,
+        "directionalLevel": 17.5,
+        "directionalMax": 29.8,
+        "dirVsCalm": 0.59,
+        "contrast": 1.73,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W"
+        ],
+        "notes": "calm_mean=29.82 calm_max=38.02 best=E best_mean=17.50 dir_vs_calm=0.59 contrast=1.73 peak_gt_calm=FALSE"
+      }
+    },
+    "pm25": {
+      "winter": {
+        "ok": true,
+        "hours": 1442,
+        "pattern": "calm-local",
+        "calmLevel": 16.71,
+        "calmMax": 23.16,
+        "directionalLevel": 14.43,
+        "directionalMax": 24.48,
+        "dirVsCalm": 0.86,
+        "contrast": 3.69,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "N"
+        ],
+        "notes": "calm_mean=16.71 calm_max=23.16 best=SE best_mean=14.43 dir_vs_calm=0.86 contrast=3.69 peak_gt_calm=TRUE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2122,
+        "pattern": "calm-local",
+        "calmLevel": 17.63,
+        "calmMax": 20.53,
+        "directionalLevel": 11.24,
+        "directionalMax": 16.85,
+        "dirVsCalm": 0.64,
+        "contrast": 2.23,
+        "primaryDirs": [
+          "SE",
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=17.63 calm_max=20.53 best=SE+E best_mean=11.24 dir_vs_calm=0.64 contrast=2.23 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 1752,
+        "pattern": "directional",
+        "calmLevel": 9.88,
+        "calmMax": 11.11,
+        "directionalLevel": 11.83,
+        "directionalMax": 14.98,
+        "dirVsCalm": 1.2,
+        "contrast": 2.04,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "NW"
+        ],
+        "notes": "calm_mean=9.88 calm_max=11.11 best=E best_mean=11.83 dir_vs_calm=1.20 contrast=2.04 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1847,
+        "pattern": "calm-local",
+        "calmLevel": 13.39,
+        "calmMax": 16.8,
+        "directionalLevel": 10.91,
+        "directionalMax": 15.17,
+        "dirVsCalm": 0.81,
+        "contrast": 2.16,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "NW",
+          "N"
+        ],
+        "notes": "calm_mean=13.39 calm_max=16.80 best=E best_mean=10.91 dir_vs_calm=0.81 contrast=2.16 peak_gt_calm=FALSE"
+      }
+    }
+  },
+  "CLDP0553": {
+    "no2": {
+      "winter": {
+        "ok": true,
+        "hours": 2061,
+        "pattern": "calm-local",
+        "calmLevel": 33.33,
+        "calmMax": 44.11,
+        "directionalLevel": 18.92,
+        "directionalMax": 28.96,
+        "dirVsCalm": 0.57,
+        "contrast": 2.31,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "SW",
+          "W"
+        ],
+        "notes": "calm_mean=33.33 calm_max=44.11 best=E best_mean=18.92 dir_vs_calm=0.57 contrast=2.31 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "calm-local",
+        "calmLevel": 32.68,
+        "calmMax": 38.09,
+        "directionalLevel": 19.92,
+        "directionalMax": 31.44,
+        "dirVsCalm": 0.61,
+        "contrast": 3.02,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=32.68 calm_max=38.09 best=SE best_mean=19.92 dir_vs_calm=0.61 contrast=3.02 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 1512,
+        "pattern": "mixed",
+        "calmLevel": 18.62,
+        "calmMax": 22.99,
+        "directionalLevel": 21.02,
+        "directionalMax": 26.45,
+        "dirVsCalm": 1.13,
+        "contrast": 3.08,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "SW",
+          "S"
+        ],
+        "notes": "calm_mean=18.62 calm_max=22.99 best=E best_mean=21.02 dir_vs_calm=1.13 contrast=3.08 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 26.6,
+        "calmMax": 32.06,
+        "directionalLevel": 17.44,
+        "directionalMax": 26.09,
+        "dirVsCalm": 0.66,
+        "contrast": 2.25,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "NE"
+        ],
+        "notes": "calm_mean=26.60 calm_max=32.06 best=E best_mean=17.44 dir_vs_calm=0.66 contrast=2.25 peak_gt_calm=FALSE"
+      }
+    },
+    "pm25": {
+      "winter": {
+        "ok": true,
+        "hours": 2082,
+        "pattern": "calm-local",
+        "calmLevel": 17.31,
+        "calmMax": 28.23,
+        "directionalLevel": 14.04,
+        "directionalMax": 23.33,
+        "dirVsCalm": 0.81,
+        "contrast": 5.35,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=17.31 calm_max=28.23 best=E best_mean=14.04 dir_vs_calm=0.81 contrast=5.35 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "calm-local",
+        "calmLevel": 17.37,
+        "calmMax": 19.47,
+        "directionalLevel": 10.18,
+        "directionalMax": 17.51,
+        "dirVsCalm": 0.59,
+        "contrast": 2.23,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "NW",
+          "SW"
+        ],
+        "notes": "calm_mean=17.37 calm_max=19.47 best=SE best_mean=10.18 dir_vs_calm=0.59 contrast=2.23 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 1512,
+        "pattern": "directional",
+        "calmLevel": 6.98,
+        "calmMax": 8.27,
+        "directionalLevel": 8.95,
+        "directionalMax": 11.5,
+        "dirVsCalm": 1.28,
+        "contrast": 2.64,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "NW",
+          "S"
+        ],
+        "notes": "calm_mean=6.98 calm_max=8.27 best=E best_mean=8.95 dir_vs_calm=1.28 contrast=2.64 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 9.27,
+        "calmMax": 11.5,
+        "directionalLevel": 6.48,
+        "directionalMax": 8.7,
+        "dirVsCalm": 0.7,
+        "contrast": 1.76,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [],
+        "notes": "calm_mean=9.27 calm_max=11.50 best=E best_mean=6.48 dir_vs_calm=0.70 contrast=1.76 peak_gt_calm=FALSE"
+      }
+    }
+  },
+  "CLDP0554": {
+    "no2": {
+      "winter": {
+        "ok": true,
+        "hours": 2050,
+        "pattern": "calm-local",
+        "calmLevel": 41.77,
+        "calmMax": 62.25,
+        "directionalLevel": 27.7,
+        "directionalMax": 39.96,
+        "dirVsCalm": 0.66,
+        "contrast": 2.2,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "S",
+          "NW"
+        ],
+        "notes": "calm_mean=41.77 calm_max=62.25 best=E best_mean=27.70 dir_vs_calm=0.66 contrast=2.20 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "calm-local",
+        "calmLevel": 40.47,
+        "calmMax": 44.06,
+        "directionalLevel": 23.98,
+        "directionalMax": 40.71,
+        "dirVsCalm": 0.59,
+        "contrast": 2.11,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "NE",
+          "W"
+        ],
+        "notes": "calm_mean=40.47 calm_max=44.06 best=SE best_mean=23.98 dir_vs_calm=0.59 contrast=2.11 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 1511,
+        "pattern": "calm-local",
+        "calmLevel": 26.51,
+        "calmMax": 37.22,
+        "directionalLevel": 21.5,
+        "directionalMax": 39.42,
+        "dirVsCalm": 0.81,
+        "contrast": 2.42,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "SW",
+          "S"
+        ],
+        "notes": "calm_mean=26.51 calm_max=37.22 best=E best_mean=21.50 dir_vs_calm=0.81 contrast=2.42 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 33.55,
+        "calmMax": 38.4,
+        "directionalLevel": 17.16,
+        "directionalMax": 33.98,
+        "dirVsCalm": 0.51,
+        "contrast": 1.6,
+        "primaryDirs": [
+          "N",
+          "NW"
+        ],
+        "cleanDirs": [
+          "NE",
+          "SW"
+        ],
+        "notes": "calm_mean=33.55 calm_max=38.40 best=N+NW best_mean=17.16 dir_vs_calm=0.51 contrast=1.60 peak_gt_calm=FALSE"
+      }
+    },
+    "pm25": {
+      "winter": {
+        "ok": true,
+        "hours": 2065,
+        "pattern": "calm-local",
+        "calmLevel": 18.05,
+        "calmMax": 25.29,
+        "directionalLevel": 11.51,
+        "directionalMax": 25.42,
+        "dirVsCalm": 0.64,
+        "contrast": 3.44,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "N"
+        ],
+        "notes": "calm_mean=18.05 calm_max=25.29 best=E best_mean=11.51 dir_vs_calm=0.64 contrast=3.44 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2123,
+        "pattern": "calm-local",
+        "calmLevel": 18.65,
+        "calmMax": 22.58,
+        "directionalLevel": 11.99,
+        "directionalMax": 18.38,
+        "dirVsCalm": 0.64,
+        "contrast": 2.33,
+        "primaryDirs": [
+          "SE",
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=18.65 calm_max=22.58 best=SE+E best_mean=11.99 dir_vs_calm=0.64 contrast=2.33 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 1583,
+        "pattern": "directional",
+        "calmLevel": 10.34,
+        "calmMax": 12.01,
+        "directionalLevel": 12.31,
+        "directionalMax": 14.89,
+        "dirVsCalm": 1.19,
+        "contrast": 2.14,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "NW",
+          "N"
+        ],
+        "notes": "calm_mean=10.34 calm_max=12.01 best=E best_mean=12.31 dir_vs_calm=1.19 contrast=2.14 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 13.49,
+        "calmMax": 16.05,
+        "directionalLevel": 10.06,
+        "directionalMax": 13.82,
+        "dirVsCalm": 0.75,
+        "contrast": 1.99,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "N",
+          "NW"
+        ],
+        "notes": "calm_mean=13.49 calm_max=16.05 best=E best_mean=10.06 dir_vs_calm=0.75 contrast=1.99 peak_gt_calm=FALSE"
+      }
+    }
+  },
+  "CLDP0557": {
+    "no2": {
+      "winter": {
+        "ok": true,
+        "hours": 2024,
+        "pattern": "calm-local",
+        "calmLevel": 31.13,
+        "calmMax": 40.41,
+        "directionalLevel": 24.38,
+        "directionalMax": 29.23,
+        "dirVsCalm": 0.78,
+        "contrast": 3.13,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "SW",
+          "W"
+        ],
+        "notes": "calm_mean=31.13 calm_max=40.41 best=E best_mean=24.38 dir_vs_calm=0.78 contrast=3.13 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "calm-local",
+        "calmLevel": 34.07,
+        "calmMax": 41.25,
+        "directionalLevel": 21.28,
+        "directionalMax": 32.68,
+        "dirVsCalm": 0.62,
+        "contrast": 2.97,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=34.07 calm_max=41.25 best=SE best_mean=21.28 dir_vs_calm=0.62 contrast=2.97 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 1509,
+        "pattern": "mixed",
+        "calmLevel": 21.12,
+        "calmMax": 26.76,
+        "directionalLevel": 21.8,
+        "directionalMax": 28.57,
+        "dirVsCalm": 1.03,
+        "contrast": 2.74,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "S",
+          "SW"
+        ],
+        "notes": "calm_mean=21.12 calm_max=26.76 best=E best_mean=21.80 dir_vs_calm=1.03 contrast=2.74 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 26.61,
+        "calmMax": 31.89,
+        "directionalLevel": 15.1,
+        "directionalMax": 25.48,
+        "dirVsCalm": 0.57,
+        "contrast": 1.87,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=26.61 calm_max=31.89 best=E best_mean=15.10 dir_vs_calm=0.57 contrast=1.87 peak_gt_calm=FALSE"
+      }
+    },
+    "pm25": {
+      "winter": {
+        "ok": true,
+        "hours": 2011,
+        "pattern": "calm-local",
+        "calmLevel": 18.55,
+        "calmMax": 26.3,
+        "directionalLevel": 15.39,
+        "directionalMax": 26.26,
+        "dirVsCalm": 0.83,
+        "contrast": 6.63,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "N"
+        ],
+        "notes": "calm_mean=18.55 calm_max=26.30 best=E best_mean=15.39 dir_vs_calm=0.83 contrast=6.63 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "calm-local",
+        "calmLevel": 16.57,
+        "calmMax": 19.6,
+        "directionalLevel": 9.97,
+        "directionalMax": 16.98,
+        "dirVsCalm": 0.6,
+        "contrast": 2.58,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "NW",
+          "SW"
+        ],
+        "notes": "calm_mean=16.57 calm_max=19.60 best=SE best_mean=9.97 dir_vs_calm=0.60 contrast=2.58 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 1512,
+        "pattern": "directional",
+        "calmLevel": 6.5,
+        "calmMax": 7.89,
+        "directionalLevel": 9.27,
+        "directionalMax": 11.94,
+        "dirVsCalm": 1.43,
+        "contrast": 2.79,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "NW",
+          "S"
+        ],
+        "notes": "calm_mean=6.50 calm_max=7.89 best=E best_mean=9.27 dir_vs_calm=1.43 contrast=2.79 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1991,
+        "pattern": "calm-local",
+        "calmLevel": 9.45,
+        "calmMax": 12.61,
+        "directionalLevel": 6.05,
+        "directionalMax": 10.23,
+        "dirVsCalm": 0.64,
+        "contrast": 2.33,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "NW",
+          "N"
+        ],
+        "notes": "calm_mean=9.45 calm_max=12.61 best=E best_mean=6.05 dir_vs_calm=0.64 contrast=2.33 peak_gt_calm=FALSE"
+      }
+    }
+  },
+  "CLDP0558": {
+    "no2": {
+      "winter": {
+        "ok": true,
+        "hours": 902,
+        "pattern": "calm-local",
+        "calmLevel": 31.46,
+        "calmMax": 44.26,
+        "directionalLevel": 24.66,
+        "directionalMax": 33.59,
+        "dirVsCalm": 0.78,
+        "contrast": 1.95,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "SW",
+          "N"
+        ],
+        "notes": "calm_mean=31.46 calm_max=44.26 best=E best_mean=24.66 dir_vs_calm=0.78 contrast=1.95 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 1166,
+        "pattern": "calm-local",
+        "calmLevel": 29.86,
+        "calmMax": 38.41,
+        "directionalLevel": 18.8,
+        "directionalMax": 34.83,
+        "dirVsCalm": 0.63,
+        "contrast": 2.07,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "NE"
+        ],
+        "notes": "calm_mean=29.86 calm_max=38.41 best=SE best_mean=18.80 dir_vs_calm=0.63 contrast=2.07 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2208,
+        "pattern": "calm-local",
+        "calmLevel": 21.24,
+        "calmMax": 28.54,
+        "directionalLevel": 18.52,
+        "directionalMax": 29.61,
+        "dirVsCalm": 0.87,
+        "contrast": 2.14,
+        "primaryDirs": [
+          "E",
+          "SE"
+        ],
+        "cleanDirs": [
+          "N"
+        ],
+        "notes": "calm_mean=21.24 calm_max=28.54 best=E+SE best_mean=18.52 dir_vs_calm=0.87 contrast=2.14 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 30.56,
+        "calmMax": 37.63,
+        "directionalLevel": 17.33,
+        "directionalMax": 29.8,
+        "dirVsCalm": 0.57,
+        "contrast": 1.74,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "NE",
+          "W"
+        ],
+        "notes": "calm_mean=30.56 calm_max=37.63 best=E best_mean=17.33 dir_vs_calm=0.57 contrast=1.74 peak_gt_calm=FALSE"
+      }
+    },
+    "pm25": {
+      "winter": {
+        "ok": true,
+        "hours": 892,
+        "pattern": "mixed",
+        "calmLevel": 10.56,
+        "calmMax": 12.63,
+        "directionalLevel": 10.51,
+        "directionalMax": 14.9,
+        "dirVsCalm": 0.99,
+        "contrast": 2.8,
+        "primaryDirs": [
+          "S",
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "N"
+        ],
+        "notes": "calm_mean=10.56 calm_max=12.63 best=S+SE best_mean=10.51 dir_vs_calm=0.99 contrast=2.80 peak_gt_calm=TRUE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 1103,
+        "pattern": "calm-local",
+        "calmLevel": 15.15,
+        "calmMax": 19.3,
+        "directionalLevel": 10.23,
+        "directionalMax": 15.09,
+        "dirVsCalm": 0.68,
+        "contrast": 2.5,
+        "primaryDirs": [
+          "SE",
+          "N"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=15.15 calm_max=19.30 best=SE+N best_mean=10.23 dir_vs_calm=0.68 contrast=2.50 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 2203,
+        "pattern": "directional",
+        "calmLevel": 11,
+        "calmMax": 12.42,
+        "directionalLevel": 14.21,
+        "directionalMax": 18.42,
+        "dirVsCalm": 1.29,
+        "contrast": 2.17,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "NW",
+          "W"
+        ],
+        "notes": "calm_mean=11.00 calm_max=12.42 best=SE best_mean=14.21 dir_vs_calm=1.29 contrast=2.17 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 12.91,
+        "calmMax": 14.57,
+        "directionalLevel": 10.68,
+        "directionalMax": 14.51,
+        "dirVsCalm": 0.83,
+        "contrast": 2.15,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "N",
+          "NW"
+        ],
+        "notes": "calm_mean=12.91 calm_max=14.57 best=E best_mean=10.68 dir_vs_calm=0.83 contrast=2.15 peak_gt_calm=FALSE"
+      }
+    }
+  },
+  "CLDP0559": {
+    "no2": {
+      "winter": {
+        "ok": true,
+        "hours": 2027,
+        "pattern": "calm-local",
+        "calmLevel": 36.68,
+        "calmMax": 45.46,
+        "directionalLevel": 19.82,
+        "directionalMax": 33.55,
+        "dirVsCalm": 0.54,
+        "contrast": 2.1,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "SW",
+          "W"
+        ],
+        "notes": "calm_mean=36.68 calm_max=45.46 best=E best_mean=19.82 dir_vs_calm=0.54 contrast=2.10 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2207,
+        "pattern": "calm-local",
+        "calmLevel": 36.29,
+        "calmMax": 42.38,
+        "directionalLevel": 21.77,
+        "directionalMax": 39.61,
+        "dirVsCalm": 0.6,
+        "contrast": 2.82,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=36.29 calm_max=42.38 best=SE best_mean=21.77 dir_vs_calm=0.60 contrast=2.82 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 1512,
+        "pattern": "calm-local",
+        "calmLevel": 21.73,
+        "calmMax": 27.08,
+        "directionalLevel": 20.15,
+        "directionalMax": 28.68,
+        "dirVsCalm": 0.93,
+        "contrast": 2.45,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "S",
+          "SW"
+        ],
+        "notes": "calm_mean=21.73 calm_max=27.08 best=E best_mean=20.15 dir_vs_calm=0.93 contrast=2.45 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 31.06,
+        "calmMax": 36.86,
+        "directionalLevel": 20.04,
+        "directionalMax": 29.6,
+        "dirVsCalm": 0.65,
+        "contrast": 2.24,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "NE"
+        ],
+        "notes": "calm_mean=31.06 calm_max=36.86 best=E best_mean=20.04 dir_vs_calm=0.65 contrast=2.24 peak_gt_calm=FALSE"
+      }
+    },
+    "pm25": {
+      "winter": {
+        "ok": true,
+        "hours": 2045,
+        "pattern": "calm-local",
+        "calmLevel": 18.71,
+        "calmMax": 32.3,
+        "directionalLevel": 14.27,
+        "directionalMax": 26.02,
+        "dirVsCalm": 0.76,
+        "contrast": 6.3,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=18.71 calm_max=32.30 best=E best_mean=14.27 dir_vs_calm=0.76 contrast=6.30 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2207,
+        "pattern": "calm-local",
+        "calmLevel": 17.34,
+        "calmMax": 20.11,
+        "directionalLevel": 10.07,
+        "directionalMax": 17.59,
+        "dirVsCalm": 0.58,
+        "contrast": 2.17,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "NW",
+          "SW"
+        ],
+        "notes": "calm_mean=17.34 calm_max=20.11 best=SE best_mean=10.07 dir_vs_calm=0.58 contrast=2.17 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 1512,
+        "pattern": "directional",
+        "calmLevel": 6.75,
+        "calmMax": 8.18,
+        "directionalLevel": 9.45,
+        "directionalMax": 12.21,
+        "dirVsCalm": 1.4,
+        "contrast": 2.74,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "NW",
+          "S"
+        ],
+        "notes": "calm_mean=6.75 calm_max=8.18 best=E best_mean=9.45 dir_vs_calm=1.40 contrast=2.74 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 9.1,
+        "calmMax": 11.22,
+        "directionalLevel": 5.62,
+        "directionalMax": 8.55,
+        "dirVsCalm": 0.62,
+        "contrast": 1.62,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "NW"
+        ],
+        "notes": "calm_mean=9.10 calm_max=11.22 best=E best_mean=5.62 dir_vs_calm=0.62 contrast=1.62 peak_gt_calm=FALSE"
+      }
+    }
+  },
+  "CLDP0561": {
+    "no2": {
+      "winter": {
+        "ok": true,
+        "hours": 1571,
+        "pattern": "calm-local",
+        "calmLevel": 32.92,
+        "calmMax": 48.52,
+        "directionalLevel": 26.18,
+        "directionalMax": 30.5,
+        "dirVsCalm": 0.8,
+        "contrast": 2.39,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "SW"
+        ],
+        "notes": "calm_mean=32.92 calm_max=48.52 best=E best_mean=26.18 dir_vs_calm=0.80 contrast=2.39 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2176,
+        "pattern": "calm-local",
+        "calmLevel": 38.97,
+        "calmMax": 43.03,
+        "directionalLevel": 25.39,
+        "directionalMax": 43.02,
+        "dirVsCalm": 0.65,
+        "contrast": 2.21,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "NE",
+          "W"
+        ],
+        "notes": "calm_mean=38.97 calm_max=43.03 best=SE best_mean=25.39 dir_vs_calm=0.65 contrast=2.21 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 1512,
+        "pattern": "calm-local",
+        "calmLevel": 24.38,
+        "calmMax": 33.13,
+        "directionalLevel": 20.64,
+        "directionalMax": 31.81,
+        "dirVsCalm": 0.85,
+        "contrast": 2.12,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "SW",
+          "NE"
+        ],
+        "notes": "calm_mean=24.38 calm_max=33.13 best=SE best_mean=20.64 dir_vs_calm=0.85 contrast=2.12 peak_gt_calm=FALSE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 743,
+        "pattern": "calm-local",
+        "calmLevel": 27.86,
+        "calmMax": 36.83,
+        "directionalLevel": 20.9,
+        "directionalMax": 36.03,
+        "dirVsCalm": 0.75,
+        "contrast": 1.95,
+        "primaryDirs": [
+          "N"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=27.86 calm_max=36.83 best=N best_mean=20.90 dir_vs_calm=0.75 contrast=1.95 peak_gt_calm=FALSE"
+      }
+    },
+    "pm25": {
+      "winter": {
+        "ok": true,
+        "hours": 1588,
+        "pattern": "calm-local",
+        "calmLevel": 16.38,
+        "calmMax": 23.8,
+        "directionalLevel": 10.17,
+        "directionalMax": 22.25,
+        "dirVsCalm": 0.62,
+        "contrast": 2.47,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "N"
+        ],
+        "notes": "calm_mean=16.38 calm_max=23.80 best=E best_mean=10.17 dir_vs_calm=0.62 contrast=2.47 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2145,
+        "pattern": "calm-local",
+        "calmLevel": 17.67,
+        "calmMax": 21.08,
+        "directionalLevel": 11.26,
+        "directionalMax": 17.98,
+        "dirVsCalm": 0.64,
+        "contrast": 2.5,
+        "primaryDirs": [
+          "SE",
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=17.67 calm_max=21.08 best=SE+E best_mean=11.26 dir_vs_calm=0.64 contrast=2.50 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 1584,
+        "pattern": "mixed",
+        "calmLevel": 10.09,
+        "calmMax": 12.19,
+        "directionalLevel": 11.67,
+        "directionalMax": 14.68,
+        "dirVsCalm": 1.16,
+        "contrast": 1.86,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "NW",
+          "N"
+        ],
+        "notes": "calm_mean=10.09 calm_max=12.19 best=E best_mean=11.67 dir_vs_calm=1.16 contrast=1.86 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 743,
+        "pattern": "calm-local",
+        "calmLevel": 11.47,
+        "calmMax": 15.9,
+        "directionalLevel": 9.3,
+        "directionalMax": 12.64,
+        "dirVsCalm": 0.81,
+        "contrast": 1.72,
+        "primaryDirs": [
+          "S"
+        ],
+        "cleanDirs": [
+          "NW",
+          "NE"
+        ],
+        "notes": "calm_mean=11.47 calm_max=15.90 best=S best_mean=9.30 dir_vs_calm=0.81 contrast=1.72 peak_gt_calm=FALSE"
+      }
+    }
+  },
+  "CLDP0564": {
+    "no2": {
+      "winter": {
+        "ok": true,
+        "hours": 1661,
+        "pattern": "calm-local",
+        "calmLevel": 35.28,
+        "calmMax": 45.11,
+        "directionalLevel": 19.74,
+        "directionalMax": 27.74,
+        "dirVsCalm": 0.56,
+        "contrast": 2.1,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=35.28 calm_max=45.11 best=E best_mean=19.74 dir_vs_calm=0.56 contrast=2.10 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2207,
+        "pattern": "calm-local",
+        "calmLevel": 39.67,
+        "calmMax": 48.73,
+        "directionalLevel": 21.8,
+        "directionalMax": 40.46,
+        "dirVsCalm": 0.55,
+        "contrast": 2.7,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "NE"
+        ],
+        "notes": "calm_mean=39.67 calm_max=48.73 best=SE best_mean=21.80 dir_vs_calm=0.55 contrast=2.70 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 1804,
+        "pattern": "mixed",
+        "calmLevel": 22.04,
+        "calmMax": 28.76,
+        "directionalLevel": 23.76,
+        "directionalMax": 39.56,
+        "dirVsCalm": 1.08,
+        "contrast": 2.93,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "SW"
+        ],
+        "notes": "calm_mean=22.04 calm_max=28.76 best=E best_mean=23.76 dir_vs_calm=1.08 contrast=2.93 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1953,
+        "pattern": "calm-local",
+        "calmLevel": 31.54,
+        "calmMax": 37.02,
+        "directionalLevel": 20.31,
+        "directionalMax": 31.34,
+        "dirVsCalm": 0.64,
+        "contrast": 2.19,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "NE"
+        ],
+        "notes": "calm_mean=31.54 calm_max=37.02 best=E best_mean=20.31 dir_vs_calm=0.64 contrast=2.19 peak_gt_calm=FALSE"
+      }
+    },
+    "pm25": {
+      "winter": {
+        "ok": true,
+        "hours": 1683,
+        "pattern": "calm-local",
+        "calmLevel": 18.47,
+        "calmMax": 27.71,
+        "directionalLevel": 14.96,
+        "directionalMax": 22.95,
+        "dirVsCalm": 0.81,
+        "contrast": 3.59,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "N"
+        ],
+        "notes": "calm_mean=18.47 calm_max=27.71 best=E best_mean=14.96 dir_vs_calm=0.81 contrast=3.59 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2207,
+        "pattern": "calm-local",
+        "calmLevel": 16.63,
+        "calmMax": 20.3,
+        "directionalLevel": 9.37,
+        "directionalMax": 16.65,
+        "dirVsCalm": 0.56,
+        "contrast": 1.8,
+        "primaryDirs": [
+          "SE",
+          "E"
+        ],
+        "cleanDirs": [
+          "SW",
+          "W"
+        ],
+        "notes": "calm_mean=16.63 calm_max=20.30 best=SE+E best_mean=9.37 dir_vs_calm=0.56 contrast=1.80 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 1804,
+        "pattern": "directional",
+        "calmLevel": 6.91,
+        "calmMax": 8.33,
+        "directionalLevel": 9.64,
+        "directionalMax": 12.9,
+        "dirVsCalm": 1.4,
+        "contrast": 2.58,
+        "primaryDirs": [
+          "E",
+          "SE"
+        ],
+        "cleanDirs": [
+          "NW"
+        ],
+        "notes": "calm_mean=6.91 calm_max=8.33 best=E+SE best_mean=9.64 dir_vs_calm=1.40 contrast=2.58 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1953,
+        "pattern": "calm-local",
+        "calmLevel": 8.86,
+        "calmMax": 11.33,
+        "directionalLevel": 6.06,
+        "directionalMax": 8.55,
+        "dirVsCalm": 0.68,
+        "contrast": 1.48,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [],
+        "notes": "calm_mean=8.86 calm_max=11.33 best=E best_mean=6.06 dir_vs_calm=0.68 contrast=1.48 peak_gt_calm=FALSE"
+      }
+    }
+  },
+  "CLDP0589": {
+    "no2": {
+      "winter": {
+        "ok": true,
+        "hours": 2015,
+        "pattern": "calm-local",
+        "calmLevel": 29.67,
+        "calmMax": 39.07,
+        "directionalLevel": 20.76,
+        "directionalMax": 31.52,
+        "dirVsCalm": 0.7,
+        "contrast": 1.67,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "N",
+          "SW"
+        ],
+        "notes": "calm_mean=29.67 calm_max=39.07 best=E best_mean=20.76 dir_vs_calm=0.70 contrast=1.67 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2207,
+        "pattern": "calm-local",
+        "calmLevel": 30.9,
+        "calmMax": 37.44,
+        "directionalLevel": 22.14,
+        "directionalMax": 33.13,
+        "dirVsCalm": 0.72,
+        "contrast": 2.39,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "NE"
+        ],
+        "notes": "calm_mean=30.90 calm_max=37.44 best=SE best_mean=22.14 dir_vs_calm=0.72 contrast=2.39 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 1512,
+        "pattern": "calm-local",
+        "calmLevel": 19.05,
+        "calmMax": 25.23,
+        "directionalLevel": 18.06,
+        "directionalMax": 26.73,
+        "dirVsCalm": 0.95,
+        "contrast": 2.36,
+        "primaryDirs": [
+          "SE",
+          "E"
+        ],
+        "cleanDirs": [
+          "SW",
+          "S"
+        ],
+        "notes": "calm_mean=19.05 calm_max=25.23 best=SE+E best_mean=18.06 dir_vs_calm=0.95 contrast=2.36 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 29,
+        "calmMax": 39.69,
+        "directionalLevel": 15.67,
+        "directionalMax": 25.1,
+        "dirVsCalm": 0.54,
+        "contrast": 1.66,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=29.00 calm_max=39.69 best=E best_mean=15.67 dir_vs_calm=0.54 contrast=1.66 peak_gt_calm=FALSE"
+      }
+    },
+    "pm25": {
+      "winter": {
+        "ok": true,
+        "hours": 2029,
+        "pattern": "calm-local",
+        "calmLevel": 17.07,
+        "calmMax": 24.74,
+        "directionalLevel": 11.21,
+        "directionalMax": 23.66,
+        "dirVsCalm": 0.66,
+        "contrast": 3.25,
+        "primaryDirs": [
+          "E",
+          "SE"
+        ],
+        "cleanDirs": [
+          "W"
+        ],
+        "notes": "calm_mean=17.07 calm_max=24.74 best=E+SE best_mean=11.21 dir_vs_calm=0.66 contrast=3.25 peak_gt_calm=FALSE"
+      },
+      "spring": {
+        "ok": true,
+        "hours": 2121,
+        "pattern": "calm-local",
+        "calmLevel": 19.05,
+        "calmMax": 22.3,
+        "directionalLevel": 13.1,
+        "directionalMax": 19.18,
+        "dirVsCalm": 0.69,
+        "contrast": 2.5,
+        "primaryDirs": [
+          "SE"
+        ],
+        "cleanDirs": [
+          "W",
+          "SW"
+        ],
+        "notes": "calm_mean=19.05 calm_max=22.30 best=SE best_mean=13.10 dir_vs_calm=0.69 contrast=2.50 peak_gt_calm=FALSE"
+      },
+      "summer": {
+        "ok": true,
+        "hours": 1396,
+        "pattern": "mixed",
+        "calmLevel": 10.27,
+        "calmMax": 12.2,
+        "directionalLevel": 11.51,
+        "directionalMax": 14.65,
+        "dirVsCalm": 1.12,
+        "contrast": 2.25,
+        "primaryDirs": [
+          "SE",
+          "E"
+        ],
+        "cleanDirs": [
+          "NW",
+          "N"
+        ],
+        "notes": "calm_mean=10.27 calm_max=12.20 best=SE+E best_mean=11.51 dir_vs_calm=1.12 contrast=2.25 peak_gt_calm=TRUE"
+      },
+      "autumn": {
+        "ok": true,
+        "hours": 1992,
+        "pattern": "calm-local",
+        "calmLevel": 13.42,
+        "calmMax": 15.28,
+        "directionalLevel": 9.35,
+        "directionalMax": 12.88,
+        "dirVsCalm": 0.7,
+        "contrast": 1.6,
+        "primaryDirs": [
+          "E"
+        ],
+        "cleanDirs": [
+          "NE"
+        ],
+        "notes": "calm_mean=13.42 calm_max=15.28 best=E best_mean=9.35 dir_vs_calm=0.70 contrast=1.60 peak_gt_calm=FALSE"
+      }
+    }
+  }
+}

@@ -1,13 +1,14 @@
 import { polarImageUrl } from './components/polar-plot/polar-image-url.js';
 import { loadPolarReadings, applyPolarReading } from './components/polar-plot/polar-readings.js';
+import { initPolarSeasonalPlots } from './components/polar-plot/polar-seasonal-plots.js';
 
 const API_KEY = 'e2635276-e87a-11eb-9a03-0242ac130003';
 const API_BASE_URL = 'https://api.breathelondon-communities.org/api';
 
 /**
  * Parse query params. Also recovers from a common typo where a second `?` is used
- * instead of `&` (e.g. `?sitecode=CLDP0299?polarMap=1`), which would otherwise make
- * sitecode=`CLDP0299?polarMap=1` and leave polarMap unset.
+ * instead of `&` (e.g. `?sitecode=CLDP0299?species=both`), which would otherwise make
+ * sitecode=`CLDP0299?species=both` and leave the second param unset.
  */
 function parseUrlParams(search) {
     const params = new URLSearchParams(search);
@@ -35,11 +36,11 @@ let sitecode = urlParams.get('sitecode') || 'CLDP0299';
 let species = urlParams.get('species') || 'both';
 /**
  * Polar UI studio: /?sitecode=CLDP0299&polarUI=studio
- * When studio is on, polarMap is ignored (static plot redesign only).
+ * When studio is on, the map overlay is skipped (static plot redesign only).
  */
 const polarStudioEnabled = urlParams.get('polarUI') === 'studio';
-/** Polar map overlay variant: /?sitecode=CLDP0299&polarMap=1 */
-const polarMapEnabled = urlParams.get('polarMap') === '1' && !polarStudioEnabled;
+/** Map overlay is the default polar presentation (unless studio is on). */
+const polarMapEnabled = !polarStudioEnabled;
 
 if (polarStudioEnabled) {
     document.getElementById('polar-plot-slot')?.classList.add('polar-plot-slot--studio');
@@ -325,9 +326,14 @@ document.addEventListener('DOMContentLoaded', async () => {
     // / abort the location fetch and surface "Could not load sensor location".
     const polarMapPromise = (async () => {
         await loadPolarReadings();
+        let seasonalApi;
         if (!polarMapEnabled) {
             applyStaticPolarImages(sitecode);
-            initPolarPlotSwitcher({ siteCode: sitecode });
+            seasonalApi = await initPolarSeasonalPlots({ sitecode });
+            initPolarPlotSwitcher({
+                siteCode: sitecode,
+                onPollutantChange: (p) => seasonalApi?.setPollutant?.(p),
+            });
             refreshPolarReading(sitecode);
             return;
         }
@@ -336,10 +342,14 @@ document.addEventListener('DOMContentLoaded', async () => {
             const slot = document.getElementById('polar-plot-slot');
             if (!slot) return;
             const { setPollutant } = await initPolarMapView({ sitecode, slot });
+            seasonalApi = await initPolarSeasonalPlots({ sitecode });
             initPolarPlotSwitcher({
                 syncPanels: false,
                 siteCode: sitecode,
-                onPollutantChange: setPollutant
+                onPollutantChange: (p) => {
+                    setPollutant(p);
+                    seasonalApi?.setPollutant?.(p);
+                },
             });
             refreshPolarReading(sitecode);
         } catch (error) {
@@ -350,7 +360,11 @@ document.addEventListener('DOMContentLoaded', async () => {
             const mapView = document.getElementById('polar-map-view');
             if (mapView) mapView.hidden = true;
             applyStaticPolarImages(sitecode);
-            initPolarPlotSwitcher({ siteCode: sitecode });
+            seasonalApi = await initPolarSeasonalPlots({ sitecode });
+            initPolarPlotSwitcher({
+                siteCode: sitecode,
+                onPollutantChange: (p) => seasonalApi?.setPollutant?.(p),
+            });
             refreshPolarReading(sitecode);
         }
     })();

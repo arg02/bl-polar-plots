@@ -46,16 +46,6 @@
       max-width: 70ch;
       color: var(--muted);
     }
-    .nav-links {
-      margin: 14px 0 0;
-      font-size: 0.9rem;
-    }
-    .nav-links a {
-      color: var(--ink);
-      margin-right: 14px;
-    }
-    .nav-links a:hover { color: var(--accent); }
-
     /* Three text sections with coloured vertical bars */
     .notes {
       display: grid;
@@ -112,7 +102,7 @@
     .card {
       background: var(--card);
       border: 1px solid var(--line);
-      margin: 0 0 28px;
+      margin: 0 0 52px;
       padding: 20px 20px 16px;
     }
     .card--tint-teal { background: #eef8f5; }
@@ -233,18 +223,24 @@
       .plots { grid-template-columns: 1fr; }
     }
   </style>
+  <link rel="stylesheet" href="/bl-polar-plots/site-nav.css">
 </head>
 <body>
+  <nav class="pages-site-nav" aria-label="Polar plot pages">
+    <div class="pages-site-nav__inner">
+      <span class="pages-site-nav__label">Polar plots</span>
+      <a href="/bl-polar-plots/" aria-current="page">Co-location comparisons</a>
+      <a href="/bl-polar-plots/node-info/?sitecode=CLDP0299">Node info</a>
+      <a href="/bl-polar-plots/node-info/community-polar-summaries-2025.html">Community summaries</a>
+      <a href="/bl-polar-plots/node-info/community-polar-summaries-2025.html#colour-scale-notes">Colour scale notes</a>
+    </div>
+  </nav>
   <header class="page">
     <div class="inner">
       <h1>Co-Located Sensor Comparisons — 2025</h1>
       <p class="lede">
         Side-by-side polar plots of Breathe London sensors and their Imperial College reference stations,
         using shared wind data so directional patterns can be compared fairly.
-      </p>
-      <p class="nav-links">
-        <a href="node-info/?sitecode=CLDP0299">Node info mockup</a>
-        <a href="node-info/community-polar-summaries-2025.html">Community plot summaries</a>
       </p>
     </div>
   </header>
