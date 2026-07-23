@@ -11,7 +11,7 @@ Canonical process doc for generating, summarising, and deploying polar plots on 
 > - Spring: Mar–May 2026 · Summer: Jun–Aug 2026 · Autumn: Sep–Nov 2026
 > - Refresh Bloomberg active list (`EndDate` null), allowlist, PNGs, readings JSON, seasonal manifest, then ship via `sensor-polar-plot` → GCS.
 >
-> Tracking issue: create/update on `erg-ic/sensor-polar-plot` (title like “Jan 2027: Regenerate polar plots for 2026”).
+> Tracking issues: [erg-ic/sensor-polar-plot#1](https://github.com/erg-ic/sensor-polar-plot/issues/1) · [arg02/bl-polar-plots#1](https://github.com/arg02/bl-polar-plots/issues/1)
 
 ---
 
