@@ -2,6 +2,8 @@
 
 Local recreation of the Breathe London sensor node info page with polar plot visualization.
 
+**Polar plot process (generation, summaries, deploy, Jan 2027 regen):** [`docs/POLAR-PLOTS-PROCESS.md`](docs/POLAR-PLOTS-PROCESS.md). Production widget: [`erg-ic/sensor-polar-plot`](https://github.com/erg-ic/sensor-polar-plot).
+
 ## Setup
 
 1. Install main project dependencies:
@@ -25,7 +27,6 @@ cd components/individual-node-map && npm install && npm run build && cd ../..
 
 3. Set up environment variables (create `.env` file):
 ```bash
-VITE_MAPBOX_ACCESS_TOKEN=your_mapbox_token_here
 VITE_API_KEY=e2635276-e87a-11eb-9a03-0242ac130003
 ```
 
@@ -45,19 +46,17 @@ Access a sensor page with URL parameters (matching production site format):
 
 **Optional:**
 - `&species=both` - Pollutant species: `both`, `NO2`, or `PM25` (defaults to `both`)
-- `&polarMap=1` - Map overlay variant: transparent polar plot georeferenced on a Mapbox map (falls back to Leaflet + OSM if Mapbox/WebGL is unavailable), centred on the sensor lat/lon (outer radius ≈ 10 km; see page caption)
+- `&polarUI=studio` - Static “Wind Reading Room” restyle (skips the default map overlay)
 
 **Examples:**
-- `http://localhost:3001?sitecode=CLDP0299&species=both` - Default layout (plot left, text right)
-- `http://localhost:3001?sitecode=CLDP0299&polarMap=1` - Polar plot overlaid on a map at the sensor location
-- `http://localhost:3001?sitecode=CLDP0299` - Different sensor (species defaults to 'both')
+- `http://localhost:3001?sitecode=CLDP0299` - Polar plot on the map (default)
+- `http://localhost:3001?sitecode=CLDP0299&species=both` - Same, with species set
+- `http://localhost:3001?sitecode=CLDP0299&polarUI=studio` - Static studio restyle (no map)
 - `http://localhost:3001` - Uses defaults (CLDP0299, both)
 
 **Note:** The page will work without URL parameters using defaults, but for proper functionality matching the production site, include the `sitecode` parameter. Dev server port is **3001** (see `vite.config.js`).
 
-**URL variants:**
-- `?polarMap=1` — transparent polar PNG overlaid on a map (Mapbox if `VITE_MAPBOX_ACCESS_TOKEN` works; else Leaflet + OSM)
-- `?polarUI=studio` — static-plot “Wind Reading Room” restyle (if both are set, studio wins and map mode is ignored)
+The polar section defaults to a transparent polar PNG overlaid on a Leaflet map (CARTO/Esri basemaps; no Mapbox token).
 
 ## Deploying the node mockup (GitHub Pages)
 
@@ -70,7 +69,7 @@ Co-located comparison pages are already published from the repo’s **`docs/`** 
 
 The Vite node mockup is **not** on Pages yet (source lives at repo root: `index.html`, `main.js`, etc.). Recommended: keep comparisons at the site root and publish the mockup under `/node-info/`.
 
-1. Ensure `.env` has `VITE_MAPBOX_ACCESS_TOKEN=...` (baked into the client bundle at build time). `VITE_API_KEY` already has a client fallback matching production widgets.
+1. `VITE_API_KEY` already has a client fallback matching production widgets (optional in `.env`).
 2. Fix root-absolute asset URLs before a project-Pages build (or overlays/`what-can-i-do` break). Prefer `import.meta.env.BASE_URL` for paths like `/cldp0299-*.png` and `/sections/what-can-i-do.html` in `components/polar-plot/polar-map-view.js` and `main.js`.
 3. Build into `docs/node-info` with the project base path:
 
@@ -82,15 +81,13 @@ npm run build -- --base /bl-polar-plots/node-info/ --outDir docs/node-info
 4. Commit `docs/node-info/` (built assets only is enough to publish) and push `reference-comparison`. Do not overwrite `docs/index.html` (that is the comparisons hub).
 5. After Pages refreshes:
 
-- Default: `https://arg02.github.io/bl-polar-plots/node-info/?sitecode=CLDP0299&species=both`
-- Map: `...?sitecode=CLDP0299&polarMap=1`
+- Default (map): `https://arg02.github.io/bl-polar-plots/node-info/?sitecode=CLDP0299&species=both`
 - Studio UI: `...?sitecode=CLDP0299&polarUI=studio`
 
 **Gotchas**
 
 - This is a **project** site (`username.github.io/repo/`), so Vite `base` must be `/bl-polar-plots/node-info/` (trailing slash). Default `base: '/'` breaks JS/CSS.
 - Dev-only Vite proxies (`/api/s3-proxy`, `/r-api`, local linechart) do **not** exist on Pages; widgets load from GCS CDN. R/openair helpers that call `localhost:8000` will not work remotely.
-- Restrict the Mapbox token to `https://arg02.github.io` if you bake it into a public Pages build.
 - Vite also copies all of `public/` into the build output (including `colocated-comparisons/`); that nested copy under `node-info/` is unused on Pages—safe to delete from `docs/node-info` before committing if you want a smaller tree.
 
 ## Components
@@ -113,7 +110,7 @@ npm run build -- --base /bl-polar-plots/node-info/ --outDir docs/node-info
 
 - `sensor-polar-plot` - Polar plot with wind-pollution correlation
   - Dual implementation: R/openair server-side and JavaScript client-side
-  - Overlays on Mapbox map with geospatial alignment
+  - Overlays on Leaflet map with geospatial alignment
 
 ## Features
 
@@ -139,7 +136,7 @@ bl-polar-plots/
 │   ├── api.js                     # Breathe London API client
 │   └── wind-data.js               # NOAA wind data service
 ├── utils/
-│   └── mapbox-overlay.js          # Mapbox utilities
+│   └── leaflet-basemaps.js        # Free CARTO/Esri Leaflet tile layers
 ├── index.html                     # Main page
 ├── main.js                        # App entry point
 └── styles.css                     # Styles
@@ -151,4 +148,4 @@ bl-polar-plots/
 2. Implement NOAA wind data fetching
 3. Set up R service for server-side polar plots
 4. Implement client-side JavaScript polar plot
-5. Add Mapbox overlay with geospatial alignment
+5. Refine Leaflet polar map overlay
